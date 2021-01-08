@@ -22,6 +22,7 @@
         <e p="CharacterScripts" t="Include">
           <e p="Hitting.cs" t="Include" />
         </e>
+        <e p="InteractCanvas.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="GitHub" t="Include">
             <e p="Editor" t="Include">
