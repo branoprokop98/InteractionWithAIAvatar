@@ -10,6 +10,18 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="aiml" t="Include">
+          <e p="AI_Bot.cs" t="Include" />
+          <e p="Aiml.cs" t="Include" />
+          <e p="ContextWindow.cs" t="Include" />
+          <e p="LoadTopics.cs" t="Include" />
+          <e p="SpeechInput.cs" t="Include" />
+          <e p="SpeechInputForAiml.cs" t="Include" />
+          <e p="Topics.cs" t="Include" />
+        </e>
+        <e p="CharacterScripts" t="Include">
+          <e p="Hitting.cs" t="Include" />
+        </e>
         <e p="Plugins" t="Include">
           <e p="GitHub" t="Include">
             <e p="Editor" t="Include">
@@ -280,6 +292,9 @@
               </e>
             </e>
           </e>
+        </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="Topics.xml" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
