@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +42,8 @@
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" />
         <option value="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs" />
-        <option value="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" />
+        <option value="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" />
       </list>
     </option>
   </component>
@@ -102,7 +100,7 @@
       <workItem from="1610187191436" duration="713000" />
       <workItem from="1610188661042" duration="1326000" />
       <workItem from="1610219800696" duration="211000" />
-      <workItem from="1610277980383" duration="3557000" />
+      <workItem from="1610277980383" duration="3677000" />
     </task>
     <servers />
   </component>
@@ -203,37 +201,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610278282659" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindow.cs</url>
-          <line>61</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindow.cs" initialLine="59">
-            <startOffsets>
-              <option value="1757" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1771" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindow.cs</url>
-          <line>73</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindow.cs" initialLine="73">
-            <startOffsets>
-              <option value="2267" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2267" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
