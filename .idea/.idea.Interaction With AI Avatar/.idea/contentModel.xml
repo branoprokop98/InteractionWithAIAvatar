@@ -295,6 +295,16 @@
           </e>
         </e>
         <e p="StreamingAssets" t="Include">
+          <e p="config" t="Include">
+            <e p="bots.xml" t="Include" />
+            <e p="DefaultPredicates.xml" t="Include" />
+            <e p="GenderSubstitutions.xml" t="Include" />
+            <e p="Person2Substitutions.xml" t="Include" />
+            <e p="PersonSubstitutions.xml" t="Include" />
+            <e p="Settings.xml" t="Include" />
+            <e p="Splitters.xml" t="Include" />
+            <e p="Substitutions.xml" t="Include" />
+          </e>
           <e p="Topics.xml" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
