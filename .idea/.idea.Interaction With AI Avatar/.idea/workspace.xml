@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="" />
+    <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -37,8 +43,9 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" />
-        <option value="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs" />
+        <option value="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" />
       </list>
     </option>
   </component>
@@ -48,6 +55,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -70,10 +79,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="5460">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="5460" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -92,6 +101,8 @@
       <workItem from="1610109832248" duration="2065000" />
       <workItem from="1610187191436" duration="713000" />
       <workItem from="1610188661042" duration="1326000" />
+      <workItem from="1610219800696" duration="211000" />
+      <workItem from="1610277980383" duration="3557000" />
     </task>
     <servers />
   </component>
@@ -114,5 +125,115 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="466" height="464" key="DebuggerActiveHint" timestamp="1610280919976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="466" height="464" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610280919976" />
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1610281079911">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079911" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1610281079911">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079911" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1610281079911">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079911" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1610281079911">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079911" />
+    <state width="1877" height="316" key="GridCell.Tab.1.bottom" timestamp="1610281100559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281100559" />
+    <state width="1877" height="316" key="GridCell.Tab.1.center" timestamp="1610281100559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281100559" />
+    <state width="1877" height="316" key="GridCell.Tab.1.left" timestamp="1610281100559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281100559" />
+    <state width="1877" height="316" key="GridCell.Tab.1.right" timestamp="1610281100559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281100559" />
+    <state width="1877" height="316" key="GridCell.Tab.2.bottom" timestamp="1610281079716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079716" />
+    <state width="1877" height="316" key="GridCell.Tab.2.center" timestamp="1610281079716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079716" />
+    <state width="1877" height="316" key="GridCell.Tab.2.left" timestamp="1610281079716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079716" />
+    <state width="1877" height="316" key="GridCell.Tab.2.right" timestamp="1610281079716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079716" />
+    <state width="1877" height="316" key="GridCell.Tab.3.bottom" timestamp="1610281079716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079716" />
+    <state width="1877" height="316" key="GridCell.Tab.3.center" timestamp="1610281079716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079716" />
+    <state width="1877" height="316" key="GridCell.Tab.3.left" timestamp="1610281079716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079716" />
+    <state width="1877" height="316" key="GridCell.Tab.3.right" timestamp="1610281079716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610281079716" />
+    <state x="764" y="194" key="RiderGenerateDialog" timestamp="1610279242365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="194" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610279242365" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610278282659">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610278282659" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindow.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindow.cs" initialLine="59">
+            <startOffsets>
+              <option value="1757" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1771" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindow.cs</url>
+          <line>73</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindow.cs" initialLine="73">
+            <startOffsets>
+              <option value="2267" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2267" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
