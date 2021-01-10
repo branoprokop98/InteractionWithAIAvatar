@@ -23,6 +23,7 @@ namespace AIML
             tempListOfTopics = new List<Topics>();
             listOfTopics = new List<List<Topics>>();
             readTopic();
+            initListOfTopics();
             //instantiateListOfTopics();
         }
 
@@ -62,30 +63,28 @@ namespace AIML
             }
         }
 
-        // private void instantiateListOfTopics()
-        // {
-        //     int k = 0;
-        //     double rows = this.tempListOfTopics.Count / 9f;
-        //     Double numOfRows = Math.Ceiling(rows);
-        //     List<Topics> temp = new List<Topics>();
-        //     for (int j = 0; j < numOfRows; j++)
-        //     {
-        //         for (int i = 0; i < 9; i++)
-        //         {
-        //             try
-        //             {
-        //                 temp.Add(tempListOfTopics[k]);
-        //                 k++;
-        //             }
-        //             catch
-        //             {
-        //                 break;
-        //             }
-        //         }
-        //
-        //         this.listOfTopics.Add(new Topics(){Topic = temp});
-        //         temp.Clear();
-        //     }
-        // }
+        private void initListOfTopics()
+        {
+            int k = 0;
+            double numOfItemsInLayer = Math.Ceiling(tempListOfTopics.Count / 9d);
+            for (int i = 0; i < numOfItemsInLayer; i++)
+            {
+                listOfTopics.Add(new List<Topics>());
+                for (int j = 0; j < 10; j++)
+                {
+                    try
+                    {
+                        listOfTopics[i].Add(new Topics() {TopicName = tempListOfTopics[k].TopicName, PathToTopic = tempListOfTopics[k].PathToTopic});
+                        k++;
+                    }
+                    catch (Exception e)
+                    {
+                        break;
+                    }
+                }
+            }
+        }
+
+        public List<List<Topics>> ListOfTopics => listOfTopics;
     }
 }
