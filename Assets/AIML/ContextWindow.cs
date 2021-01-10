@@ -61,6 +61,15 @@ public class ContextWindow : MonoBehaviour
     {
         actualLayer++;
         List<List<Topics>> topics = this.topics.ListOfTopics;
+        try
+        {
+            if (topics[actualLayer][0] == null){}
+        }
+        catch (Exception e)
+        {
+            actualLayer--;
+            return;
+        }
         for (int i = 0; i < canvas.transform.childCount - 2; i++)
         {
             Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
@@ -68,11 +77,46 @@ public class ContextWindow : MonoBehaviour
             try
             {
                 buttonText.text = topics[actualLayer][i].TopicName;
+                button.gameObject.SetActive(true);
             }
             catch (Exception e)
             {
                button.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void getPrevLayer()
+    {
+        actualLayer--;
+        List<List<Topics>> topics = this.topics.ListOfTopics;
+        try
+        {
+            if (topics[actualLayer][0] == null){}
+        }
+        catch (Exception e)
+        {
+            actualLayer++;
+            return;
+        }
+        for (int i = 0; i < canvas.transform.childCount - 2; i++)
+        {
+            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
+            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
+            try
+            {
+                buttonText.text = topics[actualLayer][i].TopicName;
+                button.gameObject.SetActive(true);
+            }
+            catch (Exception e)
+            {
+                button.gameObject.SetActive(false);
+            }
+        }
+    }
+
+    public void getSentencesOfTopic(Button button)
+    {
+        Debug.Log(button.transform.GetChild(0).gameObject.GetComponent<Text>().text);
     }
 }
