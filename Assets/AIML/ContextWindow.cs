@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using AIML;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ContextWindow : MonoBehaviour
 {
@@ -12,7 +10,7 @@ public class ContextWindow : MonoBehaviour
     [SerializeField] private GameObject interactObject;
     private Hiting _hiting;
     private bool interacting;
-    private int actualLayer;
+    private float startTime;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +19,6 @@ public class ContextWindow : MonoBehaviour
         canvas.enabled = false;
         _hiting = new Hiting();
         interacting = false;
-        actualLayer = 0;
-        initTopicsName();
     }
 
     // Update is called once per frame
@@ -34,45 +30,12 @@ public class ContextWindow : MonoBehaviour
             canvas.enabled = true;
             interacting = true;
         }
-        else if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() &&
+        else if (Input.GetKey(KeyCode.F) && _hiting.getHit() &&
                  _hiting._hit.collider.gameObject == interactObject &&
                  interacting)
         {
             canvas.enabled = false;
             interacting = false;
-        }
-    }
-
-    private Button btn;
-
-    public void initTopicsName()
-    {
-        actualLayer = 0;
-        List<List<Topics>> topics = this.topics.ListOfTopics;
-        for (int i = 0; i < canvas.transform.childCount - 2; i++)
-        {
-            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
-            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
-            buttonText.text = topics[actualLayer][i].TopicName;
-        }
-    }
-
-    public void getNextLayer()
-    {
-        actualLayer++;
-        List<List<Topics>> topics = this.topics.ListOfTopics;
-        for (int i = 0; i < canvas.transform.childCount - 2; i++)
-        {
-            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
-            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
-            try
-            {
-                buttonText.text = topics[actualLayer][i].TopicName;
-            }
-            catch (Exception e)
-            {
-               button.gameObject.SetActive(false);
-            }
         }
     }
 }
