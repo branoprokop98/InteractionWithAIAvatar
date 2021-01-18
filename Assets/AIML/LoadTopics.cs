@@ -84,7 +84,6 @@ namespace AIML
                 }
             }
         }
-
         public List<List<Topics>> ListOfTopics => listOfTopics;
     }
 }
