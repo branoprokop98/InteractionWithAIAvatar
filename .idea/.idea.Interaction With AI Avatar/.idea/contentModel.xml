@@ -13,11 +13,17 @@
         <e p="aiml" t="Include">
           <e p="AI_Bot.cs" t="Include" />
           <e p="Aiml.cs" t="Include" />
-          <e p="ContextWindow.cs" t="Include" />
+          <e p="AIMLStructure.cs" t="Include" />
+          <e p="ContextLayer.cs" t="Include" />
+          <e p="ContextWindowSentences.cs" t="Include" />
+          <e p="ContextWindowTopic.cs" t="Include" />
           <e p="LoadTopics.cs" t="Include" />
           <e p="SpeechInput.cs" t="Include" />
           <e p="SpeechInputForAiml.cs" t="Include" />
           <e p="Topics.cs" t="Include" />
+        </e>
+        <e p="Button" t="Include">
+          <e p="SelectableButton.cs" t="Include" />
         </e>
         <e p="CharacterScripts" t="Include">
           <e p="Hitting.cs" t="Include" />
