@@ -22,9 +22,6 @@
           <e p="SpeechInputForAiml.cs" t="Include" />
           <e p="Topics.cs" t="Include" />
         </e>
-        <e p="Button" t="Include">
-          <e p="SelectableButton.cs" t="Include" />
-        </e>
         <e p="CharacterScripts" t="Include">
           <e p="Hitting.cs" t="Include" />
         </e>

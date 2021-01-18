@@ -20,19 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/AIMLStructure.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/AIMLStructure.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextLayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextLayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Topics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Topics.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +55,9 @@
         <option value="$PROJECT_DIR$/Assets/AIML/ContextWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/AIML/AIMLStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" />
-        <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs" />
         <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" />
+        <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs" />
+        <option value="$PROJECT_DIR$/Assets/StreamingAssets/Topics.xml" />
       </list>
     </option>
   </component>
@@ -127,7 +118,7 @@
       <workItem from="1610291713088" duration="2770000" />
       <workItem from="1610813730866" duration="607000" />
       <workItem from="1610900672509" duration="4801000" />
-      <workItem from="1610986798706" duration="6633000" />
+      <workItem from="1610986798706" duration="7378000" />
     </task>
     <servers />
   </component>
@@ -156,70 +147,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="510" height="464" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610990024924" />
-    <state width="1877" height="219" key="GridCell.Tab.0.bottom" timestamp="1610993176112">
+    <state width="1877" height="219" key="GridCell.Tab.0.bottom" timestamp="1610994189877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993176112" />
-    <state width="1877" height="219" key="GridCell.Tab.0.center" timestamp="1610993176111">
+    <state width="1877" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189877" />
+    <state width="1877" height="219" key="GridCell.Tab.0.center" timestamp="1610994189876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993176111" />
-    <state width="1877" height="219" key="GridCell.Tab.0.left" timestamp="1610993176111">
+    <state width="1877" height="219" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189876" />
+    <state width="1877" height="219" key="GridCell.Tab.0.left" timestamp="1610994189876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993176111" />
-    <state width="1877" height="219" key="GridCell.Tab.0.right" timestamp="1610993176111">
+    <state width="1877" height="219" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189876" />
+    <state width="1877" height="219" key="GridCell.Tab.0.right" timestamp="1610994189877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993176111" />
-    <state width="1877" height="219" key="GridCell.Tab.1.bottom" timestamp="1610993187405">
+    <state width="1877" height="219" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189877" />
+    <state width="1877" height="219" key="GridCell.Tab.1.bottom" timestamp="1610994211670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993187405" />
-    <state width="1877" height="219" key="GridCell.Tab.1.center" timestamp="1610993187405">
+    <state width="1877" height="219" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994211670" />
+    <state width="1877" height="219" key="GridCell.Tab.1.center" timestamp="1610994211670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993187405" />
-    <state width="1877" height="219" key="GridCell.Tab.1.left" timestamp="1610993187404">
+    <state width="1877" height="219" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994211670" />
+    <state width="1877" height="219" key="GridCell.Tab.1.left" timestamp="1610994211670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993187404" />
-    <state width="1877" height="219" key="GridCell.Tab.1.right" timestamp="1610993187405">
+    <state width="1877" height="219" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994211670" />
+    <state width="1877" height="219" key="GridCell.Tab.1.right" timestamp="1610994211670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993187405" />
-    <state width="1877" height="219" key="GridCell.Tab.2.bottom" timestamp="1610993175947">
+    <state width="1877" height="219" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994211670" />
+    <state width="1877" height="219" key="GridCell.Tab.2.bottom" timestamp="1610994189681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993175947" />
-    <state width="1877" height="219" key="GridCell.Tab.2.center" timestamp="1610993175947">
+    <state width="1877" height="219" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189681" />
+    <state width="1877" height="219" key="GridCell.Tab.2.center" timestamp="1610994189681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993175947" />
-    <state width="1877" height="219" key="GridCell.Tab.2.left" timestamp="1610993175947">
+    <state width="1877" height="219" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189681" />
+    <state width="1877" height="219" key="GridCell.Tab.2.left" timestamp="1610994189681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993175947" />
-    <state width="1877" height="219" key="GridCell.Tab.2.right" timestamp="1610993175947">
+    <state width="1877" height="219" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189681" />
+    <state width="1877" height="219" key="GridCell.Tab.2.right" timestamp="1610994189681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993175947" />
-    <state width="1877" height="219" key="GridCell.Tab.3.bottom" timestamp="1610993175947">
+    <state width="1877" height="219" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189681" />
+    <state width="1877" height="219" key="GridCell.Tab.3.bottom" timestamp="1610994189681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993175947" />
-    <state width="1877" height="219" key="GridCell.Tab.3.center" timestamp="1610993175947">
+    <state width="1877" height="219" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189681" />
+    <state width="1877" height="219" key="GridCell.Tab.3.center" timestamp="1610994189681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993175947" />
-    <state width="1877" height="219" key="GridCell.Tab.3.left" timestamp="1610993175947">
+    <state width="1877" height="219" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189681" />
+    <state width="1877" height="219" key="GridCell.Tab.3.left" timestamp="1610994189681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993175947" />
-    <state width="1877" height="219" key="GridCell.Tab.3.right" timestamp="1610993175947">
+    <state width="1877" height="219" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189681" />
+    <state width="1877" height="219" key="GridCell.Tab.3.right" timestamp="1610994189681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="219" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610993175947" />
+    <state width="1877" height="219" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1610994189681" />
     <state x="764" y="194" key="RiderGenerateDialog" timestamp="1610989412391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -274,6 +265,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowSentences.cs" initialLine="26">
+            <startOffsets>
+              <option value="697" />
+            </startOffsets>
+            <endOffsets>
+              <option value="715" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
