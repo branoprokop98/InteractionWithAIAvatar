@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Salutations.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Salutations.aiml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/23/a3e3722c/AIMLLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/d0/178950ba/Bot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/06/33c53402/SettingsDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
@@ -123,7 +123,7 @@
       <workItem from="1610813730866" duration="607000" />
       <workItem from="1610900672509" duration="4801000" />
       <workItem from="1610986798706" duration="7562000" />
-      <workItem from="1611320223059" duration="3758000" />
+      <workItem from="1611320223059" duration="5272000" />
     </task>
     <servers />
   </component>
@@ -148,10 +148,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="622" height="464" key="DebuggerActiveHint" timestamp="1611323456132">
+    <state width="622" height="464" key="DebuggerActiveHint" timestamp="1611324124917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="622" height="464" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611323456132" />
+    <state width="622" height="464" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324124917" />
     <state width="1877" height="188" key="GridCell.Tab.0.bottom" timestamp="1611324005238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -168,22 +168,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="188" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324005238" />
-    <state width="1877" height="188" key="GridCell.Tab.1.bottom" timestamp="1611324005034">
+    <state width="1877" height="188" key="GridCell.Tab.1.bottom" timestamp="1611324035987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324005034" />
-    <state width="1877" height="188" key="GridCell.Tab.1.center" timestamp="1611324005034">
+    <state width="1877" height="188" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324035987" />
+    <state width="1877" height="188" key="GridCell.Tab.1.center" timestamp="1611324035987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324005034" />
-    <state width="1877" height="188" key="GridCell.Tab.1.left" timestamp="1611324005034">
+    <state width="1877" height="188" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324035987" />
+    <state width="1877" height="188" key="GridCell.Tab.1.left" timestamp="1611324035987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324005034" />
-    <state width="1877" height="188" key="GridCell.Tab.1.right" timestamp="1611324005034">
+    <state width="1877" height="188" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324035987" />
+    <state width="1877" height="188" key="GridCell.Tab.1.right" timestamp="1611324035987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324005034" />
+    <state width="1877" height="188" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1611324035987" />
     <state width="1877" height="188" key="GridCell.Tab.2.bottom" timestamp="1611324005034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
