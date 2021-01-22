@@ -9,6 +9,7 @@ namespace AIML
 {
     public class ContextWindowSentences : ContextLayer
     {
+        private Bot bot;
         private XDocument aimlFile;
         private AIMLStructure aimlStructure;
         private List<AIMLStructure> sentences;
@@ -25,9 +26,10 @@ namespace AIML
         public void listSentences(string nameOfFile)
         {
             sentences.Clear();
-            Bot bot = new Bot();
+            bot = new Bot();
             string path = bot.PathToAIML + "\\" + "aiml";
             string[] files = Directory.GetFiles(path, nameOfFile);
+
             aimlFile = XDocument.Load(files[0]);
 
             IEnumerable<XElement> aimlNodes = from aiml in aimlFile.Descendants("category") select aiml;

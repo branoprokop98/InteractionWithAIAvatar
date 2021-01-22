@@ -10,11 +10,13 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
     private LoadTopics topics;
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject interactObject;
+    [SerializeField] private Canvas textCanvas;
     private Hiting _hiting;
     private bool interacting;
     private int actualLayer;
     private int actualLayerOfSentences;
     private ContextWindowSentences contextWindowSentences;
+    private Aiml aiml;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +28,9 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
         interacting = false;
         actualLayer = 0;
         actualLayerOfSentences = 0;
+        aiml = new Aiml();
         initTopicsName();
+        textCanvas.enabled = false;
     }
 
     // Update is called once per frame
@@ -35,6 +39,7 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
         if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && _hiting._hit.collider.gameObject == interactObject &&
             interacting == false)
         {
+            textCanvas.enabled = true;
             canvas.enabled = true;
             interacting = true;
         }
@@ -42,6 +47,7 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
                  _hiting._hit.collider.gameObject == interactObject &&
                  interacting)
         {
+            textCanvas.enabled = false;
             canvas.enabled = false;
             interacting = false;
         }
@@ -145,8 +151,12 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
                     initSentences();
                     return;
                 }
+
             }
         }
+        Text outText = textCanvas.transform.GetChild(0).gameObject.GetComponent<Text>();
+        Text errorText = textCanvas.transform.GetChild(1).gameObject.GetComponent<Text>();
+        aiml.botInput(nameOfTopic, outText, errorText);
     }
 
     public void initSentences()
