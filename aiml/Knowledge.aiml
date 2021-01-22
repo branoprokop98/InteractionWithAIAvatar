@@ -31,10 +31,11 @@
 	<category>
 		<pattern>WHAT IS THERMOMETER</pattern>
 		<template>
+		A device for measuring temperature.
 			<think>
 				<set name="it">
 					<set name="topic">
-      A device for measuring temperature.
+						thermo
 					</set>
 				</set>
 			</think>
@@ -43,10 +44,11 @@
 	<category>
 		<pattern>WHAT IS A THERMOMETER</pattern>
 		<template>
+		A device for measuring temperature.
 			<think>
 				<set name="it">
 					<set name="topic">
-      A device for measuring temperature.
+						thermo
 					</set>
 				</set>
 			</think>
