@@ -7,7 +7,7 @@ using AIMLbot;
 
 namespace AIML
 {
-    public class ContextWindowSentences : ContextLayer
+    public class ContextWindowSentences
     {
         private Bot bot;
         private XDocument aimlFile;
@@ -21,19 +21,21 @@ namespace AIML
             sentences = new List<AIMLStructure>();
             listOfAimlSentences = new List<List<AIMLStructure>>();
             aimlStructure = new AIMLStructure();
+            bot = new Bot();
+        }
+
+        private void loadXmlDocument(string nameOfFile)
+        {
+            string path = bot.PathToAIML + "\\" + "aiml";
+            string[] files = Directory.GetFiles(path, nameOfFile);
+            aimlFile = XDocument.Load(files[0]);
         }
 
         public void listSentences(string nameOfFile)
         {
             sentences.Clear();
-            bot = new Bot();
-            string path = bot.PathToAIML + "\\" + "aiml";
-            string[] files = Directory.GetFiles(path, nameOfFile);
-
-            aimlFile = XDocument.Load(files[0]);
-
+            loadXmlDocument(nameOfFile);
             IEnumerable<XElement> aimlNodes = from aiml in aimlFile.Descendants("category") select aiml;
-
             foreach (XElement aimlNode in aimlNodes)
             {
                 IEnumerable<XElement> childNodes = aimlNode.Elements();
@@ -50,11 +52,14 @@ namespace AIML
                             ;
                     }
                 }
-
-                sentences.Add(new AIMLStructure() {Pattern = aimlStructure.Pattern});
+                addSentenceToList();
             }
-
             addTo2DList();
+        }
+
+        private void addSentenceToList()
+        {
+            sentences.Add(new AIMLStructure(){Pattern = aimlStructure.Pattern});
         }
 
         public void addTo2DList()
@@ -78,16 +83,6 @@ namespace AIML
                     }
                 }
             }
-        }
-
-        public void getNextLayer()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void getPrevLayer()
-        {
-            throw new System.NotImplementedException();
         }
 
         public List<List<AIMLStructure>> ListOfAimlSentences

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class ContextWindowTopic : MonoBehaviour, ContextLayer
 {
     private LoadTopics topics;
+    private LoadSentences loadSentences;
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject interactObject;
     [SerializeField] private Canvas textCanvas;
@@ -15,13 +16,13 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
     private bool interacting;
     private int actualLayer;
     private int actualLayerOfSentences;
-    private ContextWindowSentences contextWindowSentences;
     private Aiml aiml;
+    private Button btn;
 
     // Start is called before the first frame update
     void Start()
     {
-        contextWindowSentences = new ContextWindowSentences();
+        loadSentences = new LoadSentences();
         topics = new LoadTopics();
         canvas.enabled = false;
         _hiting = new Hiting();
@@ -53,8 +54,6 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
         }
     }
 
-    private Button btn;
-
     public void initTopicsName()
     {
         actualLayer = 0;
@@ -78,17 +77,10 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
     public void getNextLayer()
     {
         actualLayer++;
-        try
+        if (tryLayerOfTopicBounce(1) == -1)
         {
-            if (topics.ListOfTopics[actualLayer][0] == null)
-            {
-            }
-        }
-        catch (Exception e)
-        {
-            actualLayer--;
             return;
-        }
+        };
 
         for (int i = 0; i < canvas.transform.childCount - 3; i++)
         {
@@ -109,17 +101,10 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
     public void getPrevLayer()
     {
         actualLayer--;
-        try
+        if (tryLayerOfTopicBounce(0) == -1)
         {
-            if (this.topics.ListOfTopics[actualLayer][0] == null)
-            {
-            }
-        }
-        catch (Exception e)
-        {
-            actualLayer++;
             return;
-        }
+        };
 
         for (int i = 0; i < canvas.transform.childCount - 3; i++)
         {
@@ -147,13 +132,13 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
             {
                 if (topic.TopicName.Equals(nameOfTopic))
                 {
-                    contextWindowSentences.listSentences(topic.PathToTopic);
+                    loadSentences.listSentences(topic.PathToTopic);
                     initSentences();
                     return;
                 }
-
             }
         }
+
         Text outText = textCanvas.transform.GetChild(0).gameObject.GetComponent<Text>();
         Text errorText = textCanvas.transform.GetChild(1).gameObject.GetComponent<Text>();
         aiml.botInput(nameOfTopic, outText, errorText);
@@ -169,7 +154,7 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
             Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
             try
             {
-                buttonText.text = contextWindowSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
+                buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
                 button.gameObject.SetActive(true);
             }
             catch (Exception e)
@@ -182,15 +167,8 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
     public void getNextLayerSentence()
     {
         actualLayerOfSentences++;
-        try
+        if (tryLayerOfSentencesBounce(1) == -1)
         {
-            if (contextWindowSentences.ListOfAimlSentences[actualLayerOfSentences][0] == null)
-            {
-            }
-        }
-        catch (Exception e)
-        {
-            actualLayerOfSentences--;
             return;
         }
 
@@ -200,7 +178,7 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
             Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
             try
             {
-                buttonText.text = contextWindowSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
+                buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
                 button.gameObject.SetActive(true);
             }
             catch (Exception e)
@@ -209,18 +187,12 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
             }
         }
     }
+
     public void getPrevLayerSentence()
     {
         actualLayerOfSentences--;
-        try
+        if (tryLayerOfSentencesBounce(0) == -1)
         {
-            if (contextWindowSentences.ListOfAimlSentences[actualLayerOfSentences][0] == null)
-            {
-            }
-        }
-        catch (Exception e)
-        {
-            actualLayerOfSentences++;
             return;
         }
 
@@ -230,7 +202,7 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
             Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
             try
             {
-                buttonText.text = contextWindowSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
+                buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
                 button.gameObject.SetActive(true);
             }
             catch (Exception e)
@@ -238,5 +210,67 @@ public class ContextWindowTopic : MonoBehaviour, ContextLayer
                 button.gameObject.SetActive(false);
             }
         }
+    }
+
+    private void testLayerBounceForSentences()
+    {
+        if (loadSentences.ListOfAimlSentences[actualLayerOfSentences][0] == null)
+        {
+            throw new Exception("Out of range");
+        }
+    }
+
+    private int tryLayerOfSentencesBounce(int layerDirection)
+    {
+        try
+        {
+            testLayerBounceForSentences();
+        }
+        catch (Exception e)
+        {
+            if (layerDirection == 0)
+            {
+                actualLayerOfSentences++;
+            }
+            else
+            {
+                actualLayerOfSentences--;
+            }
+
+            Debug.LogWarning(e.Message);
+            return -1;
+        }
+
+        return 0;
+    }
+
+    private void testLayerBounceForTopic()
+    {
+        if (topics.ListOfTopics[actualLayer][0] == null)
+        {
+            throw new Exception("Topic layer is out of range");
+        }
+    }
+
+    private int tryLayerOfTopicBounce(int layerDirection)
+    {
+        try
+        {
+            testLayerBounceForTopic();
+        }
+        catch (Exception e)
+        {
+            if (layerDirection == 1)
+            {
+                actualLayer--;
+            }
+            else
+            {
+                actualLayer++;
+            }
+            Debug.Log(e.Message);
+            return -1;
+        }
+        return 0;
     }
 }
