@@ -5,17 +5,17 @@ using AIML;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ContextWindowService : MonoBehaviour, ContextLayer
+public class ContextWindowService : MonoBehaviour
 {
     private LoadTopics topics;
-    public LoadSentences loadSentences;
+    private LoadSentences loadSentences;
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject interactObject;
     [SerializeField] private Canvas textCanvas;
     private Hiting _hiting;
     private bool interacting;
-    private int actualLayer;
-    private int actualLayerOfSentences;
+    public static int actualLayerOfTopic { get; set; }
+    public static int actualLayerOfSentences { get; set; }
     private Aiml aiml;
     private Button btn;
 
@@ -27,10 +27,10 @@ public class ContextWindowService : MonoBehaviour, ContextLayer
         canvas.enabled = false;
         _hiting = new Hiting();
         interacting = false;
-        actualLayer = 0;
+        actualLayerOfTopic = 0;
         actualLayerOfSentences = 0;
         aiml = new Aiml();
-        initTopicsName();
+        //initTopicsName();
         textCanvas.enabled = false;
     }
 
@@ -54,177 +54,177 @@ public class ContextWindowService : MonoBehaviour, ContextLayer
         }
     }
 
-    public void initTopicsName()
+    // public void initTopicsName()
+    // {
+    //     actualLayerOfTopic = 0;
+    //     actualLayerOfSentences = -2;
+    //     for (int i = 0; i < canvas.transform.childCount - 3; i++)
+    //     {
+    //         Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
+    //         Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
+    //         try
+    //         {
+    //             buttonText.text = topics.ListOfTopics[actualLayerOfTopic][i].TopicName;
+    //             button.gameObject.SetActive(true);
+    //         }
+    //         catch (Exception e)
+    //         {
+    //             button.gameObject.SetActive(false);
+    //         }
+    //     }
+    // }
+    //
+    // public void getNextLayer()
+    // {
+    //     actualLayerOfTopic++;
+    //     if (tryLayerOfTopicBounce(1) == -1)
+    //     {
+    //         return;
+    //     };
+    //
+    //     for (int i = 0; i < canvas.transform.childCount - 3; i++)
+    //     {
+    //         Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
+    //         Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
+    //         try
+    //         {
+    //             buttonText.text = topics.ListOfTopics[actualLayerOfTopic][i].TopicName;
+    //             button.gameObject.SetActive(true);
+    //         }
+    //         catch (Exception e)
+    //         {
+    //             button.gameObject.SetActive(false);
+    //         }
+    //     }
+    // }
+    //
+    // public void getPrevLayer()
+    // {
+    //     actualLayerOfTopic--;
+    //     if (tryLayerOfTopicBounce(0) == -1)
+    //     {
+    //         return;
+    //     };
+    //
+    //     for (int i = 0; i < canvas.transform.childCount - 3; i++)
+    //     {
+    //         Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
+    //         Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
+    //         try
+    //         {
+    //             buttonText.text = this.topics.ListOfTopics[actualLayerOfTopic][i].TopicName;
+    //             button.gameObject.SetActive(true);
+    //         }
+    //         catch (Exception e)
+    //         {
+    //             button.gameObject.SetActive(false);
+    //         }
+    //     }
+    // }
+
+    // public void getSentencesOfTopic(Button button)
+    // {
+    //     Debug.Log(button.transform.GetChild(0).gameObject.GetComponent<Text>().text);
+    //     string nameOfTopic = button.transform.GetChild(0).gameObject.GetComponent<Text>().text;
+    //     foreach (List<Topics> listsOfTopics in topics.ListOfTopics)
+    //     {
+    //         foreach (Topics topic in listsOfTopics)
+    //         {
+    //             if (topic.TopicName.Equals(nameOfTopic))
+    //             {
+    //                 loadSentences.listSentences(topic.PathToTopic);
+    //                 initSentences();
+    //                 return;
+    //             }
+    //         }
+    //     }
+    //
+    //     Text outText = textCanvas.transform.GetChild(0).gameObject.GetComponent<Text>();
+    //     Text errorText = textCanvas.transform.GetChild(1).gameObject.GetComponent<Text>();
+    //     aiml.botInput(nameOfTopic, outText, errorText);
+    // }
+    //
+    // public void initSentences()
+    // {
+    //     actualLayerOfSentences = 0;
+    //     actualLayerOfTopic = -2;
+    //     for (int i = 0; i < canvas.transform.childCount - 3; i++)
+    //     {
+    //         Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
+    //         Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
+    //         try
+    //         {
+    //             buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
+    //             button.gameObject.SetActive(true);
+    //         }
+    //         catch (Exception e)
+    //         {
+    //             button.gameObject.SetActive(false);
+    //         }
+    //     }
+    // }
+    //
+    // public void getNextLayerSentence()
+    // {
+    //     actualLayerOfSentences++;
+    //     if (tryLayerOfSentencesBounce(1) == -1)
+    //     {
+    //         return;
+    //     }
+    //
+    //     for (int i = 0; i < canvas.transform.childCount - 3; i++)
+    //     {
+    //         Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
+    //         Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
+    //         try
+    //         {
+    //             buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
+    //             button.gameObject.SetActive(true);
+    //         }
+    //         catch (Exception e)
+    //         {
+    //             button.gameObject.SetActive(false);
+    //         }
+    //     }
+    // }
+    //
+    // public void getPrevLayerSentence()
+    // {
+    //     actualLayerOfSentences--;
+    //     if (tryLayerOfSentencesBounce(0) == -1)
+    //     {
+    //         return;
+    //     }
+    //
+    //     for (int i = 0; i < canvas.transform.childCount - 3; i++)
+    //     {
+    //         Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
+    //         Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
+    //         try
+    //         {
+    //             buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
+    //             button.gameObject.SetActive(true);
+    //         }
+    //         catch (Exception e)
+    //         {
+    //             button.gameObject.SetActive(false);
+    //         }
+    //     }
+    // }
+
+    private void testLayerBounceForSentences(List<List<AIMLStructure>> listOfSentences)
     {
-        actualLayer = 0;
-        actualLayerOfSentences = -2;
-        for (int i = 0; i < canvas.transform.childCount - 3; i++)
-        {
-            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
-            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
-            try
-            {
-                buttonText.text = topics.ListOfTopics[actualLayer][i].TopicName;
-                button.gameObject.SetActive(true);
-            }
-            catch (Exception e)
-            {
-                button.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    public void getNextLayer()
-    {
-        actualLayer++;
-        if (tryLayerOfTopicBounce(1) == -1)
-        {
-            return;
-        };
-
-        for (int i = 0; i < canvas.transform.childCount - 3; i++)
-        {
-            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
-            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
-            try
-            {
-                buttonText.text = topics.ListOfTopics[actualLayer][i].TopicName;
-                button.gameObject.SetActive(true);
-            }
-            catch (Exception e)
-            {
-                button.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    public void getPrevLayer()
-    {
-        actualLayer--;
-        if (tryLayerOfTopicBounce(0) == -1)
-        {
-            return;
-        };
-
-        for (int i = 0; i < canvas.transform.childCount - 3; i++)
-        {
-            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
-            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
-            try
-            {
-                buttonText.text = this.topics.ListOfTopics[actualLayer][i].TopicName;
-                button.gameObject.SetActive(true);
-            }
-            catch (Exception e)
-            {
-                button.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    public void getSentencesOfTopic(Button button)
-    {
-        Debug.Log(button.transform.GetChild(0).gameObject.GetComponent<Text>().text);
-        string nameOfTopic = button.transform.GetChild(0).gameObject.GetComponent<Text>().text;
-        foreach (List<Topics> listsOfTopics in topics.ListOfTopics)
-        {
-            foreach (Topics topic in listsOfTopics)
-            {
-                if (topic.TopicName.Equals(nameOfTopic))
-                {
-                    loadSentences.listSentences(topic.PathToTopic);
-                    initSentences();
-                    return;
-                }
-            }
-        }
-
-        Text outText = textCanvas.transform.GetChild(0).gameObject.GetComponent<Text>();
-        Text errorText = textCanvas.transform.GetChild(1).gameObject.GetComponent<Text>();
-        aiml.botInput(nameOfTopic, outText, errorText);
-    }
-
-    public void initSentences()
-    {
-        actualLayerOfSentences = 0;
-        actualLayer = -2;
-        for (int i = 0; i < canvas.transform.childCount - 3; i++)
-        {
-            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
-            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
-            try
-            {
-                buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
-                button.gameObject.SetActive(true);
-            }
-            catch (Exception e)
-            {
-                button.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    public void getNextLayerSentence()
-    {
-        actualLayerOfSentences++;
-        if (tryLayerOfSentencesBounce(1) == -1)
-        {
-            return;
-        }
-
-        for (int i = 0; i < canvas.transform.childCount - 3; i++)
-        {
-            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
-            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
-            try
-            {
-                buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
-                button.gameObject.SetActive(true);
-            }
-            catch (Exception e)
-            {
-                button.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    public void getPrevLayerSentence()
-    {
-        actualLayerOfSentences--;
-        if (tryLayerOfSentencesBounce(0) == -1)
-        {
-            return;
-        }
-
-        for (int i = 0; i < canvas.transform.childCount - 3; i++)
-        {
-            Button button = canvas.transform.GetChild(i).gameObject.GetComponent<Button>();
-            Text buttonText = button.transform.GetChild(0).gameObject.GetComponent<Text>();
-            try
-            {
-                buttonText.text = loadSentences.ListOfAimlSentences[actualLayerOfSentences][i].Pattern;
-                button.gameObject.SetActive(true);
-            }
-            catch (Exception e)
-            {
-                button.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    private void testLayerBounceForSentences()
-    {
-        if (loadSentences.ListOfAimlSentences[actualLayerOfSentences][0] == null)
+        if (listOfSentences[actualLayerOfSentences][0] == null)
         {
             throw new Exception("Out of range");
         }
     }
 
-    private int tryLayerOfSentencesBounce(int layerDirection)
+    public int tryLayerOfSentencesBounce(int layerDirection, List<List<AIMLStructure>> listOfSentences)
     {
         try
         {
-            testLayerBounceForSentences();
+            testLayerBounceForSentences(listOfSentences);
         }
         catch (Exception e)
         {
@@ -246,13 +246,13 @@ public class ContextWindowService : MonoBehaviour, ContextLayer
 
     private void testLayerBounceForTopic()
     {
-        if (topics.ListOfTopics[actualLayer][0] == null)
+        if (topics.ListOfTopics[actualLayerOfTopic][0] == null)
         {
             throw new Exception("Topic layer is out of range");
         }
     }
 
-    private int tryLayerOfTopicBounce(int layerDirection)
+    public int tryLayerOfTopicBounce(int layerDirection)
     {
         try
         {
@@ -262,11 +262,11 @@ public class ContextWindowService : MonoBehaviour, ContextLayer
         {
             if (layerDirection == 1)
             {
-                actualLayer--;
+                actualLayerOfTopic--;
             }
             else
             {
-                actualLayer++;
+                actualLayerOfTopic++;
             }
             Debug.Log(e.Message);
             return -1;

@@ -14,7 +14,7 @@ namespace AIML
         private XDocument xmlDocument;
         private Topics topics;
         private List<Topics> tempListOfTopics;
-        private List<List<Topics>> listOfTopics;
+        public static List<List<Topics>> listOfTopics { get; set; }
 
         public LoadTopics()
         {
