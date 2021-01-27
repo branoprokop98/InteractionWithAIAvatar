@@ -15,6 +15,7 @@
           <e p="Aiml.cs" t="Include" />
           <e p="AIMLStructure.cs" t="Include" />
           <e p="ContextLayer.cs" t="Include" />
+          <e p="ContextWindowSentence.cs" t="Include" />
           <e p="ContextWindowService.cs" t="Include" />
           <e p="ContextWindowTopic.cs" t="Include" />
           <e p="LoadSentences.cs" t="Include" />

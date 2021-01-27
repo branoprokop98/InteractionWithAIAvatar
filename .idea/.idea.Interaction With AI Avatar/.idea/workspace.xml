@@ -20,15 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/LoadSentences.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/LoadSentences.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,25 +38,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/b7/01216ef1/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/bc/0ad61a92/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/25/21126cb9/Directory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/88/2f17b279/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/23/a3e3722c/AIMLLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/d0/178950ba/Bot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/06/33c53402/SettingsDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowSentences.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/LoadSentences.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -120,7 +123,7 @@
       <workItem from="1610900672509" duration="4801000" />
       <workItem from="1610986798706" duration="7562000" />
       <workItem from="1611320223059" duration="5592000" />
-      <workItem from="1611758548682" duration="5041000" />
+      <workItem from="1611758548682" duration="9727000" />
     </task>
     <servers />
   </component>
@@ -159,6 +162,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs</url>
+          <line>65</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowSentence.cs" initialLine="65" containingFunctionPresentation="method 'getNextLayerSentence'">
+            <startOffsets>
+              <option value="2285" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2331" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs</url>
+          <line>89</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowSentence.cs" initialLine="89" containingFunctionPresentation="method 'getPrevLayerSentence'">
+            <startOffsets>
+              <option value="3125" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3171" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowSentence.cs" initialLine="61" containingFunctionPresentation="method 'initSentences'">
+            <startOffsets>
+              <option value="2229" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2230" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
