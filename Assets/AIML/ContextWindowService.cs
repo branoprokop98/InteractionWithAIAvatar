@@ -5,10 +5,10 @@ using AIML;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ContextWindowTopic : MonoBehaviour, ContextLayer
+public class ContextWindowService : MonoBehaviour, ContextLayer
 {
     private LoadTopics topics;
-    private LoadSentences loadSentences;
+    public LoadSentences loadSentences;
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject interactObject;
     [SerializeField] private Canvas textCanvas;

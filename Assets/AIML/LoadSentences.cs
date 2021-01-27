@@ -7,7 +7,7 @@ using AIMLbot;
 
 namespace AIML
 {
-    public class ContextWindowSentences
+    public class LoadSentences
     {
         private Bot bot;
         private XDocument aimlFile;
@@ -16,7 +16,7 @@ namespace AIML
         private List<List<AIMLStructure>> listOfAimlSentences;
 
 
-        public ContextWindowSentences()
+        public LoadSentences()
         {
             sentences = new List<AIMLStructure>();
             listOfAimlSentences = new List<List<AIMLStructure>>();

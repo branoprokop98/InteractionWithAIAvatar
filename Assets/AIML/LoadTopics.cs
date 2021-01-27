@@ -47,10 +47,13 @@ namespace AIML
                             throw new XmlException();
                     }
                 }
-
-                tempListOfTopics.Add(new Topics()
-                    {TopicName = this.topics.TopicName, PathToTopic = this.topics.PathToTopic});
+                addTopicToList(this.topics);
             }
+        }
+
+        private void addTopicToList(Topics topic)
+        {
+            tempListOfTopics.Add(new Topics(){TopicName = topic.TopicName, PathToTopic = topic.PathToTopic});
         }
 
         private void loadXmlFile()
