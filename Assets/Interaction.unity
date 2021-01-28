@@ -515,7 +515,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -853,7 +853,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -3332,8 +3332,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222585}
-        m_MethodName: getPrevLayer
+      - m_Target: {fileID: 1845222584}
+        m_MethodName: getPrevLayerOfTopic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3343,8 +3343,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1845222586}
-        m_MethodName: getPrevLayerSentence
+      - m_Target: {fileID: 1845222584}
+        m_MethodName: getPrevLayerOfSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4137,7 +4137,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -4380,7 +4380,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -4584,7 +4584,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -4645,8 +4645,6 @@ GameObject:
   - component: {fileID: 1845222582}
   - component: {fileID: 1845222581}
   - component: {fileID: 1845222584}
-  - component: {fileID: 1845222585}
-  - component: {fileID: 1845222586}
   m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
@@ -4744,33 +4742,6 @@ MonoBehaviour:
   canvas: {fileID: 1620108172}
   interactObject: {fileID: 1845222579}
   textCanvas: {fileID: 570182287}
---- !u!114 &1845222585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845222579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41b2c20dc05e410ab4af498bbf1d3d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1620108172}
---- !u!114 &1845222586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845222579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 648e2233071b4fab8d66e0b85c91f5f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1620108172}
-  textCanvas: {fileID: 570182287}
 --- !u!1 &1894729772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,8 +4824,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222585}
-        m_MethodName: initTopicsName
+      - m_Target: {fileID: 1845222584}
+        m_MethodName: getTopics
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5085,7 +5056,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -5221,8 +5192,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222585}
-        m_MethodName: getNextLayer
+      - m_Target: {fileID: 1845222584}
+        m_MethodName: getNextLayerOfTopic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5232,8 +5203,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1845222586}
-        m_MethodName: getNextLayerSentence
+      - m_Target: {fileID: 1845222584}
+        m_MethodName: getNextLayerOfSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5362,7 +5333,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845222586}
+      - m_Target: {fileID: 1845222584}
         m_MethodName: getSentencesOfTopic
         m_Mode: 2
         m_Arguments:
@@ -5460,7 +5431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
