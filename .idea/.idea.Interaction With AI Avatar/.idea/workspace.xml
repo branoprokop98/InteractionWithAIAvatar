@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadSentences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/LoadSentences.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Topics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Topics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
@@ -126,7 +121,7 @@
       <workItem from="1610986798706" duration="7562000" />
       <workItem from="1611320223059" duration="5592000" />
       <workItem from="1611758548682" duration="10311000" />
-      <workItem from="1611842080514" duration="2584000" />
+      <workItem from="1611842080514" duration="2957000" />
     </task>
     <servers />
   </component>
