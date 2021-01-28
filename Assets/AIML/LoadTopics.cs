@@ -12,8 +12,8 @@ namespace AIML
     public class LoadTopics
     {
         private XDocument xmlDocument;
-        private Topics topics;
-        private List<Topics> tempListOfTopics;
+        private readonly Topics topics;
+        private readonly List<Topics> tempListOfTopics;
         public static List<List<Topics>> listOfTopics { get; set; }
 
         public LoadTopics()
@@ -86,6 +86,36 @@ namespace AIML
                     }
                 }
             }
+        }
+
+        private void testLayerBounceForTopic()
+        {
+            if (ListOfTopics[ContextWindowService.actualLayerOfTopic][0] == null)
+            {
+                throw new Exception("Topic layer is out of range");
+            }
+        }
+
+        public int tryLayerOfTopicBounce(int layerDirection)
+        {
+            try
+            {
+                testLayerBounceForTopic();
+            }
+            catch (Exception e)
+            {
+                if (layerDirection == 1)
+                {
+                    ContextWindowService.actualLayerOfTopic--;
+                }
+                else
+                {
+                    ContextWindowService.actualLayerOfTopic++;
+                }
+                Debug.Log(e.Message);
+                return -1;
+            }
+            return 0;
         }
         public List<List<Topics>> ListOfTopics => listOfTopics;
     }

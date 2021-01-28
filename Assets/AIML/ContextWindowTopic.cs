@@ -4,16 +4,16 @@ using UnityEngine.UI;
 
 namespace AIML
 {
-    public class ContextWindowTopic : MonoBehaviour, ContextLayer
+    public class ContextWindowTopic : ContextLayer
     {
-        [SerializeField] private Canvas canvas;
-        private LoadTopics topics;
-        private ContextWindowService contextService;
+        private readonly Canvas canvas;
+        private readonly LoadTopics topics;
 
-        private void Start()
+
+        public  ContextWindowTopic(Canvas canvas)
         {
+            this.canvas = canvas;
             topics = new LoadTopics();
-            contextService = this.gameObject.GetComponent<ContextWindowService>();
             initTopicsName();
         }
 
@@ -40,7 +40,7 @@ namespace AIML
         public void getNextLayer()
         {
             ContextWindowService.actualLayerOfTopic++;
-            if (contextService.tryLayerOfTopicBounce(1) == -1)
+            if (topics.tryLayerOfTopicBounce(1) == -1)
             {
                 return;
             };
@@ -64,7 +64,7 @@ namespace AIML
         public void getPrevLayer()
         {
             ContextWindowService.actualLayerOfTopic--;
-            if (contextService.tryLayerOfTopicBounce(0) == -1)
+            if (topics.tryLayerOfTopicBounce(0) == -1)
             {
                 return;
             };

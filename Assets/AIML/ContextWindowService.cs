@@ -1,58 +1,73 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using AIML;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ContextWindowService : MonoBehaviour
+namespace AIML
 {
-    private LoadTopics topics;
-    private LoadSentences loadSentences;
-    [SerializeField] private Canvas canvas;
-    [SerializeField] private GameObject interactObject;
-    [SerializeField] private Canvas textCanvas;
-    private Hiting _hiting;
-    private bool interacting;
-    public static int actualLayerOfTopic { get; set; }
-    public static int actualLayerOfSentences { get; set; }
-    private Aiml aiml;
-    private Button btn;
-
-    // Start is called before the first frame update
-    void Start()
+    public class ContextWindowService : MonoBehaviour
     {
-        loadSentences = new LoadSentences();
-        topics = new LoadTopics();
-        canvas.enabled = false;
-        _hiting = new Hiting();
-        interacting = false;
-        actualLayerOfTopic = 0;
-        actualLayerOfSentences = 0;
-        aiml = new Aiml();
-        //initTopicsName();
-        textCanvas.enabled = false;
-    }
+        private ContextWindowTopic contextTopic;
+        private ContextWindowSentence contextSentence;
+        [SerializeField] private Canvas canvas;
+        [SerializeField] private GameObject interactObject;
+        [SerializeField] private Canvas textCanvas;
+        private Hiting hitting;
+        private bool interacting;
+        public static int actualLayerOfTopic { get; set; }
+        public static int actualLayerOfSentences { get; set; }
+        private Aiml aiml;
+        private Button btn;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && _hiting._hit.collider.gameObject == interactObject &&
-            interacting == false)
+        // Start is called before the first frame update
+        void Start()
         {
-            textCanvas.enabled = true;
-            canvas.enabled = true;
-            interacting = true;
-        }
-        else if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() &&
-                 _hiting._hit.collider.gameObject == interactObject &&
-                 interacting)
-        {
-            textCanvas.enabled = false;
+            contextTopic = new ContextWindowTopic(canvas);
+            contextSentence = new ContextWindowSentence(canvas, textCanvas);
             canvas.enabled = false;
+            hitting = new Hiting();
             interacting = false;
+            actualLayerOfTopic = 0;
+            actualLayerOfSentences = 0;
+            aiml = new Aiml();
+            textCanvas.enabled = false;
         }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() && hitting._hit.collider.gameObject == interactObject &&
+                interacting == false)
+            {
+                textCanvas.enabled = true;
+                canvas.enabled = true;
+                interacting = true;
+            }
+            else if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() &&
+                     hitting._hit.collider.gameObject == interactObject &&
+                     interacting)
+            {
+                textCanvas.enabled = false;
+                canvas.enabled = false;
+                interacting = false;
+            }
+        }
+
+        public void getNextLayerOfTopic() => contextTopic.getNextLayer();
+
+
+        public void getPrevLayerOfTopic() => contextTopic.getPrevLayer();
+
+        public void getNextLayerOfSentence() => contextSentence.getNextLayerSentence();
+
+        public void getPrevLayerOfSentence() => contextSentence.getPrevLayerSentence();
+
+        public void getSentencesOfTopic(Button button) => contextSentence.getSentencesOfTopic(button);
+
+        public void getTopics() => contextTopic.initTopicsName();
     }
+}
+
+
+
 
     // public void initTopicsName()
     // {
@@ -211,66 +226,3 @@ public class ContextWindowService : MonoBehaviour
     //         }
     //     }
     // }
-
-    private void testLayerBounceForSentences(List<List<AIMLStructure>> listOfSentences)
-    {
-        if (listOfSentences[actualLayerOfSentences][0] == null)
-        {
-            throw new Exception("Out of range");
-        }
-    }
-
-    public int tryLayerOfSentencesBounce(int layerDirection, List<List<AIMLStructure>> listOfSentences)
-    {
-        try
-        {
-            testLayerBounceForSentences(listOfSentences);
-        }
-        catch (Exception e)
-        {
-            if (layerDirection == 0)
-            {
-                actualLayerOfSentences++;
-            }
-            else
-            {
-                actualLayerOfSentences--;
-            }
-
-            Debug.LogWarning(e.Message);
-            return -1;
-        }
-
-        return 0;
-    }
-
-    private void testLayerBounceForTopic()
-    {
-        if (topics.ListOfTopics[actualLayerOfTopic][0] == null)
-        {
-            throw new Exception("Topic layer is out of range");
-        }
-    }
-
-    public int tryLayerOfTopicBounce(int layerDirection)
-    {
-        try
-        {
-            testLayerBounceForTopic();
-        }
-        catch (Exception e)
-        {
-            if (layerDirection == 1)
-            {
-                actualLayerOfTopic--;
-            }
-            else
-            {
-                actualLayerOfTopic++;
-            }
-            Debug.Log(e.Message);
-            return -1;
-        }
-        return 0;
-    }
-}

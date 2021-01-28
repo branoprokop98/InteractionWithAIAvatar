@@ -9,10 +9,10 @@ namespace AIML
 {
     public class LoadSentences
     {
-        private Bot bot;
+        private readonly Bot bot;
         private XDocument aimlFile;
-        private AIMLStructure aimlStructure;
-        private List<AIMLStructure> sentences;
+        private readonly AIMLStructure aimlStructure;
+        private readonly List<AIMLStructure> sentences;
         private List<List<AIMLStructure>> listOfAimlSentences;
 
 
@@ -83,6 +83,37 @@ namespace AIML
                     }
                 }
             }
+        }
+
+        private void testLayerBounceForSentences(List<List<AIMLStructure>> listOfSentences)
+        {
+            if (listOfSentences[ContextWindowService.actualLayerOfSentences][0] == null)
+            {
+                throw new Exception("Out of range");
+            }
+        }
+
+        public int tryLayerOfSentencesBounce(int layerDirection, List<List<AIMLStructure>> listOfSentences)
+        {
+            try
+            {
+                testLayerBounceForSentences(listOfSentences);
+            }
+            catch (Exception e)
+            {
+                if (layerDirection == 0)
+                {
+                    ContextWindowService.actualLayerOfSentences++;
+                }
+                else
+                {
+                    ContextWindowService.actualLayerOfSentences--;
+                }
+
+                return -1;
+            }
+
+            return 0;
         }
 
         public List<List<AIMLStructure>> ListOfAimlSentences
