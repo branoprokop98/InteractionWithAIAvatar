@@ -29,6 +29,7 @@ namespace AIML.ContextWindowInput
             actualLayerOfSentences = 0;
             aiml = new Aiml();
             textCanvas.enabled = false;
+            ShowCursor.mouseInvisible();
         }
 
         // Update is called once per frame
@@ -37,6 +38,7 @@ namespace AIML.ContextWindowInput
             if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() && hitting._hit.collider.gameObject == interactObject &&
                 interacting == false)
             {
+                ShowCursor.mouseVisible();
                 textCanvas.enabled = true;
                 canvas.enabled = true;
                 interacting = true;
@@ -45,6 +47,7 @@ namespace AIML.ContextWindowInput
                      hitting._hit.collider.gameObject == interactObject &&
                      interacting)
             {
+                ShowCursor.mouseInvisible();
                 textCanvas.enabled = false;
                 canvas.enabled = false;
                 interacting = false;

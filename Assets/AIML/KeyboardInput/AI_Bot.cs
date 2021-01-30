@@ -57,6 +57,7 @@ namespace AIML.KeyboardInput
             inDialog = false;
             errorText = errorText.GetComponent<Text>();
             errorText.enabled = false;
+            ShowCursor.mouseInvisible();
         }
 
         // Update is called once per frame
@@ -65,6 +66,7 @@ namespace AIML.KeyboardInput
             if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && botObject == _hiting._hit.collider.gameObject &&
                 inDialog == false)
             {
+                ShowCursor.mouseVisible();
                 _rigidbody.constraints = RigidbodyConstraints.FreezeAll;
                 canvas.enabled = true;
                 RigidbodyFirstPersonController.instance.mouseLook.XSensitivity = 0;
@@ -73,6 +75,7 @@ namespace AIML.KeyboardInput
             }
             else if (Input.GetKeyDown(KeyCode.F) && inDialog)
             {
+                ShowCursor.mouseInvisible();
                 _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
                 canvas.enabled = false;
                 RigidbodyFirstPersonController.instance.mouseLook.XSensitivity = 2;
