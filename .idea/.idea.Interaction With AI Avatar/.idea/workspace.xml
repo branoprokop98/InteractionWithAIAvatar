@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LoadedManagment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LoadedManagment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInput.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInput.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInput.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInput.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInput.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInput.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +156,7 @@
       <workItem from="1611842080514" duration="3083000" />
       <workItem from="1611862268575" duration="32000" />
       <workItem from="1611926914057" duration="1419000" />
-      <workItem from="1612016335900" duration="12881000" />
+      <workItem from="1612016335900" duration="13475000" />
     </task>
     <servers />
   </component>
