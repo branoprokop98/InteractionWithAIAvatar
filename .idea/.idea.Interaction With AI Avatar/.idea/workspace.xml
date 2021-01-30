@@ -20,10 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/EmptyScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EmptyScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LoadedManagment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LoadingScreen.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LoadingScreen.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +65,16 @@
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/d0/178950ba/Bot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LoadedManagment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/06/33c53402/SettingsDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ShowCursor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/30/2dd5d8e8/Path.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -80,8 +99,13 @@
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadTopics.cs" />
       <option value="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGame.cs" />
-      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/LoadedManagment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/SceneSetup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/MenuService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -116,10 +140,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="24268">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="24268" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -149,7 +173,7 @@
       <workItem from="1611842080514" duration="3083000" />
       <workItem from="1611862268575" duration="32000" />
       <workItem from="1611926914057" duration="1419000" />
-      <workItem from="1612016335900" duration="2321000" />
+      <workItem from="1612016335900" duration="10512000" />
     </task>
     <servers />
   </component>
@@ -172,5 +196,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/SceneLoader.cs</url>
+          <line>14</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\SceneLoader.cs" initialLine="14" containingFunctionPresentation="method 'loadGame'">
+            <startOffsets>
+              <option value="379" />
+            </startOffsets>
+            <endOffsets>
+              <option value="442" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

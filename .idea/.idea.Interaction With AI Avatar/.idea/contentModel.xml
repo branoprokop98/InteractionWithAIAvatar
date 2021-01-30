@@ -34,11 +34,15 @@
           <e p="Hitting.cs" t="Include" />
         </e>
         <e p="InteractCanvas.cs" t="Include" />
+        <e p="LoadedManagment.cs" t="Include" />
         <e p="Menu" t="Include">
           <e p="MenuService.cs" t="Include" />
           <e p="NewGame" t="Include">
+            <e p="MenuInteraction.cs" t="Include" />
             <e p="NewGameController.cs" t="Include" />
           </e>
+          <e p="SceneLoader.cs" t="Include" />
+          <e p="XMLWorker.cs" t="Include" />
         </e>
         <e p="Plugins" t="Include">
           <e p="GitHub" t="Include">
