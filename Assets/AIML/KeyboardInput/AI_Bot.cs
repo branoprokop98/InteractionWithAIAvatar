@@ -11,7 +11,7 @@ namespace AIML.KeyboardInput
         [SerializeField] private Canvas canvas;
         [SerializeField] private InputField textField;
         [SerializeField] private GameObject botObject;
-        [SerializeField] private GameObject player;
+        //[SerializeField] private GameObject player;
         [SerializeField] private Text errorText;
         private Rigidbody _rigidbody;
 
@@ -51,7 +51,8 @@ namespace AIML.KeyboardInput
             aiBot = this;
             _aiml = new Aiml();
             outText = outText.GetComponent<Text>();
-            _rigidbody = player.GetComponent<Rigidbody>();
+            _rigidbody = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<Rigidbody>();
+            //_rigidbody = player.GetComponent<Rigidbody>();
             canvas.enabled = false;
             _hiting = new Hiting(2);
             inDialog = false;
