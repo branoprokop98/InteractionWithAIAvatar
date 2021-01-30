@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +45,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/06/33c53402/SettingsDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ShowCursor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Branislav/Documents/Unity projects/Interaction With AI Avatar/Assets/AIML/SpeechInput/SpeechInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Branislav/Documents/Unity projects/Interaction With AI Avatar/Assets/AIML/SpeechInput/SpeechInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>

@@ -65,7 +65,9 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="SpeechCompatibility.cs" t="Include" />
         </e>
+        <e p="ShowCursor.cs" t="Include" />
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
             <e p="Scripts" t="Include">
@@ -306,6 +308,7 @@
           </e>
         </e>
         <e p="StreamingAssets" t="Include">
+          <e p="Menu.xml" t="Include" />
           <e p="Topics.xml" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
