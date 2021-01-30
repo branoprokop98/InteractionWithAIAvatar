@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Branislav\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Branislav\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Interaction With AI Avatar.-477616392.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Branislav\AppData\Roaming\JetBrains\Rider2020.2\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Branislav\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Branislav\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Interaction With AI Avatar.-477616392.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Branislav\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
     <e p="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="aiml" t="Include">
+          <e p="Aiml.cs" t="Include" />
+          <e p="ContextWindowInput" t="Include">
+            <e p="AIMLStructure.cs" t="Include" />
+            <e p="ContextLayer.cs" t="Include" />
+            <e p="ContextWindowSentence.cs" t="Include" />
+            <e p="ContextWindowService.cs" t="Include" />
+            <e p="ContextWindowTopic.cs" t="Include" />
+            <e p="LoadSentences.cs" t="Include" />
+            <e p="LoadTopics.cs" t="Include" />
+            <e p="Topics.cs" t="Include" />
+          </e>
+          <e p="KeyboardInput" t="Include">
+            <e p="AI_Bot.cs" t="Include" />
+          </e>
+          <e p="SpeechInput" t="Include">
+            <e p="SpeechInput.cs" t="Include" />
+          </e>
+          <e p="SpeechInputForAiml.cs" t="Include" />
+        </e>
+        <e p="CharacterScripts" t="Include">
+          <e p="Hitting.cs" t="Include" />
+        </e>
+        <e p="InteractCanvas.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="GitHub" t="Include">
             <e p="Editor" t="Include">
@@ -41,7 +65,9 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="SpeechCompatibility.cs" t="Include" />
         </e>
+        <e p="ShowCursor.cs" t="Include" />
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
             <e p="Scripts" t="Include">
@@ -280,6 +306,10 @@
               </e>
             </e>
           </e>
+        </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="Menu.xml" t="Include" />
+          <e p="Topics.xml" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">

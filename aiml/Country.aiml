@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<topic name="slovakia">
+		<category>
+			<pattern>TELL ME MORE</pattern>
+			<template>Slovakia, officially the Slovak Republic, is a landlocked country in Central Europe.[11][12] It is bordered by Poland to the north, Ukraine to the east, Hungary to the south, Austria to the southwest, and Czech Republic to the northwest. Slovakia's territory spans about 49,000 square kilometres (19,000 sq mi) and is mostly mountainous. The population is over 5.4 million and consists mostly of ethnic Slovaks. The capital and largest city is Bratislava, and the second-largest city is Košice. The official language is Slovak.</template>
+		</category>
+	</topic>
+</aiml>
