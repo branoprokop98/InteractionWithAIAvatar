@@ -20,40 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextLayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextLayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowTopic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowTopic.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadTopics.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ShowCursor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextLayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextLayer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowTopic.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadSentences.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadSentences.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/LoadTopics.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +51,8 @@
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/06/33c53402/SettingsDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ShowCursor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,14 +69,23 @@
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowTopic.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextLayer.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadTopics.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/AIMLStructure.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/Topics.cs" />
+      <option value="$PROJECT_DIR$/Assets/CharacterScripts/Hitting.cs" />
+      <option value="$PROJECT_DIR$/Assets/MouseRaycast.cs" />
+      <option value="$PROJECT_DIR$/Assets/MouseRaycaster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" />
+      <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" />
+      <option value="$PROJECT_DIR$/Assets/ShowCursor.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -133,10 +120,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2068">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="2068" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -165,7 +152,10 @@
       <workItem from="1611758548682" duration="10311000" />
       <workItem from="1611842080514" duration="3083000" />
       <workItem from="1611862268575" duration="32000" />
-      <workItem from="1611926914057" duration="1419000" />
+      <workItem from="1611926914057" duration="3805000" />
+      <workItem from="1611942363560" duration="5825000" />
+      <workItem from="1611950797958" duration="225000" />
+      <workItem from="1612005350807" duration="3372000" />
     </task>
     <servers />
   </component>
