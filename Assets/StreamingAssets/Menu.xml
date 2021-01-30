@@ -1,1 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<mainMenu>
+    <newGame>
+        <gender>0</gender>
+        <inputType>0</inputType>
+        <name>default</name>
+    </newGame>
+    <systemInfo>
+        <operatingSystem>default</operatingSystem>
+    </systemInfo>
+</mainMenu>
