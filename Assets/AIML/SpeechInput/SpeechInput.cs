@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Windows.Speech;
 
@@ -32,7 +33,8 @@ namespace AIML.SpeechInput
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && _hiting._hit.collider.gameObject == interactObject && interacting == false)
+            if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && _hiting._hit.collider.gameObject == interactObject &&
+                interacting == false)
             {
                 interacting = true;
                 interactCanvas.enabled = true;
@@ -40,7 +42,8 @@ namespace AIML.SpeechInput
                 _dictationRecognizer.Start();
                 speechInput();
             }
-            else if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && _hiting._hit.collider.gameObject == interactObject && interacting)
+            else if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() &&
+                     _hiting._hit.collider.gameObject == interactObject && interacting)
             {
                 interacting = false;
                 interactCanvas.enabled = false;
