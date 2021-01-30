@@ -20,25 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/EmptyScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EmptyScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LoadedManagment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LoadingScreen.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LoadingScreen.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LoadedManagment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LoadedManagment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInput.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInput.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInput.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInput.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInput.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInput.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,17 +85,17 @@
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextLayer.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadTopics.cs" />
       <option value="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGame.cs" />
-      <option value="$PROJECT_DIR$/Assets/LoadedManagment.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/SceneSetup.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/MenuService.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/LoadedManagment.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" />
     </changedPaths>
   </component>
@@ -173,7 +164,7 @@
       <workItem from="1611842080514" duration="3083000" />
       <workItem from="1611862268575" duration="32000" />
       <workItem from="1611926914057" duration="1419000" />
-      <workItem from="1612016335900" duration="10512000" />
+      <workItem from="1612016335900" duration="12881000" />
     </task>
     <servers />
   </component>
@@ -201,17 +192,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Menu/SceneLoader.cs</url>
-          <line>14</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\SceneLoader.cs" initialLine="14" containingFunctionPresentation="method 'loadGame'">
+          <url>file://$PROJECT_DIR$/Assets/LoadedManagment.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\LoadedManagment.cs" initialLine="19" containingFunctionPresentation="method 'Start'">
             <startOffsets>
-              <option value="379" />
+              <option value="592" />
             </startOffsets>
             <endOffsets>
-              <option value="442" />
+              <option value="655" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
