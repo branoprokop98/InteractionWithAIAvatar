@@ -10,20 +10,12 @@ namespace Menu
         private NewGameController newGame;
 
 
-
         // Start is called before the first frame update
         void Start()
         {
             newGame = new NewGame.NewGameController();
             mainMenuCanvas.enabled = true;
             newGameCanvas.enabled = false;
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
 
         public void getNewGameCanvas()
