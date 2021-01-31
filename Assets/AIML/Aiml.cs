@@ -4,6 +4,8 @@ using AIMLbot;
 using SpeechLib;
 using UnityEngine.UI;
 using System.IO;
+using Menu;
+using Menu.NewGame;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
@@ -13,12 +15,14 @@ namespace AIML
     {
         private Bot AI;
         private User myuser;
-
         private string text;
+        private MenuInteraction menuInteraction;
         //private SpeechOut _speechOut;
 
         public Aiml()
         {
+            string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
+            menuInteraction = XMLWorker.deserialize<MenuInteraction>(path);
             AI = new Bot();
             myuser = new User("Username Here", AI);
             //_speechOut = new SpeechOut();
@@ -43,7 +47,8 @@ namespace AIML
             process.StartInfo.UseShellExecute = false;
             //process.StartInfo.FileName = "C:/Users/Branislav/PycharmProjects/exe/dist/TextToSpeech.exe";
             //process.StartInfo.FileName = Environment.CurrentDirectory + @"\Assets\StreamingAssets" + @"\TextToSpeech.exe";
-            process.StartInfo.FileName = Path.Combine(Application.dataPath + @"\StreamingAssets" + @"\TextToSpeech.exe");
+            process.StartInfo.FileName = getGender();
+            //process.StartInfo.FileName = Path.Combine(Application.dataPath + @"\StreamingAssets" + @"\TextToSpeechMale.exe");
             process.StartInfo.Arguments = output;
             process.EnableRaisingEvents = true;
             Debug.LogWarning(Environment.CurrentDirectory);
@@ -59,6 +64,20 @@ namespace AIML
                 throw;
             }
         }
+
+        private string getGender()
+        {
+            switch (menuInteraction.newGame.gender)
+            {
+                case 0:
+                    return Path.Combine(Application.dataPath + @"\StreamingAssets" + @"\TextToSpeechMale.exe");
+                case 1:
+                    return Path.Combine(Application.dataPath + @"\StreamingAssets" + @"\TextToSpeechFemale.exe");
+                default:
+                    return null;
+            }
+        }
+
         public void speechOutput(string output)
         {
             SpVoice voice = new SpVoice();
