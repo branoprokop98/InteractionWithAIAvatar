@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/TextToSpeechFemale.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/TextToSpeechFemale.exe.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/TextToSpeechMale.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/TextToSpeechMale.exe.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/Aiml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/Aiml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/TextToSpeech.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/TextToSpeech.exe.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +158,7 @@
       <workItem from="1611862268575" duration="32000" />
       <workItem from="1611926914057" duration="1419000" />
       <workItem from="1612016335900" duration="13476000" />
-      <workItem from="1612091012394" duration="4170000" />
+      <workItem from="1612091012394" duration="4798000" />
     </task>
     <servers />
   </component>
