@@ -42,7 +42,7 @@ namespace AIML
             process.StartInfo.CreateNoWindow = true;
             process.StartInfo.UseShellExecute = false;
             //process.StartInfo.FileName = "C:/Users/Branislav/PycharmProjects/exe/dist/TextToSpeech.exe";
-            process.StartInfo.FileName = Environment.CurrentDirectory + @"\Assets\StreamingAssets" + @"\TextToSpeech.exe";
+            //process.StartInfo.FileName = Environment.CurrentDirectory + @"\Assets\StreamingAssets" + @"\TextToSpeech.exe";
             process.StartInfo.FileName = Path.Combine(Application.dataPath + @"\StreamingAssets" + @"\TextToSpeech.exe");
             process.StartInfo.Arguments = output;
             process.EnableRaisingEvents = true;
