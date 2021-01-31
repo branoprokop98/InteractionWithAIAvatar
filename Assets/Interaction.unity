@@ -150,11 +150,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fece7bb2ade51c4a8e420a1045db062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speechInput: {fileID: 7098117361945605138, guid: aff93f1df6d89ee4685326ff9c2de694,
+  speechInputMale: {fileID: 7098117361945605138, guid: aff93f1df6d89ee4685326ff9c2de694,
     type: 3}
-  keyboardInput: {fileID: 8677028698766713287, guid: 90ae68c210896e941871711cda52cd28,
+  speechInputFemale: {fileID: 4851537400259886792, guid: d600608ed2e8b0c41a8aec36dff094d6,
     type: 3}
-  contextWindowInput: {fileID: 3216593724310217453, guid: ddd2cb622b8726549afe07bd92321c87,
+  keyboardInputMale: {fileID: 8677028698766713287, guid: 90ae68c210896e941871711cda52cd28,
+    type: 3}
+  keyboardInputFemale: {fileID: 6108535038840111044, guid: 5bddf9def474da34ebaf92962ea21a48,
+    type: 3}
+  contextWindowInputMale: {fileID: 3216593724310217453, guid: ddd2cb622b8726549afe07bd92321c87,
+    type: 3}
+  contextWindowInputFemale: {fileID: 2848767485591327670, guid: 69f0caa2290f63c4eaf3586b6676f877,
     type: 3}
 --- !u!4 &212181659
 Transform:
