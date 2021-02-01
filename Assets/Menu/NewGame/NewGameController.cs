@@ -6,35 +6,40 @@ using UnityEngine.UI;
 
 namespace Menu.NewGame
 {
-    public class NewGameController : MonoBehaviour
+    public class NewGameController
     {
-        private MenuInteraction menuInteraction;
+        private readonly MenuInteraction menuInteraction;
+        private readonly Canvas canvas;
 
-        private void Start()
+        public NewGameController(Canvas canvas)
         {
             menuInteraction = new MenuInteraction();
+            this.canvas = canvas;
         }
 
-        public void setGender()
+        private void setGender()
         {
-            menuInteraction.newGame.gender = this.transform.GetChild(2).gameObject.GetComponent<Dropdown>().value;
-            updateXml();
+            menuInteraction.newGame.gender = canvas.transform.GetChild(2).gameObject.GetComponent<Dropdown>().value;
+            //updateXml();
         }
 
-        public void setInput()
+        private void setInput()
         {
-            menuInteraction.newGame.inputType = this.transform.GetChild(1).gameObject.GetComponent<Dropdown>().value;
-            updateXml();
+            menuInteraction.newGame.inputType = canvas.transform.GetChild(1).gameObject.GetComponent<Dropdown>().value;
+            //updateXml();
         }
 
-        public void setName()
+        private void setName()
         {
-            menuInteraction.newGame.name = this.transform.GetChild(3).gameObject.GetComponent<InputField>().text;
-            updateXml();
+            menuInteraction.newGame.name = canvas.transform.GetChild(3).gameObject.GetComponent<InputField>().text;
+            //updateXml();
         }
 
         public void updateXml()
         {
+            setGender();
+            setInput();
+            setName();
             string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
             XMLWorker.serialize( menuInteraction, path);
         }
