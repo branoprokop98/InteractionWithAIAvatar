@@ -20,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/ExitGame/ExitGameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/ExitGame/ExitGameController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Glass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,12 +91,13 @@
       <option value="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/SceneSetup.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" />
-      <option value="$PROJECT_DIR$/Assets/Menu/MenuService.cs" />
-      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/LoadedManagment.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/Aiml.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/ExitGame/ExitGameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/MenuService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -159,6 +167,7 @@
       <workItem from="1611926914057" duration="1419000" />
       <workItem from="1612016335900" duration="13476000" />
       <workItem from="1612091012394" duration="4798000" />
+      <workItem from="1612192405655" duration="3078000" />
     </task>
     <servers />
   </component>
