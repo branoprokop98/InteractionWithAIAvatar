@@ -20,10 +20,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/AIMLBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/AIMLBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/Aiml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/Aiml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputFemale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputMale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputFemale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/AI.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/AI.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Atomic.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Atomic.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Badanswer.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Badanswer.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Biography.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Biography.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Bot.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Bot.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Botmaster.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Botmaster.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Client.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Client.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Computers.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Computers.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Country.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Country.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Default.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Default.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Emotion.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Emotion.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Food.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Food.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Geography.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Geography.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/History.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/History.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/IU.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/IU.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Inquiry.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Inquiry.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Interjection.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Interjection.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Knowledge.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Knowledge.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Literature.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Literature.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Money.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Money.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Movies.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Movies.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Music.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Music.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Personality.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Personality.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Philosophy.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Philosophy.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Pickup.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Pickup.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Predicates.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Predicates.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Reduce.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Reduce.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Reductions.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Reductions.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Salutations.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Salutations.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Science.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Science.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Stack.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Stack.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Stories.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Stories.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/That.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/That.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/train.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/train.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/DefaultPredicates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/DefaultPredicates.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/Settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bots.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/bots.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +89,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/b7/01216ef1/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/bc/0ad61a92/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/25/21126cb9/Directory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/bc/0ad61a92/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/88/2f17b279/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/23/a3e3722c/AIMLLoader.cs" root0="SKIP_HIGHLIGHTING" />
@@ -75,24 +132,24 @@
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowTopic.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextLayer.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadTopics.cs" />
       <option value="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/SceneSetup.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/LoadedManagment.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/Aiml.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/ExitGame/ExitGameController.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/MenuService.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/Aiml.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -102,7 +159,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.28494042" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -162,7 +219,9 @@
       <workItem from="1611926914057" duration="1419000" />
       <workItem from="1612016335900" duration="13476000" />
       <workItem from="1612091012394" duration="4798000" />
-      <workItem from="1612192405655" duration="3644000" />
+      <workItem from="1612192405655" duration="4292000" />
+      <workItem from="1612448626904" duration="970000" />
+      <workItem from="1612630167825" duration="1751000" />
     </task>
     <servers />
   </component>
@@ -202,7 +261,26 @@
           </properties>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs</url>
+          <line>65</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\LoadSentences.cs" initialLine="65" containingFunctionPresentation="method 'addSentenceToList'">
+            <startOffsets>
+              <option value="2144" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2213" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="aimlStructure.Pattern" language="C#" />
+        <watch expression="!aimlStructure.Pattern.Contains(&quot;*&quot;) &amp;&amp; !aimlStructure.Pattern.Contains(&quot;_&quot;)" language="C#" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
