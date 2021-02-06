@@ -11,6 +11,8 @@ namespace AIML.KeyboardInput
         [SerializeField] private Canvas canvas;
         [SerializeField] private InputField textField;
         [SerializeField] private GameObject botObject;
+
+        [SerializeField] private Text moodText;
         //[SerializeField] private GameObject player;
         [SerializeField] private Text errorText;
         private Rigidbody _rigidbody;
@@ -88,7 +90,7 @@ namespace AIML.KeyboardInput
 
         public void botControll(string text)
         {
-            _aiml.botInput(text, outText, errorText);
+            _aiml.botInput(text, outText, errorText, moodText);
 
         }
 
