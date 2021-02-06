@@ -12,6 +12,7 @@ namespace AIML.SpeechInput
         [SerializeField] private Text speechText;
         [SerializeField] private Text outText;
         [SerializeField] private Text errorText;
+        [SerializeField] private Text moodText;
 
         private DictationRecognizer _dictationRecognizer;
         private string m_Recognitions;
@@ -59,7 +60,7 @@ namespace AIML.SpeechInput
                 Debug.LogWarningFormat("Dictation result: {0} , {1}", text, confidence);
                 m_Recognitions += text + "\n";
                 speechText.text = text;
-                _aiml.botInput(text, outText, errorText);
+                _aiml.botInput(text, outText, errorText, moodText);
             };
         }
     }
