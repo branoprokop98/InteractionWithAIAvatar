@@ -70,6 +70,7 @@
 	<category>
 		<pattern>INTERJECTION</pattern>
 		<template>
+		<think><set name="mood">1</set></think>
 			<random>
 				<li>OK.</li>
 				<li>Ah.</li>
@@ -132,6 +133,7 @@
 	<category>
 		<pattern>GOD DAMN *</pattern>
 		<template>
+			<think><set name="mood">-2</set></think>
 			<srai>INTERJECTION</srai>
 		</template>
 	</category> 
