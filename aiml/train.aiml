@@ -40,7 +40,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 										<star index="2"/>
 									</eval>
 								</srai>
-							<think><set name="mood">1</set></think></template>
+							</template>
 						</category>
 						<category>
 							<pattern>
@@ -54,7 +54,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 									</eval>
 									<star/>
 								</srai>
-							<think><set name="mood">1</set></think></template>
+							</template>
 						</category>
 						<category>
 							<pattern>_ <eval>
@@ -68,7 +68,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 										<star index="2"/>
 									</eval>
 								</srai>
-							<think><set name="mood">1</set></think></template>
+							</template>
 						</category>
 						<category>
 							<pattern>_ <eval>
@@ -82,14 +82,14 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 									</eval>
 									<star index="2"/>
 								</srai>
-							<think><set name="mood">1</set></think></template>
+							</template>
 						</category>
 					</learnf>
 				</li>
 				<li>
 					<star/> is already the same as <star index="2"/>.</li>
 			</condition>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>A * IS A *</pattern>
@@ -102,7 +102,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>A <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>WHAT IS A <eval>
@@ -111,7 +111,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>A <eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS A <eval>
@@ -120,11 +120,11 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>Yes.<think><set name="mood">1</set></think></template>
+					<template>Yes.</template>
 				</category>
 
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>* IS A *</pattern>
@@ -151,7 +151,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>A <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>
@@ -165,7 +165,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					<template>
 						<eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS <eval>
@@ -174,10 +174,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>Yes.<think><set name="mood">1</set></think></template>
+					<template>Yes.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>* IS THE *</pattern>
@@ -204,7 +204,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>The <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>
@@ -218,7 +218,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					<template>
 						<eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS <eval>
@@ -227,10 +227,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>Yes.<think><set name="mood">1</set></think></template>
+					<template>Yes.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>A * IS AN *</pattern>
@@ -243,7 +243,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>A <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>WHAT IS AN <eval>
@@ -252,7 +252,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>A <eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS A <eval>
@@ -261,10 +261,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>Yes.<think><set name="mood">1</set></think></template>
+					<template>Yes.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>AN * IS A *</pattern>
@@ -277,7 +277,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>A <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>WHAT IS A <eval>
@@ -286,7 +286,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>AN <eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS AN <eval>
@@ -295,10 +295,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>Yes.<think><set name="mood">1</set></think></template>
+					<template>Yes.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>AN * IS AN *</pattern>
@@ -311,7 +311,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>An <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>WHAT IS AN <eval>
@@ -320,7 +320,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>An <eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS AN <eval>
@@ -329,10 +329,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>Yes.<think><set name="mood">1</set></think></template>
+					<template>Yes.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>* IS AN *</pattern>
@@ -359,7 +359,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>An <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>
@@ -373,17 +373,17 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					<template>
 						<eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS <eval>
 							<star/>
 						</eval> AN <star index="2"/>
 					</pattern>
-					<template>Yes.<think><set name="mood">1</set></think></template>
+					<template>Yes.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>A * IS NOT *</pattern>
@@ -396,7 +396,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>Not <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>WHAT IS NOT <eval>
@@ -406,7 +406,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					<template>
 						<eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS A <eval>
@@ -416,10 +416,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>No.<think><set name="mood">1</set></think></template>
+					<template>No.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>THE * IS NOT *</pattern>
@@ -432,7 +432,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>Not <eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>WHAT IS NOT <eval>
@@ -441,7 +441,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</pattern>
 					<template>The <eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS THE <eval>
@@ -451,11 +451,11 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>No.<think><set name="mood">1</set></think></template>
+					<template>No.</template>
 				</category>
 
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>* IS NOT *</pattern>
@@ -483,7 +483,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					<template>
 						<eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>
@@ -497,7 +497,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					<template>
 						<eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 				<category>
 					<pattern>IS <eval>
@@ -507,10 +507,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 							<star index="2"/>
 						</eval>
 					</pattern>
-					<template>No.<think><set name="mood">1</set></think></template>
+					<template>No.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>*</pattern>
@@ -518,7 +518,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>YOU _</pattern>
@@ -526,7 +526,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE You <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>A _</pattern>
@@ -534,7 +534,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE A <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>I _</pattern>
@@ -542,7 +542,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE I <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>HE _</pattern>
@@ -550,7 +550,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE He <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>AN _</pattern>
@@ -558,7 +558,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE An <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>THAT _</pattern>
@@ -566,7 +566,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE That <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>MY * S NAME IS *</pattern>
@@ -600,12 +600,12 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 								<eval>
 									<star index="2"/>
 								</eval>
-							<think><set name="mood">1</set></think></template>
+							</template>
 						</category>
 					</learnf>
 				</li>
 			</condition>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>MY * S AGE IS *</pattern>
@@ -619,10 +619,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 						<eval>
 							<star index="2"/>
 						</eval>
-					<think><set name="mood">1</set></think></template>
+					</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>MY * IS *</pattern>
@@ -671,7 +671,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 												<eval>
 													<star index="2"/>
 												</eval>
-											<think><set name="mood">1</set></think></template>
+											</template>
 										</category>
 										<category>
 											<pattern>WHO IS <eval>
@@ -681,7 +681,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 											<template>Your <eval>
 													<star/>
 												</eval>
-											<think><set name="mood">1</set></think></template>
+											</template>
 										</category>
 									</learnf>
 								</li>
@@ -703,7 +703,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 												<eval>
 													<star index="2"/>
 												</eval>
-											<think><set name="mood">1</set></think></template>
+											</template>
 										</category>
 										<category>
 											<pattern>WHAT IS <eval>
@@ -713,7 +713,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 											<template>Your <eval>
 													<star/>
 												</eval>
-											<think><set name="mood">1</set></think></template>
+											</template>
 										</category>
 									</learnf>
 								</li>
@@ -722,7 +722,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					</condition>
 				</li>
 			</condition>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>MY FAVORITE * IS *</pattern>
@@ -743,10 +743,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 						<eval>
 							<star index="2"/>
 						</eval>
-					<think><set name="mood">1</set></think></template>
+					</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>MY _</pattern>
@@ -754,7 +754,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE My <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>LEARN NEW RESPONSE *</pattern>
@@ -772,10 +772,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					<template>
 						<eval>
 							<star/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>LEARN * IS *</pattern>
@@ -789,10 +789,10 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 					<template>
 						<eval>
 							<star index="2"/>
-						</eval>.<think><set name="mood">1</set></think></template>
+						</eval>.</template>
 				</category>
 			</learnf>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>IT _</pattern>
@@ -800,7 +800,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 		<template>
 			<srai>LEARN NEW RESPONSE It <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>BAD ANSWER</pattern>
@@ -811,7 +811,7 @@ OK, when you say "<star/>", I will assume you mean "<star index="2"/>".
 				</set>
 			</think>
 OK.  You said "<input index="2"/>" and I replied "<response/>".
-What should I say instead?<think><set name="mood">1</set></think></template>
+What should I say instead?</template>
 	</category>
 	<category>
 		<pattern>SHE _</pattern>
@@ -819,7 +819,7 @@ What should I say instead?<think><set name="mood">1</set></think></template>
 		<template>
 			<srai>LEARN NEW RESPONSE She <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>SAY _</pattern>
@@ -827,7 +827,7 @@ What should I say instead?<think><set name="mood">1</set></think></template>
 		<template>
 			<srai>LEARN NEW RESPONSE <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>WE _</pattern>
@@ -835,7 +835,7 @@ What should I say instead?<think><set name="mood">1</set></think></template>
 		<template>
 			<srai>LEARN NEW RESPONSE We <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>THE _</pattern>
@@ -843,7 +843,7 @@ What should I say instead?<think><set name="mood">1</set></think></template>
 		<template>
 			<srai>LEARN NEW RESPONSE The <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>THEY _</pattern>
@@ -851,25 +851,25 @@ What should I say instead?<think><set name="mood">1</set></think></template>
 		<template>
 			<srai>LEARN NEW RESPONSE They <star/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>NEVERMIND</pattern>
 		<that>WHAT SHOULD I SAY INSTEAD</that>
-		<template>Ok. We'll come back to that later.<think><set name="mood">1</set></think></template>
+		<template>Ok. We'll come back to that later.</template>
 	</category>
 	<category>
 		<pattern>QUESTIONWORD <SET>NAME</SET>
 		</pattern>
-		<template>Who<think><set name="mood">1</set></think></template>
+		<template>Who</template>
 	</category>
 	<category>
 		<pattern>QUESTIONWORD <SET>NAME</SET> *</pattern>
-		<template>Who<think><set name="mood">1</set></think></template>
+		<template>Who</template>
 	</category>
 	<category>
 		<pattern>QUESTIONWORD *</pattern>
-		<template>What<think><set name="mood">1</set></think></template>
+		<template>What</template>
 	</category>
 	<category>
 		<pattern>MY <SET>FAMILIARNAME</SET>
@@ -880,7 +880,7 @@ What should I say instead?<think><set name="mood">1</set></think></template>
 				<star index="2"/>
 				<star index="3"/>
 			</srai>
-		<think><set name="mood">1</set></think></template>
+		</template>
 	</category>
 	<category>
 		<pattern>
@@ -906,7 +906,7 @@ What should I say instead?<think><set name="mood">1</set></think></template>
 							<eval>
 								<get name="learntemplate"/>
 							</eval>
-						<think><set name="mood">1</set></think></template>
+						</template>
 					</category>
 				</learnf>
 			</think>
@@ -933,11 +933,11 @@ Now you can ask me: "<get name="learnpattern"/>"?
 							<eval>
 								<get name="learntemplate"/>
 							</eval>
-						<think><set name="mood">1</set></think></template>
+						</template>
 					</category>
 				</learnf>
 			</think>
-and "<get name="learnpattern"/>"?<think><set name="mood">1</set></think></template>
+and "<get name="learnpattern"/>"?</template>
 	</category>
 	<category>
 		<pattern>* <SET>VERB2SP</SET> *</pattern>
@@ -965,7 +965,7 @@ and "<get name="learnpattern"/>"?<think><set name="mood">1</set></think></templa
 							<eval>
 								<get name="learntemplate"/>
 							</eval>
-						<think><set name="mood">1</set></think></template>
+						</template>
 					</category>
 				</learnf>
 			</think>
@@ -992,11 +992,11 @@ Now you can ask me: "<get name="learnpattern"/>"?
 							<eval>
 								<get name="learntemplate"/>
 							</eval>
-						<think><set name="mood">1</set></think></template>
+						</template>
 					</category>
 				</learnf>
 			</think>
-and "<get name="learnpattern"/>"?<think><set name="mood">1</set></think></template>
+and "<get name="learnpattern"/>"?</template>
 	</category>
 	<category>
 		<pattern>* <SET>VERB2ST</SET> *</pattern>
@@ -1006,6 +1006,6 @@ and "<get name="learnpattern"/>"?<think><set name="mood">1</set></think></templa
 			<star index="2"/>
 			<person>
 				<star index="3"/>
-			</person>?  <star/>.<think><set name="mood">1</set></think></template>
+			</person>?  <star/>.</template>
 	</category>
 </aiml>

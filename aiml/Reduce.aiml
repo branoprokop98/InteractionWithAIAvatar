@@ -16931,7 +16931,6 @@
 	<category>
 		<pattern>IDIOT *</pattern>
 		<template>
-			<think><set name="mood">-10</set></think>
 			<sr/>
 		</template>
 	</category>   
@@ -28618,7 +28617,6 @@
 			<sr/>
 		</template>
 	</category>   
-	
 	<category>
 		<pattern>TELL ME NOW *</pattern>
 		<template>
@@ -38778,7 +38776,6 @@
 	<category>
 		<pattern>YOU ARE A * IDIOT</pattern>
 		<template>
-			<think><set name="mood">-10</set></think>
 			<srai>YOU ARE AN IDIOT</srai>
 		</template>
 	</category>  

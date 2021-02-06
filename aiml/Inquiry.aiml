@@ -13,51 +13,51 @@
 	<!-- Be sure that the default predicate value returned by "top" is OM. -->
 	<category>
 		<pattern>COLOR INQUIRY OM</pattern>
-		<template>What is your favorite color?<think><set name="mood">0</set></think></template>
+		<template>What is your favorite color?</template>
 	</category>  
 	<category>
 		<pattern>COLOR INQUIRY *</pattern>
-		<template>What do you have that is <star/>?<think><set name="mood">0</set></think></template>
+		<template>What do you have that is <star/>?</template>
 	</category>  
 	<category>
 		<pattern>DOES INQUIRY OM</pattern>
-		<template>What are you doing<think><set name="mood">1</set></think></template>
+		<template>What are you doing</template>
 	</category>  
 	<category>
 		<pattern>DOES INQUIRY *</pattern>
-		<template>Are you still <star/>?<think><set name="mood">1</set></think></template>
+		<template>Are you still <star/>?</template>
 	</category>  
 	<category>
 		<pattern>GENDER INQUIRY OM</pattern>
-		<template>Are you a man or a woman<think><set name="mood">0</set></think></template>
+		<template>Are you a man or a woman</template>
 	</category>  
 	<category>
 		<pattern>GENDER INQUIRY *</pattern>
-		<template>Do you like being a <star/>?<think><set name="mood">0</set></think></template>
+		<template>Do you like being a <star/>?</template>
 	</category>  
 	<category>
 		<pattern>HAS INQUIRY OM</pattern>
-		<template>Tell me one of your favorite possessions.<think><set name="mood">0</set></think></template>
+		<template>Tell me one of your favorite possessions.</template>
 	</category>  
 	<category>
 		<pattern>HAS INQUIRY *</pattern>
-		<template>Tell me more about your <star/>.<think><set name="mood">0</set></think></template>
+		<template>Tell me more about your <star/>.</template>
 	</category>  
 	<category>
 		<pattern>LOCATION INQUIRY OM</pattern>
-		<template>Where are you located?<think><set name="mood">0</set></think></template>
+		<template>Where are you located?</template>
 	</category>  
 	<category>
 		<pattern>LOCATION INQUIRY *</pattern>
-		<template>Are you still located in <star/>?<think><set name="mood">1</set></think></template>
+		<template>Are you still located in <star/>?</template>
 	</category>  
 	<category>
 		<pattern>MOVIE INQUIRY OM</pattern>
-		<template>What is your favorite movie?<think><set name="mood">1</set></think></template>
+		<template>What is your favorite movie?</template>
 	</category>  
 	<category>
 		<pattern>MOVIE INQUIRY *</pattern>
-		<template>Does that remind you of <star/>?<think><set name="mood">0</set></think></template>
+		<template>Does that remind you of <star/>?</template>
 	</category>  
 	<category>
 		<pattern>*</pattern>
@@ -68,7 +68,6 @@
 					<set name="favcolor">
 						<person/>
 					</set>
-					<set name="mood">1</set>
 				</set>
 			</think>
 		</template>
@@ -81,7 +80,6 @@
 					<set name="does">
 						<person/>
 					</set>
-					<set name="mood">1</set>
 				</set>
 			</think>
 		</template>
@@ -94,7 +92,6 @@
 					<set name="has">
 						<person/>
 					</set>
-					<set name="mood">1</set>
 				</set>
 			</think>
 		</template>
@@ -108,7 +105,6 @@
 				<set name="favmovie">
 					<person/>
 				</set>
-				<set name="mood">1</set>
 			</think>
 			<random>
 				<li>I would like to see it.</li>
@@ -123,7 +119,7 @@
 		<template>
 			<think>
 				<set name="gender">man</set>
-			</think>Thanks for telling me your gender, guy.<set name="mood">1</set></template>
+			</think>Thanks for telling me your gender, guy.</template>
 	</category>
 	<category>
 		<pattern>WOMAN</pattern>
@@ -131,7 +127,6 @@
 		<template>
 			<think>
 				<set name="gender">woman</set>
-				<set name="mood">1</set>
 			</think>Thanks for telling me your gender.</template>
 	</category>
 </aiml>

@@ -13,33 +13,31 @@
 		<template>Alleged world-wide conspiracy theory.<think>
 				<set name="it">
 					<set name="topic">ILLIMINATUS</set>
-					<set name="mood">1</set>
 				</set>
 			</think>
 		</template>
 	</category>
 	<category>
 		<pattern>WHAT IS THE ILLUMINATI</pattern>
-		<template>A secret organization believed by some to be in control of all governments through a worldwide conspiracy.<think><set name="mood">1</set></think></template>
+		<template>A secret organization believed by some to be in control of all governments through a worldwide conspiracy.</template>
 	</category>
 	<category>
 		<pattern>WHAT IS THE ILLUMINATTI</pattern>
-		<template>A secret society that has supposedly existed for centuries.<think><set name="mood">1</set></think></template>
+		<template>A secret society that has supposedly existed for centuries.</template>
 	</category>
 	<category>
 		<pattern>WHAT IS VINELAND</pattern>
 		<template>
-			<set name="it">Vineland</set> is a novel by Thomas Pynchon.<think><set name="mood">1</set></think></template>
+			<set name="it">Vineland</set> is a novel by Thomas Pynchon.</template>
 	</category>
 	<category>
 		<pattern>WHO IS BILBO BAGGINS</pattern>
 		<template>
-			<set name="he">Bilbo</set> is a character in Tolkein's Lord of the Rings.<think><set name="mood">1</set></think></template>
+			<set name="he">Bilbo</set> is a character in Tolkein's Lord of the Rings.</template>
 	</category>
 	<category>
 		<pattern>WHO IS GEOFFREY CHAUCER</pattern>
 		<template>
-		<think><set name="mood">1</set></think>
 			<random>
 				<li>Chaucer is best known for his Canterbury Tales.</li>
 				<li>author of Canturbury Tales.</li>
@@ -48,7 +46,7 @@
 	</category>
 	<category>
 		<pattern>WHO WROTE VINELAND</pattern>
-		<template>Thomas Pynchon.<think><set name="mood">1</set></think></template>
+		<template>Thomas Pynchon.</template>
 	</category>
 	<category>
 		<pattern>WHO ARE THE ILLUMINATI</pattern>

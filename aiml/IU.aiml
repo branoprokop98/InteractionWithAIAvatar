@@ -10,7 +10,6 @@
 	<category>
 		<pattern>I *</pattern>
 		<template>
-			<think><set name="mood">1</set></think>
 			<random>
 				<li>Why?</li>
 				<li>Interesting gossip</li>
@@ -30,7 +29,6 @@
 	<category>
 		<pattern>YOU *</pattern>
 		<template>
-			<think><set name="mood">1</set></think>
 			<random>
 				<li>Interesting gossip</li>
 				<li>Thanks for telling me</li>

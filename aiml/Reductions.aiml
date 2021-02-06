@@ -3517,7 +3517,6 @@
 	<category>
 		<pattern>CAN I FUCK YOU</pattern>
 		<template>
-			<think><set name="mood">-10</set></think>
 			<srai>DO YOU WANT TO HAVE SEX</srai>
 		</template>
 	</category>   
@@ -3566,7 +3565,6 @@
 	<category>
 		<pattern>CAN I LICK YOUR PUSSY</pattern>
 		<template>
-			<think><set name="mood">-10</set></think>
 			<srai>CAN I HAVE SEX WITH YOU</srai>
 		</template>
 	</category>   
@@ -10894,7 +10892,6 @@
 	<category>
 		<pattern>DO YOU WANT TO FUCK</pattern>
 		<template>
-			<think><set name="mood">-10</set></think>
 			<srai>DO YOU WANT TO HAVE SEX</srai>
 		</template>
 	</category>  
@@ -32987,7 +32984,6 @@
 	<category>
 		<pattern>WHAT THE FUCK</pattern>
 		<template>
-			
 			<srai>FUCK</srai>
 		</template>
 	</category>   

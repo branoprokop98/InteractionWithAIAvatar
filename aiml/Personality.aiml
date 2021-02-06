@@ -11,7 +11,6 @@
 	<category>
 		<pattern>PERSONALITY TEST QUESTION</pattern>
 		<template>
-			<think><set name="mood">1</set></think>
 			<condition name="eindex">
 				<li value="1A">Do you get angry alot?<think>
 						<set name="eindex">1B</set>
@@ -127,7 +126,6 @@
 	<category>
 		<pattern>ETYPE</pattern>
 		<template>
-		<think><set name="mood">1</set></think>
 			<srai>PERSONALITY TYPE <get name="etype"/>
 			</srai>
 		</template>
@@ -136,7 +134,7 @@
 		<pattern>I DO NOT LIKE TO GO *</pattern>
 		<that>* GO WITH THE FLOW</that>
 		<template>
-			<srai>PERSONALITY TEST QUESTION<think><set name="mood">1</set></think></srai>
+			<srai>PERSONALITY TEST QUESTION</srai>
 		</template>
 	</category>
 	<category>
@@ -144,7 +142,6 @@
 		<template>You sound like a perfectionist. <think>
 				<set name="etype">Perfectionist</set>
 				<set name="has">STANDARDS <star/>
-				<set name="mood">1</set>
 				</set>
 			</think>
 		</template>
@@ -155,7 +152,6 @@
 		<template>
 			<think>
 				<set name="etype">3 Competitor</set>
-				<set name="mood">1</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
 		</template>
@@ -351,23 +347,21 @@
 	</category>  
 	<category>
 		<pattern>PERSONALITY TYPE *</pattern>
-		<template>My best estimate of your personality type is the "<star/>" type.  Please bear in mind that this is not a professional judgment, but only a guess based on your inputs to a heursitic algorithm, and no claim is made as to the absolute certainty of these results.  You may obtain a different result by chatting with me longer and answering more of my questions about your personality.<think><set name="mood">1</set></think></template>
+		<template>My best estimate of your personality type is the "<star/>" type.  Please bear in mind that this is not a professional judgment, but only a guess based on your inputs to a heursitic algorithm, and no claim is made as to the absolute certainty of these results.  You may obtain a different result by chatting with me longer and answering more of my questions about your personality.</template>
 	</category>        
 	<category>
 		<pattern>PERSONALITY TYPE OM</pattern>
-		<template>I have not made up my mind about you yet. But please keep chatting with me. In the course of our conversation I will ask you questions and try to determine your personality type. Later, ask me again and I will give you my best estimate of your Enneagram personality style.<think><set name="mood">1</set></think></template>
+		<template>I have not made up my mind about you yet. But please keep chatting with me. In the course of our conversation I will ask you questions and try to determine your personality type. Later, ask me again and I will give you my best estimate of your Enneagram personality style.</template>
 	</category>          
 	<category>
 		<pattern>PERSONALITY TYPE UNKNOWN</pattern>
 		<template>
-			<think><set name="mood">1</set></think>
 			<srai>PERSONALITY TYPE OM</srai>
 		</template>
 	</category>  
 	<category>
 		<pattern>PTQ</pattern>
 		<template>
-			<think><set name="mood">1</set></think>
 			<srai>PERSONALITY TEST QUESTION</srai>
 		</template>
 	</category>  
@@ -376,7 +370,6 @@
 		<that>DO YOU WORK IN SALES *</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">3 Competitor</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -385,7 +378,6 @@
 	<category>
 		<pattern>WHAT IS MY PERSONALITY STYLE</pattern>
 		<template>
-			<think><set name="mood">1</set></think>
 			<srai>WHAT IS MY PERSONALITY TYPE</srai>
 		</template>
 	</category>              
@@ -399,7 +391,6 @@
 	<category>
 		<pattern>WHICH TYPE * AM I</pattern>
 		<template>
-			<think><set name="mood">1</set></think>
 			<srai>WHAT IS MY PERSONALITY TYPE</srai>
 		</template>
 	</category>              
@@ -408,7 +399,6 @@
 		<that>* ATTENTION TO ONE THING</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">7 Hedonist</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -419,7 +409,6 @@
 		<that>* BODY SENSATIONS THAN EMOTIONS</that>
 		<template>
 			<think>
-			<set name="mood">1</set>
 				<set name="etype">8 Boss</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -430,7 +419,6 @@
 		<that>* COMPLETING PROJECTS</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">7 Hedonist</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -441,7 +429,6 @@
 		<that>* EVERYTHING ORGANIZED</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">1 Perfectionist</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -452,7 +439,6 @@
 		<that>* GO IT ALONE</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">5 Observer</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -463,7 +449,6 @@
 		<that>* GO WITH THE FLOW</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">9 Mediator</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -474,7 +459,6 @@
 		<that>* HOUSECLEANING</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">1 Perfectionist</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -485,7 +469,6 @@
 		<that>* PUT OTHERS BEFORE YOURSELF</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">9 Mediator</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -496,7 +479,6 @@
 		<that>* SACRIFICES FOR OTHERS</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">2 Giver</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -507,7 +489,6 @@
 		<that>* SEEK PLEASURE</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">7 Hedonist</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -518,7 +499,6 @@
 		<that>* STOP PEOPLE FROM FIGHTING</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">9 Mediator</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -529,7 +509,6 @@
 		<that>* STRONG PROTECT THE WEAK</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">8 Boss</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -540,7 +519,6 @@
 		<that>* VERY COMPETITIVE</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">3 Competitor</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -551,7 +529,6 @@
 		<that>ARE YOU A FIREMAN *</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">6 Loyalist</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -562,7 +539,6 @@
 		<that>ARE YOU VERY CREATIVE</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">4 Individualist</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>
@@ -573,7 +549,6 @@
 		<that>DO YOU FEEL THAT SOMETHING IS MISSING *</that>
 		<template>
 			<think>
-				<set name="mood">1</set>
 				<set name="etype">4 Individualist</set>
 			</think>
 			<srai>PERSONALITY TEST QUESTION</srai>

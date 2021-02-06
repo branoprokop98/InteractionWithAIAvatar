@@ -8,7 +8,6 @@
 	<!-- as adopted by the ALICE A.I. Foundation.  -->
 	<!-- Revision Pickup-1.06 -->
 	<!-- Last Modified Jan 29 2005 -->
-	
 
 	<category>
 		<pattern>*</pattern>
@@ -22,14 +21,12 @@
 				</set>
 				<srai>PUSH <get name="topic"/>
 				</srai>
-				<think><set name="mood">1</set></think>
 			</think>
 		</template>
 	</category> 
 	<category>
 		<pattern>RANDOM PICKUP LINE</pattern>  
 		<template> 
-			<think><set name="mood">1</set></think>
 			<random> 
 				<li>
 					<srai>HAS INQUIRY <get name="has"/>
@@ -132,7 +129,6 @@
 				<srai>SET PREDICATES OM</srai>
 				<set name="name">JUDGE <star/>
 				</set>
-				<set name="mood">1</set>
 			</think> 
 			<random>
 				<li>Hello!</li>
