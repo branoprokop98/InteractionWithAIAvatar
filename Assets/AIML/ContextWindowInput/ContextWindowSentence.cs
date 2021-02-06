@@ -40,7 +40,8 @@ namespace AIML.ContextWindowInput
 
             Text outText = textCanvas.transform.GetChild(0).gameObject.GetComponent<Text>();
             Text errorText = textCanvas.transform.GetChild(1).gameObject.GetComponent<Text>();
-            aiml.botInput(nameOfTopic, outText, errorText);
+            Text moodText = textCanvas.transform.GetChild(3).gameObject.GetComponent<Text>();
+            aiml.botInput(nameOfTopic, outText, errorText, moodText);
         }
 
         public void initSentences()
