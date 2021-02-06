@@ -17,6 +17,7 @@ namespace AIML
         private User myuser;
         private string text;
         private MenuInteraction menuInteraction;
+        private int mood;
         //private SpeechOut _speechOut;
 
         public Aiml()
@@ -28,14 +29,17 @@ namespace AIML
             //_speechOut = new SpeechOut();
             AI.loadSettings(); //It will Load Settings from its Config Folder with this code
             AI.loadAIMLFromFiles(); //With this Code It Will Load AIML Files from its AIML Folder
+            mood = 50;
         }
 
-        public void botInput(string text, Text outText, Text errorText)
+        public void botInput(string text, Text outText, Text errorText, Text moodText)
         {
+            myuser.setMood();
             Request r = new Request(text, myuser, AI); //With This Code it will Request The Response From AIML Folders
             Result res = AI.Chat(r); //With This Code It Will Get Result
             string output = res.Output; //With this Code It Will Write the Result of Textbox1 Response to Textbox2 text
             outText.text = output;
+            calculateMood(moodText);
             run_cmd(output, errorText);
         }
 
@@ -77,6 +81,19 @@ namespace AIML
                     return null;
             }
         }
+
+
+        private void calculateMood(Text moodText)
+        {
+            string mood = myuser.getMood();
+            if (mood == "")
+            {
+                mood = "0";
+            }
+            this.mood += int.Parse(mood);
+            moodText.text = this.mood.ToString();
+        }
+
 
         public void speechOutput(string output)
         {
