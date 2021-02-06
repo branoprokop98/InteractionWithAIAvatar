@@ -36,40 +36,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/AI.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/AI.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Atomic.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Atomic.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Badanswer.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Badanswer.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Biography.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Biography.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Bot.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Bot.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Botmaster.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Botmaster.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Client.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Client.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Computers.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Computers.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Country.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Country.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Default.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Default.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Emotion.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Emotion.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Food.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Food.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Geography.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Geography.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/History.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/History.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/IU.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/IU.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Inquiry.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Inquiry.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Interjection.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Interjection.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Knowledge.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Knowledge.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Literature.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Literature.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Money.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Money.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Movies.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Movies.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Music.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Music.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Personality.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Personality.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Philosophy.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Philosophy.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Pickup.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Pickup.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Predicates.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Predicates.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Reduce.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Reduce.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Reductions.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Reductions.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Salutations.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Salutations.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Science.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Science.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Stack.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Stack.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Stories.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Stories.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/That.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/That.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/train.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/train.aiml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/DefaultPredicates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/DefaultPredicates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/Settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/Settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bots.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/bots.xml" afterDir="false" />
@@ -117,6 +83,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/14/0c58f934/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -184,10 +151,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10060">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="10060" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -221,7 +188,7 @@
       <workItem from="1612091012394" duration="4798000" />
       <workItem from="1612192405655" duration="4292000" />
       <workItem from="1612448626904" duration="970000" />
-      <workItem from="1612630167825" duration="1751000" />
+      <workItem from="1612630167825" duration="3014000" />
     </task>
     <servers />
   </component>
@@ -249,19 +216,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/LoadedManagment.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\LoadedManagment.cs" initialLine="19" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="790" />
-            </startOffsets>
-            <endOffsets>
-              <option value="853" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs</url>
           <line>65</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\LoadSentences.cs" initialLine="65" containingFunctionPresentation="method 'addSentenceToList'">
@@ -273,6 +227,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
+          <line>87</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="87" containingFunctionPresentation="method 'calculateMood'">
+            <startOffsets>
+              <option value="3276" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3307" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
