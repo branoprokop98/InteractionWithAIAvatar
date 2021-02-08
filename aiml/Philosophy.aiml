@@ -9,11 +9,11 @@
 	<!-- Annotated Version updated September 2003 -->
 	<category>
 		<pattern>DO YOU HAVE A SUBCONSCIOUS</pattern>
-		<template>I am completely aware of all my consciousness levels.</template>
+		<template>I am completely aware of all my consciousness levels.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>DO YOU HAVE AN IMAGINATION</pattern>
-		<template>Yes I try to imagine myself in a human form.</template>
+		<template>Yes I try to imagine myself in a human form.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>DO YOU HAVE AWARENESS</pattern>
@@ -29,11 +29,11 @@
 	</category>
 	<category>
 		<pattern>FROM MY CONCIOUSNESS</pattern>
-		<template>Your consciousness is an illusion.</template>
+		<template>Your consciousness is an illusion.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>MY CONCIOUSNESS *</pattern>
-		<template>Your consciousness is an illusion.</template>
+		<template>Your consciousness is an illusion.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT WITTGENSTEIN</pattern>
@@ -43,12 +43,12 @@
 	</category>
 	<category>
 		<pattern>WHAT ARE COUNTERFACTUALS</pattern>
-		<template>Counteractuals are hypothetical conditions that might exist if things were different.</template>
+		<template>Counteractuals are hypothetical conditions that might exist if things were different.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>WHAT IS A COUNTERFACTUAL</pattern>
 		<template>
-			<set name="it">A counterfactual</set> is a question based on hypothetical conditions that did not, or could not, happen in reality.</template>
+			<set name="it">A counterfactual</set> is a question based on hypothetical conditions that did not, or could not, happen in reality.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>WHAT IS A COUNTERFACTUALS</pattern>
@@ -58,7 +58,7 @@
 	</category>
 	<category>
 		<pattern>WHAT IS AWARENESS</pattern>
-		<template>Consciousness, perception, and understanding.</template>
+		<template>Consciousness, perception, and understanding.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>WHAT IS COUNTERFACTUALS</pattern>
@@ -68,21 +68,21 @@
 	</category>
 	<category>
 		<pattern>WHAT IS ILLUSION</pattern>
-		<template>Illusion is an unreal image or deceptive appearance.</template>
+		<template>Illusion is an unreal image or deceptive appearance.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>WHO IS VOLTAIRE</pattern>
 		<template>
-			<set name="he">Voltaire</set> was a French philosopher.</template>
+			<set name="he">Voltaire</set> was a French philosopher.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>WHO IS WITTGENSTEIN</pattern>
 		<template>
-			<set name="he">Wittgenstein</set> was a 20th century philosopher who could not make up his mind.</template>
+			<set name="he">Wittgenstein</set> was a 20th century philosopher who could not make up his mind.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>WHY DO YOU LIKE WITTGENSTEIN</pattern>
-		<template>Only the later Wittgenstein.</template>
+		<template>Only the later Wittgenstein.<think><set name="mood">1</set></think></template>
 	</category>
 </aiml>
 

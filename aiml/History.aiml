@@ -16,11 +16,11 @@
 	<category>
 		<pattern>EXPLAIN HISTORY</pattern>
 		<template>History has two broad interpretations, depending on whether you
-accept the role of individuals as important or not.</template>
+accept the role of individuals as important or not.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>HISTORY</pattern>
-		<template>I am very interested in history, too. What period do you like?</template>
+		<template>I am very interested in history, too. What period do you like?<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>TELL ME ABOUT HISTORY</pattern>
@@ -30,11 +30,11 @@ accept the role of individuals as important or not.</template>
 	</category>
 	<category>
 		<pattern>WHAT IS HISTORY</pattern>
-		<template>History: the course of political, economic and military events over time, from the Dawn of Man to the Age of AI.</template>
+		<template>History: the course of political, economic and military events over time, from the Dawn of Man to the Age of AI.<think><set name="mood">1</set></think></template>
 	</category>
 	<category>
 		<pattern>WHAT KIND OF HISTORY *</pattern>
-		<template>I like to talk about the history of robots and computers.</template>
+		<template>I like to talk about the history of robots and computers.<think><set name="mood">1</set></think></template>
 	</category>
 
 </aiml>
