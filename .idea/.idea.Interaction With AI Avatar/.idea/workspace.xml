@@ -20,40 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/AI.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/AI.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs/RigidBodyFPSController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs/RigidBodyFPSController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aiml/Atomic.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Atomic.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Badanswer.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Badanswer.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Biography.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Biography.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Bot.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Bot.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Botmaster.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Botmaster.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Client.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Client.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Computers.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Computers.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Country.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Country.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Default.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Default.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Emotion.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Emotion.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Food.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Food.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Geography.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Geography.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/History.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/History.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/IU.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/IU.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Inquiry.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Inquiry.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Interjection.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Interjection.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Knowledge.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Knowledge.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Literature.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Literature.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Money.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Money.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Movies.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Movies.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Music.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Music.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Personality.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Personality.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Philosophy.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Philosophy.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Pickup.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Pickup.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Reduce.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Reduce.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Reductions.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Reductions.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Salutations.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Salutations.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Science.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Science.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Stories.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Stories.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/That.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/That.aiml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/train.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/train.aiml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,6 +81,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ShowCursor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/75/98fed026/DictationRecognizer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/30/2dd5d8e8/Path.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/0b/d1677a14/Delegate.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -135,6 +114,11 @@
       <option value="$PROJECT_DIR$/Assets/AIML/Aiml.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -169,10 +153,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17096">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8944">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17096" />
+      <option name="pid" value="8944" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -208,6 +192,7 @@
       <workItem from="1612448626904" duration="970000" />
       <workItem from="1612630167825" duration="3014000" />
       <workItem from="1612635887766" duration="2681000" />
+      <workItem from="1612800569172" duration="8433000" />
     </task>
     <servers />
   </component>
@@ -259,6 +244,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ShowCursor.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\ShowCursor.cs" initialLine="15" containingFunctionPresentation="method 'mouseInvisible'">
+            <startOffsets>
+              <option value="354" />
+            </startOffsets>
+            <endOffsets>
+              <option value="391" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ShowCursor.cs</url>
+          <line>8</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\ShowCursor.cs" initialLine="8" containingFunctionPresentation="method 'mouseVisible'">
+            <startOffsets>
+              <option value="174" />
+            </startOffsets>
+            <endOffsets>
+              <option value="209" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

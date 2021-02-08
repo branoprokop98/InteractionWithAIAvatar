@@ -44,6 +44,9 @@
             <e p="MenuInteraction.cs" t="Include" />
             <e p="NewGameController.cs" t="Include" />
           </e>
+          <e p="PauseMenu" t="Include">
+            <e p="PauseMenuScript.cs" t="Include" />
+          </e>
           <e p="SceneLoader.cs" t="Include" />
           <e p="XMLWorker.cs" t="Include" />
         </e>
@@ -61,7 +64,6 @@
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
               <e p="MenuSceneLoader.cs" t="Include" />
-              <e p="PauseMenu.cs" t="Include" />
               <e p="SceneAndURLLoader.cs" t="Include" />
             </e>
           </e>
