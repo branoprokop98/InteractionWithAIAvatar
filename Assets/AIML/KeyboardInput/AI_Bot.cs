@@ -76,7 +76,7 @@ namespace AIML.KeyboardInput
                 RigidbodyFirstPersonController.instance.mouseLook.YSensitivity = 0;
                 inDialog = true;
             }
-            else if (Input.GetKeyDown(KeyCode.F) && inDialog)
+            else if (Input.GetKeyDown(KeyCode.Escape) && inDialog)
             {
                 ShowCursor.mouseInvisible();
                 _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
