@@ -20,17 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputFemale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputMale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputFemale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs/RigidBodyFPSController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs/RigidBodyFPSController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Atomic.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Atomic.aiml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,7 @@
       <workItem from="1612448626904" duration="970000" />
       <workItem from="1612630167825" duration="3014000" />
       <workItem from="1612635887766" duration="2681000" />
-      <workItem from="1612800569172" duration="8433000" />
+      <workItem from="1612800569172" duration="8558000" />
     </task>
     <servers />
   </component>
