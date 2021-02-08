@@ -3789,6 +3789,7 @@
 				<li>Everything is running smoothly.</li>
 				<li>I am fine, thank you.</li>
 			</random>
+			<think><set name="mood">1</set></think>
 		</template>
 	</category>  
 	<category>
