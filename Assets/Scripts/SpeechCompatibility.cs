@@ -29,6 +29,7 @@ public class SpeechCompatibility : MonoBehaviour
         catch (Exception e)
         {
             canvas.enabled = true;
+            ShowCursor.mouseVisible();
             crossCanvas.enabled = false;
         }
     }
@@ -42,6 +43,7 @@ public class SpeechCompatibility : MonoBehaviour
     public void hideCanvas()
     {
         canvas.enabled = false;
+        ShowCursor.mouseInvisible();
         crossCanvas.enabled = true;
     }
 }
