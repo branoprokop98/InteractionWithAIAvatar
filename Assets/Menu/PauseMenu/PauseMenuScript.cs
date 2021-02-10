@@ -6,14 +6,17 @@ namespace Menu.PauseMenu
     public class PauseMenuScript : MonoBehaviour
     {
         [SerializeField] private Canvas pauseCanvas;
+        [SerializeField] private Canvas hitCanvas;
 
-        public bool isPaused;
+
+        private bool isPaused;
         // Start is called before the first frame update
         void Start()
         {
             isPaused = false;
             //pauseCanvas.SetActive(false);
             pauseCanvas.enabled = false;
+            hitCanvas.enabled = true;
             ShowCursor.mouseInvisible();
         }
 
@@ -37,6 +40,7 @@ namespace Menu.PauseMenu
         {
             //pauseCanvas.SetActive(false);
             pauseCanvas.enabled = false;
+            hitCanvas.enabled = true;
             ShowCursor.mouseInvisible();
             Time.timeScale = 1f;
             isPaused = false;
@@ -47,6 +51,7 @@ namespace Menu.PauseMenu
         {
             //pauseCanvas.SetActive(true);
             pauseCanvas.enabled = true;
+            hitCanvas.enabled = false;
             ShowCursor.mouseVisible();
             Time.timeScale = 0.1f;
             isPaused = true;
@@ -55,6 +60,7 @@ namespace Menu.PauseMenu
         public void loadMenu()
         {
             SceneManager.LoadScene("Menu");
+            Time.timeScale = 1f;
             Debug.Log("Load Menu ...");
         }
     }
