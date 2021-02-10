@@ -6,8 +6,8 @@ using UnityEngine.SocialPlatforms;
 
 public class Hiting
 {
-    private Ray _ray;
-    public RaycastHit _hit;
+    private Ray ray;
+    public RaycastHit hit;
     private int hitDistance;
 
     public Hiting(int hitDistance)
@@ -22,11 +22,11 @@ public class Hiting
 
     public bool getHit()
     {
-        _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit[] hits =  Physics.RaycastAll(_ray, 20);
-        if (Physics.Raycast(_ray, out _hit, hitDistance))
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits =  Physics.RaycastAll(ray, 20);
+        if (Physics.Raycast(ray, out hit, hitDistance))
         {
-            Debug.Log(_hit.collider.gameObject);
+            Debug.Log(hit.collider.gameObject);
             return true;
         }
 
