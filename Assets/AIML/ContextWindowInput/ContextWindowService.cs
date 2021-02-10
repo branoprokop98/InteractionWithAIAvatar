@@ -35,7 +35,7 @@ namespace AIML.ContextWindowInput
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() && hitting._hit.collider.gameObject == interactObject &&
+            if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() && hitting.hit.collider.gameObject == interactObject &&
                 interacting == false)
             {
                 ShowCursor.mouseVisible();
@@ -44,7 +44,7 @@ namespace AIML.ContextWindowInput
                 interacting = true;
             }
             else if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() &&
-                     hitting._hit.collider.gameObject == interactObject &&
+                     hitting.hit.collider.gameObject == interactObject &&
                      interacting)
             {
                 ShowCursor.mouseInvisible();
@@ -66,6 +66,17 @@ namespace AIML.ContextWindowInput
         public void getSentencesOfTopic(Button button) => contextSentence.getSentencesOfTopic(button);
 
         public void getTopics() => contextTopic.initTopicsName();
+
+        public void OnHoverEnter(Button button)
+        {
+            button.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
+        }
+
+        public void OnHoverExit(Button button)
+        {
+            button.transform.localScale += new Vector3(-0.1f, -0.1f, -0.1f);
+        }
+
     }
 }
 

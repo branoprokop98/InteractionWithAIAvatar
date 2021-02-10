@@ -14,19 +14,19 @@ namespace AIML.SpeechInput
         [SerializeField] private Text errorText;
         [SerializeField] private Text moodText;
 
-        private DictationRecognizer _dictationRecognizer;
+        private DictationRecognizer dictationRecognizer;
         private string m_Recognitions;
-        private Hiting _hiting;
+        private Hiting hitting;
         public static bool interacting;
-        private Aiml _aiml;
+        private Aiml aiml;
         private string recognizedString;
 
 
         private void Start()
         {
-            _aiml = new Aiml();
+            aiml = new Aiml();
             interacting = false;
-            _hiting = new Hiting(2);
+            hitting = new Hiting(2);
             interactCanvas.enabled = false;
             errorText = errorText.GetComponent<Text>();
             errorText.enabled = false;
@@ -34,33 +34,33 @@ namespace AIML.SpeechInput
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && _hiting._hit.collider.gameObject == interactObject &&
+            if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() && hitting.hit.collider.gameObject == interactObject &&
                 interacting == false)
             {
                 interacting = true;
                 interactCanvas.enabled = true;
-                _dictationRecognizer = new DictationRecognizer();
-                _dictationRecognizer.Start();
+                dictationRecognizer = new DictationRecognizer();
+                dictationRecognizer.Start();
                 speechInput();
             }
-            else if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() &&
-                     _hiting._hit.collider.gameObject == interactObject && interacting)
+            else if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() &&
+                     hitting.hit.collider.gameObject == interactObject && interacting)
             {
                 interacting = false;
                 interactCanvas.enabled = false;
-                _dictationRecognizer.Stop();
-                _dictationRecognizer.Dispose();
+                dictationRecognizer.Stop();
+                dictationRecognizer.Dispose();
             }
         }
 
         private void speechInput()
         {
-            _dictationRecognizer.DictationResult += (text, confidence) =>
+            dictationRecognizer.DictationResult += (text, confidence) =>
             {
                 Debug.LogWarningFormat("Dictation result: {0} , {1}", text, confidence);
                 m_Recognitions += text + "\n";
                 speechText.text = text;
-                _aiml.botInput(text, outText, errorText, moodText);
+                aiml.botInput(text, outText, errorText, moodText);
             };
         }
     }

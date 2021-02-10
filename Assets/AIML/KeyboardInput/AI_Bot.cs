@@ -66,7 +66,7 @@ namespace AIML.KeyboardInput
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && botObject == _hiting._hit.collider.gameObject &&
+            if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && botObject == _hiting.hit.collider.gameObject &&
                 inDialog == false)
             {
                 ShowCursor.mouseVisible();
