@@ -20,17 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterScripts/Hitting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterScripts/Hitting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InteractCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InteractCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputFemale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputMale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputFemale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs/RigidBodyFPSController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs/RigidBodyFPSController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Salutations.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Salutations.aiml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +99,6 @@
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowSentence.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowService.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowTopic.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextLayer.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadTopics.cs" />
@@ -113,12 +116,15 @@
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/Aiml.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
-      <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
       <option value="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" />
+      <option value="$PROJECT_DIR$/Assets/CharacterScripts/Hitting.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -153,10 +159,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8944">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9552">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="8944" />
+      <option name="pid" value="9552" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -192,7 +198,9 @@
       <workItem from="1612448626904" duration="970000" />
       <workItem from="1612630167825" duration="3014000" />
       <workItem from="1612635887766" duration="2681000" />
-      <workItem from="1612800569172" duration="8558000" />
+      <workItem from="1612800569172" duration="9863000" />
+      <workItem from="1612867015820" duration="1779000" />
+      <workItem from="1612885033707" duration="1506000" />
     </task>
     <servers />
   </component>
@@ -220,19 +228,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs</url>
-          <line>65</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\LoadSentences.cs" initialLine="65" containingFunctionPresentation="method 'addSentenceToList'">
-            <startOffsets>
-              <option value="2144" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2213" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
           <line>87</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="87" containingFunctionPresentation="method 'calculateMood'">
@@ -246,30 +241,82 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/ShowCursor.cs</url>
-          <line>15</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\ShowCursor.cs" initialLine="15" containingFunctionPresentation="method 'mouseInvisible'">
+          <url>file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\PauseMenu\PauseMenuScript.cs" initialLine="38" containingFunctionPresentation="method 'resume'">
             <startOffsets>
-              <option value="354" />
+              <option value="1008" />
             </startOffsets>
             <endOffsets>
-              <option value="391" />
+              <option value="1036" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/ShowCursor.cs</url>
-          <line>8</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\ShowCursor.cs" initialLine="8" containingFunctionPresentation="method 'mouseVisible'">
+          <url>file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs</url>
+          <line>52</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\PauseMenu\PauseMenuScript.cs" initialLine="48" containingFunctionPresentation="method 'pause'">
             <startOffsets>
-              <option value="174" />
+              <option value="1326" />
             </startOffsets>
             <endOffsets>
-              <option value="209" />
+              <option value="1353" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\PauseMenu\PauseMenuScript.cs" initialLine="25" containingFunctionPresentation="method 'Update'">
+            <startOffsets>
+              <option value="752" />
+            </startOffsets>
+            <endOffsets>
+              <option value="753" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\PauseMenu\PauseMenuScript.cs" initialLine="30" containingFunctionPresentation="method 'Update'">
+            <startOffsets>
+              <option value="861" />
+            </startOffsets>
+            <endOffsets>
+              <option value="869" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\PauseMenu\PauseMenuScript.cs" initialLine="56" containingFunctionPresentation="method 'loadMenu'">
+            <startOffsets>
+              <option value="1560" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1591" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\LoadSentences.cs" initialLine="29" containingFunctionPresentation="method 'loadXmlDocument'">
+            <startOffsets>
+              <option value="798" />
+            </startOffsets>
+            <endOffsets>
+              <option value="843" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
