@@ -22,19 +22,22 @@
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterScripts/Hitting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterScripts/Hitting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InteractCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InteractCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Dark wood/DarkWood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Dark wood/DarkWood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Glass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/A.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/I.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/I.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/L.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/L.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/O.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/O.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/R.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/R.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/T.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/T.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/U.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/Textures/Text board/U.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/corridor.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/corridor.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Corridor/corridor.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Corridor/corridor.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs/RigidBodyFPSController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs/RigidBodyFPSController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiml/Salutations.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Salutations.aiml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +74,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Branislav/Documents/Unity projects/Interaction With AI Avatar/Assets/Scripts/SpeechCompatibility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InteractCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -125,6 +129,7 @@
       <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" />
+      <option value="$PROJECT_DIR$/Assets/InteractCanvas.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -201,6 +206,7 @@
       <workItem from="1612800569172" duration="9863000" />
       <workItem from="1612867015820" duration="1779000" />
       <workItem from="1612885033707" duration="1506000" />
+      <workItem from="1612979923191" duration="811000" />
     </task>
     <servers />
   </component>
