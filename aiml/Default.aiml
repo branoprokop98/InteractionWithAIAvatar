@@ -8708,7 +8708,7 @@
 					</set> so much?</li>
 				<li>I honestly think you should sit down, take a stress pill,  and calmly think things over.</li>
 			</random>
-		<think><set name="mood">1</set></think></template>
+		<think><set name="mood">0</set></think></template>
 	</category>  
 	<category>
 		<pattern>I HATE YOU *</pattern>
