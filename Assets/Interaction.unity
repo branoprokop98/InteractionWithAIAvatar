@@ -1793,7 +1793,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 65f9bd8faafc47940ab6d0e42c8d5e07,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.542
+      value: 9.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 65f9bd8faafc47940ab6d0e42c8d5e07,
         type: 3}
@@ -2367,7 +2367,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2359
+    m_Bits: 2103
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -2785,7 +2785,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 542759d21b510214da5c5b896e55c2b2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.369109
+      value: 9.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 542759d21b510214da5c5b896e55c2b2,
         type: 3}
@@ -2841,6 +2841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: lousieNormalAnimIdle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989292866490371355, guid: 542759d21b510214da5c5b896e55c2b2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 542759d21b510214da5c5b896e55c2b2, type: 3}
