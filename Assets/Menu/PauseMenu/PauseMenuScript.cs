@@ -50,11 +50,14 @@ namespace Menu.PauseMenu
         private void pause()
         {
             //pauseCanvas.SetActive(true);
-            pauseCanvas.enabled = true;
-            hitCanvas.enabled = false;
-            ShowCursor.mouseVisible();
-            Time.timeScale = 0.1f;
-            isPaused = true;
+            if (!InteractCanvas.interacting && InteractCanvas.showPauseMenu)
+            {
+                pauseCanvas.enabled = true;
+                hitCanvas.enabled = false;
+                ShowCursor.mouseVisible();
+                Time.timeScale = 0.1f;
+                isPaused = true;
+            }
         }
 
         public void loadMenu()
