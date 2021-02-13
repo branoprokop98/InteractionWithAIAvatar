@@ -43,7 +43,7 @@ namespace AIML.ContextWindowInput
                 canvas.enabled = true;
                 interacting = true;
             }
-            else if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() &&
+            else if (Input.GetKeyDown(KeyCode.Escape) && hitting.getHit() &&
                      hitting.hit.collider.gameObject == interactObject &&
                      interacting)
             {

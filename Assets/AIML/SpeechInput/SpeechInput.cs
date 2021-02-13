@@ -43,7 +43,7 @@ namespace AIML.SpeechInput
                 dictationRecognizer.Start();
                 speechInput();
             }
-            else if (Input.GetKeyDown(KeyCode.F) && hitting.getHit() &&
+            else if (Input.GetKeyDown(KeyCode.Escape) && hitting.getHit() &&
                      hitting.hit.collider.gameObject == interactObject && interacting)
             {
                 interacting = false;
