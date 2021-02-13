@@ -2050,8 +2050,12 @@
 	</category>  
 	<category>
 		<pattern>CAN I * YOU</pattern>
-		<template>No I don't think that would be a very good idea.<think><set name="mood">1</set></think></template>
+		<template>No I don't think that would be a very good idea.<think><set name="mood">0</set></think></template>
 	</category>  
+	<category>
+		<pattern>CAN I F YOU</pattern>
+		<template>No I don't think that would be a very good idea.<think><set name="mood">-10</set></think></template>
+	</category>
 	<category>
 		<pattern>CAN ONE *</pattern>
 		<template>Theoretically, I suppose one could.<think><set name="mood">1</set></think></template>
@@ -4532,7 +4536,7 @@
 		<pattern>DO YOU WANT TO HAVE *</pattern>
 		<template>If I had <person/>  what would I do with <set name="it">
 				<person/>
-			</set>?<think><set name="mood">1</set></think></template>
+			</set>?<think><set name="mood">0</set></think></template>
 	</category>  
 	<category>
 		<pattern>DO YOU WANT TO HEAR *</pattern>
