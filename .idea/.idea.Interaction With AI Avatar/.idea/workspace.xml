@@ -22,14 +22,12 @@
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputFemale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ContextWindowInput/ContextWindowInputMale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputFemale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KeyboardInput/KeyboardInputMale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputFemale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputFemale.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpeechInput/SpeechInputMale.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InteractCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InteractCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiml/Atomic.aiml" beforeDir="false" afterPath="$PROJECT_DIR$/aiml/Atomic.aiml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +55,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/b7/01216ef1/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/25/21126cb9/Directory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/fd/15e97549/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/23/a3e3722c/AIMLLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/d0/178950ba/Bot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LoadedManagment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Branislav/Documents/Unity projects/Interaction With AI Avatar/Assets/AIML/SpeechInput/SpeechInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E2E727C9-98CA-473B-BE75-3F12C746239D/06/33c53402/SettingsDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Branislav/Documents/Unity projects/Interaction With AI Avatar/Assets/AIML/SpeechInput/SpeechInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -73,17 +74,22 @@
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/74/21de41a0/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/bc/0ad61a92/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/88/2f17b279/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/d4/ed3f5952/CachedInvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/78/4c7d5f92/InvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Branislav/Documents/Unity projects/Interaction With AI Avatar/Assets/AIML/SpeechInput/SpeechInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ShowCursor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/75/98fed026/DictationRecognizer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/30/2dd5d8e8/Path.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7.3.1/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/0b/d1677a14/Delegate.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -119,9 +125,9 @@
       <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" />
       <option value="$PROJECT_DIR$/Assets/CharacterScripts/Hitting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" />
       <option value="$PROJECT_DIR$/Assets/InteractCanvas.cs" />
     </changedPaths>
@@ -158,10 +164,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19392">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3000">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19392" />
+      <option name="pid" value="3000" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -202,6 +208,8 @@
       <workItem from="1612885033707" duration="1506000" />
       <workItem from="1612979923191" duration="811000" />
       <workItem from="1613068228852" duration="1712000" />
+      <workItem from="1613150347663" duration="8000" />
+      <workItem from="1613218071927" duration="5107000" />
     </task>
     <servers />
   </component>
@@ -259,10 +267,10 @@
           <line>56</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\ContextWindowService.cs" initialLine="56" containingFunctionPresentation="method 'getNextLayerOfTopic'">
             <startOffsets>
-              <option value="2026" />
+              <option value="2031" />
             </startOffsets>
             <endOffsets>
-              <option value="2053" />
+              <option value="2058" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="24" />
@@ -272,10 +280,10 @@
           <line>59</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\ContextWindowService.cs" initialLine="59" containingFunctionPresentation="method 'getPrevLayerOfTopic'">
             <startOffsets>
-              <option value="2102" />
+              <option value="2107" />
             </startOffsets>
             <endOffsets>
-              <option value="2129" />
+              <option value="2134" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="25" />
@@ -285,10 +293,10 @@
           <line>61</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\ContextWindowService.cs" initialLine="61" containingFunctionPresentation="method 'getNextLayerOfSentence'">
             <startOffsets>
-              <option value="2180" />
+              <option value="2185" />
             </startOffsets>
             <endOffsets>
-              <option value="2210" />
+              <option value="2215" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="26" />
@@ -298,10 +306,10 @@
           <line>63</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\ContextWindowService.cs" initialLine="63" containingFunctionPresentation="method 'getPrevLayerOfSentence'">
             <startOffsets>
-              <option value="2261" />
+              <option value="2266" />
             </startOffsets>
             <endOffsets>
-              <option value="2291" />
+              <option value="2296" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="27" />
@@ -311,10 +319,10 @@
           <line>65</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\ContextWindowService.cs" initialLine="65" containingFunctionPresentation="method 'getSentencesOfTopic'">
             <startOffsets>
-              <option value="2352" />
+              <option value="2357" />
             </startOffsets>
             <endOffsets>
-              <option value="2395" />
+              <option value="2400" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="28" />
@@ -324,10 +332,10 @@
           <line>67</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\ContextWindowService.cs" initialLine="67" containingFunctionPresentation="method 'getTopics'">
             <startOffsets>
-              <option value="2433" />
+              <option value="2438" />
             </startOffsets>
             <endOffsets>
-              <option value="2462" />
+              <option value="2467" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="29" />
@@ -344,6 +352,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/InteractCanvas.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\InteractCanvas.cs" initialLine="32" containingFunctionPresentation="method 'Update'">
+            <startOffsets>
+              <option value="1163" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1198" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs</url>
+          <line>54</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\PauseMenu\PauseMenuScript.cs" initialLine="54" containingFunctionPresentation="method 'pause'">
+            <startOffsets>
+              <option value="1421" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1448" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
