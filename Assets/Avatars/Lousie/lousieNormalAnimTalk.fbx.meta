@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -4791504522942941401
-    second: Armature|Armature|mixamo.com|Layer0
+    second: IdleTalk
   - first:
       74: 6165553400957861818
     second: Armature|Armature|mixamo.com|Layer0.001
@@ -41,7 +41,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Armature|mixamo.com|Layer0
+      name: IdleTalk
       takeName: Armature|Armature|mixamo.com|Layer0
       internalID: 0
       firstFrame: 0
