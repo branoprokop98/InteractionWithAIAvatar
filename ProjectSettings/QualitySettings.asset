@@ -118,5 +118,5 @@ QualitySettings:
       type: 2}
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
-    Standalone: 0
-    Windows Store Apps: 0
+    Standalone: 2
+    Windows Store Apps: 2
