@@ -34,8 +34,12 @@
           <e p="Hitting.cs" t="Include" />
         </e>
         <e p="InteractCanvas.cs" t="Include" />
+        <e p="InvokeMainThread" t="Include">
+          <e p="UnityMainThreadDispatcher.cs" t="Include" />
+        </e>
         <e p="LoadedManagment.cs" t="Include" />
         <e p="Menu" t="Include">
+          <e p="CheckCompatibility.cs" t="Include" />
           <e p="ExitGame" t="Include">
             <e p="ExitGameController.cs" t="Include" />
           </e>
