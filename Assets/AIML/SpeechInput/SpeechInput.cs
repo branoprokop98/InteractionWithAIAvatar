@@ -5,6 +5,7 @@ using UnityEngine.Windows.Speech;
 
 namespace AIML.SpeechInput
 {
+    [RequireComponent(typeof(Animator))]
     public class SpeechInput : MonoBehaviour
     {
         [SerializeField] private GameObject interactObject;
@@ -20,6 +21,7 @@ namespace AIML.SpeechInput
         public static bool interacting;
         private Aiml aiml;
         private string recognizedString;
+        private Animator animator;
 
 
         private void Start()
@@ -29,6 +31,7 @@ namespace AIML.SpeechInput
             hitting = new Hiting(2);
             interactCanvas.enabled = false;
             errorText = errorText.GetComponent<Text>();
+            animator = this.GetComponent<Animator>();
             errorText.enabled = false;
         }
 
@@ -60,7 +63,7 @@ namespace AIML.SpeechInput
                 Debug.LogWarningFormat("Dictation result: {0} , {1}", text, confidence);
                 m_Recognitions += text + "\n";
                 speechText.text = text;
-                aiml.botInput(text, outText, errorText, moodText);
+                aiml.botInput(text, outText, errorText, moodText, animator);
             };
         }
     }

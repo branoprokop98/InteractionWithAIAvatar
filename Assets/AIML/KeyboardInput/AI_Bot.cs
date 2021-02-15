@@ -5,6 +5,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 namespace AIML.KeyboardInput
 {
+    [RequireComponent(typeof(Animator))]
     public class AI_Bot : MonoBehaviour
     {
         [SerializeField] private Text outText;
@@ -27,6 +28,7 @@ namespace AIML.KeyboardInput
         private bool inDialog;
         private string text;
         private float startTime;
+        private Animator animator;
 
         public static AI_Bot aiBot;
 
@@ -50,6 +52,7 @@ namespace AIML.KeyboardInput
         void Start()
         {
             //_speechInputForAiml = new SpeechInputForAiml();
+            animator = this.GetComponent<Animator>();
             aiBot = this;
             _aiml = new Aiml();
             outText = outText.GetComponent<Text>();
@@ -90,7 +93,7 @@ namespace AIML.KeyboardInput
 
         public void botControll(string text)
         {
-            _aiml.botInput(text, outText, errorText, moodText);
+            _aiml.botInput(text, outText, errorText, moodText, animator);
 
         }
 

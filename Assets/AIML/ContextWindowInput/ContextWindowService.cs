@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 namespace AIML.ContextWindowInput
 {
+    [RequireComponent(typeof(Animator))]
     public class ContextWindowService : MonoBehaviour
     {
         private ContextWindowTopic contextTopic;
@@ -16,12 +17,14 @@ namespace AIML.ContextWindowInput
         public static int actualLayerOfSentences { get; set; }
         private Aiml aiml;
         private Button btn;
+        private Animator animator;
 
         // Start is called before the first frame update
         void Start()
         {
             contextTopic = new ContextWindowTopic(canvas);
             contextSentence = new ContextWindowSentence(canvas, textCanvas);
+            animator = this.gameObject.GetComponent<Animator>();
             canvas.enabled = false;
             hitting = new Hiting();
             interacting = false;
@@ -63,7 +66,7 @@ namespace AIML.ContextWindowInput
 
         public void getPrevLayerOfSentence() => contextSentence.getPrevLayer();
 
-        public void getSentencesOfTopic(Button button) => contextSentence.getSentencesOfTopic(button);
+        public void getSentencesOfTopic(Button button) => contextSentence.getSentencesOfTopic(button, animator);
 
         public void getTopics() => contextTopic.initTopicsName();
 
