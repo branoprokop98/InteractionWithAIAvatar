@@ -5,13 +5,16 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 namespace AIML.KeyboardInput
 {
+    [RequireComponent(typeof(Animator))]
     public class AI_Bot : MonoBehaviour
     {
         [SerializeField] private Text outText;
         [SerializeField] private Canvas canvas;
         [SerializeField] private InputField textField;
         [SerializeField] private GameObject botObject;
-        [SerializeField] private GameObject player;
+
+        [SerializeField] private Text moodText;
+        //[SerializeField] private GameObject player;
         [SerializeField] private Text errorText;
         private Rigidbody _rigidbody;
 
@@ -25,6 +28,7 @@ namespace AIML.KeyboardInput
         private bool inDialog;
         private string text;
         private float startTime;
+        private Animator animator;
 
         public static AI_Bot aiBot;
 
@@ -48,10 +52,12 @@ namespace AIML.KeyboardInput
         void Start()
         {
             //_speechInputForAiml = new SpeechInputForAiml();
+            animator = this.GetComponent<Animator>();
             aiBot = this;
             _aiml = new Aiml();
             outText = outText.GetComponent<Text>();
-            _rigidbody = player.GetComponent<Rigidbody>();
+            _rigidbody = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<Rigidbody>();
+            //_rigidbody = player.GetComponent<Rigidbody>();
             canvas.enabled = false;
             _hiting = new Hiting(2);
             inDialog = false;
@@ -63,7 +69,7 @@ namespace AIML.KeyboardInput
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && botObject == _hiting._hit.collider.gameObject &&
+            if (Input.GetKeyDown(KeyCode.F) && _hiting.getHit() && botObject == _hiting.hit.collider.gameObject &&
                 inDialog == false)
             {
                 ShowCursor.mouseVisible();
@@ -73,7 +79,7 @@ namespace AIML.KeyboardInput
                 RigidbodyFirstPersonController.instance.mouseLook.YSensitivity = 0;
                 inDialog = true;
             }
-            else if (Input.GetKeyDown(KeyCode.F) && inDialog)
+            else if (Input.GetKeyDown(KeyCode.Escape) && inDialog)
             {
                 ShowCursor.mouseInvisible();
                 _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
@@ -87,7 +93,7 @@ namespace AIML.KeyboardInput
 
         public void botControll(string text)
         {
-            _aiml.botInput(text, outText, errorText);
+            _aiml.botInput(text, outText, errorText, moodText, animator);
 
         }
 

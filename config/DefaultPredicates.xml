@@ -27,7 +27,7 @@
   <item name="job" value="unknown" />
   <item name="lastname" value="unknown" />
   <item name="like" value="unknown" />
-  <item name="location" value="unknown" />
+  <item name="location" value="Bardejov" />
   <item name="looklike" value="unknown" />
   <item name="memory" value="unknown" />
   <item name="meta" value="unknown" />
@@ -43,4 +43,6 @@
   <item name="thought" value="unknown" />
   <item name="want" value="unknown" />
   <item name="we" value="unknown" />
+  <item name="river" value="unknown" />
+  <item name="mood" value="unknown"/>
 </root>

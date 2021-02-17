@@ -34,6 +34,26 @@
           <e p="Hitting.cs" t="Include" />
         </e>
         <e p="InteractCanvas.cs" t="Include" />
+        <e p="InvokeMainThread" t="Include">
+          <e p="UnityMainThreadDispatcher.cs" t="Include" />
+        </e>
+        <e p="LoadedManagment.cs" t="Include" />
+        <e p="Menu" t="Include">
+          <e p="CheckCompatibility.cs" t="Include" />
+          <e p="ExitGame" t="Include">
+            <e p="ExitGameController.cs" t="Include" />
+          </e>
+          <e p="MenuService.cs" t="Include" />
+          <e p="NewGame" t="Include">
+            <e p="MenuInteraction.cs" t="Include" />
+            <e p="NewGameController.cs" t="Include" />
+          </e>
+          <e p="PauseMenu" t="Include">
+            <e p="PauseMenuScript.cs" t="Include" />
+          </e>
+          <e p="SceneLoader.cs" t="Include" />
+          <e p="XMLWorker.cs" t="Include" />
+        </e>
         <e p="Plugins" t="Include">
           <e p="GitHub" t="Include">
             <e p="Editor" t="Include">
@@ -48,7 +68,6 @@
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
               <e p="MenuSceneLoader.cs" t="Include" />
-              <e p="PauseMenu.cs" t="Include" />
               <e p="SceneAndURLLoader.cs" t="Include" />
             </e>
           </e>

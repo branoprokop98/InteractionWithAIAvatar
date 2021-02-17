@@ -50,17 +50,21 @@ namespace AIML.ContextWindowInput
                             break;
                         default:
                             continue;
-                            ;
                     }
                 }
+
                 addSentenceToList();
             }
+
             addTo2DList();
         }
 
         private void addSentenceToList()
         {
-            sentences.Add(new AIMLStructure(){Pattern = aimlStructure.Pattern});
+            if (!aimlStructure.Pattern.Contains("*") && !aimlStructure.Pattern.Contains("_"))
+            {
+                sentences.Add(new AIMLStructure() {Pattern = aimlStructure.Pattern});
+            }
         }
 
         public void addTo2DList()
