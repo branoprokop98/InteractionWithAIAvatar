@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Globalization;
 using AIMLbot;
 using SpeechLib;
 using UnityEngine.UI;
@@ -22,18 +23,7 @@ namespace AIML
         private Process process;
         private TaskCompletionSource<bool> eventHandled;
         private Animator animator;
-
-        private static readonly int Sad = Animator.StringToHash("Sad");
-
-        private static readonly int SadTalk = Animator.StringToHash("SadTalk");
-
-        private static readonly int Happy = Animator.StringToHash("Happy");
-
-        private static readonly int HappyTalk = Animator.StringToHash("HappyTalk");
-
-        private static readonly int Idle = Animator.StringToHash("Idle");
-
-        private static readonly int IdleTalk = Animator.StringToHash("IdleTalk");
+        private float myTime;
         //private SpeechOut _speechOut;
 
         public Aiml()
@@ -46,6 +36,7 @@ namespace AIML
             AI.loadSettings(); //It will Load Settings from its Config Folder with this code
             AI.loadAIMLFromFiles(); //With this Code It Will Load AIML Files from its AIML Folder
             mood = 50;
+            myTime = 0f;
         }
 
         public void botInput(string text, Text outText, Text errorText, Text moodText, Animator animator)
@@ -63,66 +54,88 @@ namespace AIML
 
         private void setMoodAnimation()
         {
+            AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
+            AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
+            this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
+            Debug.LogWarning("Mood: " + myTime.ToString(CultureInfo.InvariantCulture));
             if (this.mood <= 30)
             {
-                animator.SetBool(Idle, false);
-                animator.SetBool(IdleTalk, false);
-                animator.SetBool(Happy, false);
-                animator.SetBool(HappyTalk, false);
-                animator.SetBool(SadTalk, false);
-                animator.SetBool(Sad, true);
+                animator.PlayInFixedTime("SadIdle", 0, this.myTime);
+                // animator.SetBool(Idle, false);
+                // animator.SetBool(IdleTalk, false);
+                // animator.SetBool(Happy, false);
+                // animator.SetBool(HappyTalk, false);
+                // animator.SetBool(SadTalk, false);
+                // animator.SetBool(Sad, true);
             }
             else if (this.mood > 30 && this.mood <= 70)
             {
-                animator.SetBool("Happy", false);
-                animator.SetBool("HappyTalk", false);
-                animator.SetBool("SadTalk", false);
-                animator.SetBool("Sad", false);
-                animator.SetBool("IdleTalk", false);
-                animator.SetBool("Idle", true);
+                animator.PlayInFixedTime("Idle", 0, this.myTime);
+                // animator.SetBool(Happy, false);
+                // animator.SetBool(HappyTalk, false);
+                // animator.SetBool(SadTalk, false);
+                // animator.SetBool(Sad, false);
+                // animator.SetBool(IdleTalk, false);
+                // animator.SetBool(Idle, true);
             }
 
             else if (this.mood > 70)
             {
-                animator.SetBool(SadTalk, false);
-                animator.SetBool(Sad, false);
-                animator.SetBool(IdleTalk, false);
-                animator.SetBool(Idle, false);
-                animator.SetBool(HappyTalk, false);
-                animator.SetBool(Happy, true);
+                animator.PlayInFixedTime("HappyIdle", 0, this.myTime);
+                // animator.SetBool(SadTalk, false);
+                // animator.SetBool(Sad, false);
+                // animator.SetBool(IdleTalk, false);
+                // animator.SetBool(Idle, false);
+                // animator.SetBool(HappyTalk, false);
+                // animator.SetBool(Happy, true);
             }
+            // AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
+            // AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
+            // this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
+            // Debug.LogWarning("Mood: " + myTime.ToString(CultureInfo.InvariantCulture));
         }
 
         private void setTalkAnimation()
         {
+            AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
+            AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
+            this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
+            Debug.LogWarning("Talk: " + myTime.ToString(CultureInfo.InvariantCulture) + "Name of clip: " + myAnimatorClip[0].clip.name);
             if (this.mood <= 30)
             {
-                animator.SetBool(Idle, false);
-                animator.SetBool(IdleTalk, false);
-                animator.SetBool(Happy, false);
-                animator.SetBool(HappyTalk, false);
-                animator.SetBool(Sad, false);
-                animator.SetBool(SadTalk, true);
+                animator.PlayInFixedTime("SadTalk", 0, this.myTime);
+                // animator.SetBool(Idle, false);
+                // animator.SetBool(IdleTalk, false);
+                // animator.SetBool(Happy, false);
+                // animator.SetBool(HappyTalk, false);
+                // animator.SetBool(Sad, false);
+                // animator.SetBool(SadTalk, true);
             }
             else if (this.mood > 30 && this.mood <= 70)
             {
-                animator.SetBool(Happy, false);
-                animator.SetBool(HappyTalk, false);
-                animator.SetBool(SadTalk, false);
-                animator.SetBool(Sad, false);
-                animator.SetBool(Idle, false);
-                animator.SetBool(IdleTalk, true);
+                animator.PlayInFixedTime("IdleTalk", 0, this.myTime);
+                // animator.SetBool(Happy, false);
+                // animator.SetBool(HappyTalk, false);
+                // animator.SetBool(SadTalk, false);
+                // animator.SetBool(Sad, false);
+                // animator.SetBool(Idle, false);
+                // animator.SetBool(IdleTalk, true);
             }
 
             else if (this.mood > 70)
             {
-                animator.SetBool(SadTalk, false);
-                animator.SetBool(Sad, false);
-                animator.SetBool(IdleTalk, false);
-                animator.SetBool(Idle, false);
-                animator.SetBool(Happy, false);
-                animator.SetBool(HappyTalk, true);
+                animator.PlayInFixedTime("HappyTalk", 0, this.myTime);
+                // animator.SetBool(SadTalk, false);
+                // animator.SetBool(Sad, false);
+                // animator.SetBool(IdleTalk, false);
+                // animator.SetBool(Idle, false);
+                // animator.SetBool(Happy, false);
+                // animator.SetBool(HappyTalk, true);
             }
+            // AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
+            // AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
+            // this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
+            // Debug.LogWarning("Talk: " + myTime.ToString(CultureInfo.InvariantCulture) + "Name of clip: " + myAnimatorClip[0].clip.name);
         }
 
         private void run_cmd(string output, Text errorText)
