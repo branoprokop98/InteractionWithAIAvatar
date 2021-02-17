@@ -20,29 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2caa3a6-7e1d-4816-a5e4-6da66786eeeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/CheckCompatibility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/CheckCompatibility.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Menu/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/SaveLoadGame.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/SaveLoadGame/SaveGameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Menu/SaveLoadGame/SaveGameController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Interaction With AI Avatar/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AIML/Aiml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/Aiml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Avatars/Joe/joeNomalAnimIdle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Avatars/Joe/joeNomalAnimIdle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Avatars/Lousie/lousieNormalAnimIdle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Avatars/Lousie/lousieNormalAnimIdle.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Interaction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interaction/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interaction/ReflectionProbe-0.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/LoadGame.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/MenuService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +73,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/14/0c58f934/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Menu/SaveLoadGame/LoadGameFromSave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/74/21de41a0/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -98,10 +89,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/75/98fed026/DictationRecognizer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/30/2dd5d8e8/Path.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Menu/SaveLoadGame/SaveGameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7.3.1/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/049BE2AF-E36F-487E-B06E-F49D51A0BAB6/51/3550f586/Animator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/2019.4.10f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/0b/d1677a14/Delegate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/b9/6a6f5825/File.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -116,16 +109,11 @@
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextLayer.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/AI_Bot.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadTopics.cs" />
-      <option value="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/XMLWorker.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/NewGame/SceneSetup.cs" />
-      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/SceneLoader.cs" />
-      <option value="$PROJECT_DIR$/Assets/LoadedManagment.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/ExitGame/ExitGameController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Menu/MenuService.cs" />
-      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/LoadSentences.cs" />
       <option value="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" />
@@ -133,7 +121,6 @@
       <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" />
       <option value="$PROJECT_DIR$/Assets/CharacterScripts/Hitting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpeechCompatibility.cs" />
-      <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" />
       <option value="$PROJECT_DIR$/Assets/InteractCanvas.cs" />
       <option value="$PROJECT_DIR$/Assets/CheckCompatibility.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu/CheckCompatibility.cs" />
@@ -141,7 +128,16 @@
       <option value="$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowSentence.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/SpeechInput/SpeechInput.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/KeyboardInput/AI_Bot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/SaveLoadGame/SaveGame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/MenuService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/SaveLoadGame/LoadGameFromSave.cs" />
       <option value="$PROJECT_DIR$/Assets/AIML/Aiml.cs" />
+      <option value="$PROJECT_DIR$/Assets/LoadedManagment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/StreamingAssets/Menu.xml" />
+      <option value="$PROJECT_DIR$/Assets/Menu/NewGame/MenuInteraction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/PauseMenu/PauseMenuScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu/SaveLoadGame/SaveGameController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mjvvJ2tvCvq75dyHzFRMGQ9beV" />
@@ -176,10 +172,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15384">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10076">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="15384" />
+      <option name="pid" value="10076" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -223,7 +219,9 @@
       <workItem from="1613150347663" duration="8000" />
       <workItem from="1613218071927" duration="5107000" />
       <workItem from="1613305229140" duration="3377000" />
-      <workItem from="1613401409251" duration="5360000" />
+      <workItem from="1613401409251" duration="12381000" />
+      <workItem from="1613555479631" duration="4506000" />
+      <workItem from="1613575838718" duration="3812000" />
     </task>
     <servers />
   </component>
@@ -342,69 +340,134 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/AIML/ContextWindowInput/ContextWindowService.cs</url>
-          <line>25</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\ContextWindowInput\ContextWindowService.cs" initialLine="23" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="881" />
-            </startOffsets>
-            <endOffsets>
-              <option value="945" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
-          <line>145</line>
+          <line>158</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="65" containingFunctionPresentation="method 'run_cmd'">
             <startOffsets>
-              <option value="5644" />
+              <option value="7339" />
             </startOffsets>
             <endOffsets>
-              <option value="5660" />
+              <option value="7355" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
-          <line>65</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="65" containingFunctionPresentation="method 'setMoodAnimation'">
-            <startOffsets>
-              <option value="2323" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2343" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
-          <line>97</line>
-          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="97" containingFunctionPresentation="method 'setTalkAnimation'">
-            <startOffsets>
-              <option value="3486" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3506" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
-          <line>159</line>
+          <line>172</line>
           <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="159" containingFunctionPresentation="method 'myProcess_Exited'">
             <startOffsets>
-              <option value="6064" />
+              <option value="7759" />
             </startOffsets>
             <endOffsets>
-              <option value="6127" />
+              <option value="7822" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
+          <line>91</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="93" containingFunctionPresentation="method 'setMoodAnimation'">
+            <startOffsets>
+              <option value="3645" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3728" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
+          <line>72</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="79" containingFunctionPresentation="method 'setMoodAnimation'">
+            <startOffsets>
+              <option value="2810" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2859" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
+          <line>115</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="116" containingFunctionPresentation="method 'setTalkAnimation'">
+            <startOffsets>
+              <option value="5008" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5061" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/AIML/Aiml.cs</url>
+          <line>134</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\AIML\Aiml.cs" initialLine="134" containingFunctionPresentation="method 'setTalkAnimation'">
+            <startOffsets>
+              <option value="5847" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5930" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/SaveLoadGame/LoadGameFromSave.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\SaveLoadGame\LoadGameFromSave.cs" initialLine="19" containingFunctionPresentation="method 'findSaves'">
+            <startOffsets>
+              <option value="547" />
+            </startOffsets>
+            <endOffsets>
+              <option value="617" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/NewGame/NewGameController.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\NewGame\NewGameController.cs" initialLine="41" containingFunctionPresentation="method 'updateXml'">
+            <startOffsets>
+              <option value="1122" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1132" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/SaveLoadGame/SaveGameController.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\SaveLoadGame\SaveGameController.cs" initialLine="27" containingFunctionPresentation="method 'saveGame'">
+            <startOffsets>
+              <option value="809" />
+            </startOffsets>
+            <endOffsets>
+              <option value="886" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Menu/SaveLoadGame/SaveGameController.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar\Assets\Menu\SaveLoadGame\SaveGameController.cs" initialLine="17" containingFunctionPresentation="constructor 'SaveGameController'">
+            <startOffsets>
+              <option value="641" />
+            </startOffsets>
+            <endOffsets>
+              <option value="710" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
