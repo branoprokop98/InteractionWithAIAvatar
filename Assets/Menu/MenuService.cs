@@ -9,6 +9,7 @@ namespace Menu
     {
         [SerializeField] private Canvas mainMenuCanvas;
         [SerializeField] private Canvas newGameCanvas;
+        [SerializeField] private Canvas loadGameCanvas;
         private NewGameController newGame;
         private ExitGameController exitGameController;
 
@@ -20,18 +21,27 @@ namespace Menu
             exitGameController = new ExitGameController();
             mainMenuCanvas.enabled = true;
             newGameCanvas.enabled = false;
+            loadGameCanvas.enabled = false;
         }
 
         public void getNewGameCanvas()
         {
             mainMenuCanvas.enabled = false;
             newGameCanvas.enabled = true;
+            loadGameCanvas.enabled = false;
         }
 
         public void getMainMenuCanvas()
         {
             mainMenuCanvas.enabled = true;
             newGameCanvas.enabled = false;
+            loadGameCanvas.enabled = false;
+        }
+        public void getLoadGameCanvas()
+        {
+            mainMenuCanvas.enabled = false;
+            newGameCanvas.enabled = false;
+            loadGameCanvas.enabled = true;
         }
 
         public void onStartGame() => newGame.updateXml();

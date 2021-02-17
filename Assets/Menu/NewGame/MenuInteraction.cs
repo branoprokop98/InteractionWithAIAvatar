@@ -1,4 +1,7 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Xml.Serialization;
+using AIMLbot.AIMLTagHandlers;
+using UnityEngine.Rendering;
 
 namespace Menu.NewGame
 {
@@ -8,13 +11,15 @@ namespace Menu.NewGame
         [XmlElement("newGame")]
         public NewGame newGame { get; set; }
 
-        [XmlElement("systemInfo")]
-        public SystemInfo sysInfo { get; set; }
+        [XmlElement("save-info")]
+        public SaveInfo saveInfo { get; set; }
 
         public MenuInteraction()
         {
             newGame = new NewGame();
+            saveInfo = new SaveInfo();
         }
+
     }
 
     public class NewGame
@@ -24,8 +29,8 @@ namespace Menu.NewGame
         [XmlElement("name")] public string name{ get; set; }
     }
 
-    public class SystemInfo
+    public class SaveInfo
     {
-        [XmlElement("operatingSystem")] public string operatingSystem{ get; set; }
+        [XmlElement("date-time")] public string DateTime{ get; set; }
     }
 }
