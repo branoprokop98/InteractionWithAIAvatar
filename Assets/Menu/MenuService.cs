@@ -10,6 +10,7 @@ namespace Menu
         [SerializeField] private Canvas mainMenuCanvas;
         [SerializeField] private Canvas newGameCanvas;
         [SerializeField] private Canvas loadGameCanvas;
+        [SerializeField] private Canvas settingsGameCanvas;
         private NewGameController newGame;
         private ExitGameController exitGameController;
 
@@ -22,6 +23,7 @@ namespace Menu
             mainMenuCanvas.enabled = true;
             newGameCanvas.enabled = false;
             loadGameCanvas.enabled = false;
+            settingsGameCanvas.enabled = false;
         }
 
         public void getNewGameCanvas()
@@ -29,6 +31,7 @@ namespace Menu
             mainMenuCanvas.enabled = false;
             newGameCanvas.enabled = true;
             loadGameCanvas.enabled = false;
+            settingsGameCanvas.enabled = false;
         }
 
         public void getMainMenuCanvas()
@@ -36,12 +39,22 @@ namespace Menu
             mainMenuCanvas.enabled = true;
             newGameCanvas.enabled = false;
             loadGameCanvas.enabled = false;
+            settingsGameCanvas.enabled = false;
         }
         public void getLoadGameCanvas()
         {
             mainMenuCanvas.enabled = false;
             newGameCanvas.enabled = false;
             loadGameCanvas.enabled = true;
+            settingsGameCanvas.enabled = false;
+        }
+
+        public void getGameSettingsCanvas()
+        {
+            mainMenuCanvas.enabled = false;
+            newGameCanvas.enabled = false;
+            loadGameCanvas.enabled = false;
+            settingsGameCanvas.enabled = true;
         }
 
         public void onStartGame() => newGame.updateXml();
