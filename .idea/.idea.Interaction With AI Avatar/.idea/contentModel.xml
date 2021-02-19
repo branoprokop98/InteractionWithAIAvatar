@@ -56,6 +56,10 @@
             <e p="SaveGameController.cs" t="Include" />
           </e>
           <e p="SceneLoader.cs" t="Include" />
+          <e p="SettingsGame" t="Include">
+            <e p="Settings.cs" t="Include" />
+            <e p="SettingsMenu.cs" t="Include" />
+          </e>
           <e p="XMLWorker.cs" t="Include" />
         </e>
         <e p="Plugins" t="Include">
@@ -336,7 +340,9 @@
             <e p="Save0.xml" t="Include" />
             <e p="Save1.xml" t="Include" />
             <e p="Save2.xml" t="Include" />
+            <e p="Save3.xml" t="Include" />
           </e>
+          <e p="Settings.xml" t="Include" />
           <e p="Topics.xml" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
