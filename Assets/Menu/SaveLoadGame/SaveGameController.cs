@@ -25,13 +25,26 @@ namespace Menu.SaveLoadGame
 
         public void saveGame()
         {
+            bool saved = false;
             menuInteraction.saveInfo.DateTime = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
             XMLWorker.serialize(menuInteraction, fileToSave);
             if (File.Exists(savePath))
             {
                 countFileName();
             }
-            File.Copy(fileToSave, savePath);
+
+            while (!saved)
+            {
+                try
+                {
+                    File.Copy(fileToSave, savePath);
+                    saved = true;
+                }
+                catch
+                {
+                    countFileName();
+                }
+            }
         }
 
         private void countFileName()

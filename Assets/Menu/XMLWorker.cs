@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Xml.Serialization;
 
 namespace Menu
@@ -17,9 +18,18 @@ namespace Menu
         {
             XmlSerializer xml = new XmlSerializer(typeof(T));
             StreamReader reader = new StreamReader(path);
-            T deserialize = (T) xml.Deserialize(reader.BaseStream);
-            reader.Close();
-            return deserialize;
+            try
+            {
+                T deserialize = (T) xml.Deserialize(reader.BaseStream);
+                reader.Close();
+                return deserialize;
+            }
+            catch (Exception e)
+            {
+                reader.Close();
+            }
+
+            return default(T);
         }
     }
 }
