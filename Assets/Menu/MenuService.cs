@@ -65,6 +65,9 @@ namespace Menu
             button.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
         }
 
+        public void setName() => newGame.setName();
+        public void setGender() => newGame.setGender();
+
         public void OnHoverExit(Button button)
         {
             button.transform.localScale += new Vector3(-0.1f, -0.1f, -0.1f);
