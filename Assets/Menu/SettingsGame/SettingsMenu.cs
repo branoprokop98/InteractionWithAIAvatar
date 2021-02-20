@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ namespace Menu.SettingsGame
         [SerializeField] private Dropdown resolutionDropdown;
         [SerializeField] private Dropdown qualityDropdown;
         [SerializeField] private Toggle fullscreenToggle;
+        [SerializeField] private Slider volumeSlider;
+        [SerializeField] private Text volumeValue;
         private Settings settings;
         private string pathToSettings;
         private List<String> options;
@@ -43,7 +46,7 @@ namespace Menu.SettingsGame
 
             if (settings == null)
             {
-                saveSettings(currentResolutionIndex, 2, true);
+                saveSettings(currentResolutionIndex, 2, true, (int)volumeSlider.value);
                 setValuesInsettings();
             }
             else
@@ -61,6 +64,9 @@ namespace Menu.SettingsGame
             qualityDropdown.RefreshShownValue();
 
             fullscreenToggle.isOn = settings.fullscreen;
+
+            volumeSlider.value = settings.volume;
+            volumeValue.text = volumeSlider.value.ToString(CultureInfo.InvariantCulture);
         }
 
         private void getListOfResolutions()
@@ -93,12 +99,13 @@ namespace Menu.SettingsGame
             Screen.fullScreen = isFullscreen;
         }
 
-        public void saveSettings(int resolution, int quality, bool isFullscreen)
+        public void saveSettings(int resolution, int quality, bool isFullscreen, int volume)
         {
             settings = new Settings();
             settings.resolutions = resolution;
             settings.levelOfDetails = quality;
             settings.fullscreen = isFullscreen;
+            settings.volume = volume;
             XMLWorker.serialize(settings, pathToSettings);
         }
 
@@ -107,7 +114,13 @@ namespace Menu.SettingsGame
             settings.fullscreen = fullscreenToggle.isOn;
             settings.resolutions = resolutionDropdown.value;
             settings.levelOfDetails = qualityDropdown.value;
+            settings.volume = (int)volumeSlider.value;
             XMLWorker.serialize(settings, pathToSettings);
+        }
+
+        public void setVolume()
+        {
+            volumeValue.text = Math.Round(volumeSlider.value, MidpointRounding.ToEven).ToString(CultureInfo.InvariantCulture);
         }
     }
 }

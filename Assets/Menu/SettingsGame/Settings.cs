@@ -8,5 +8,6 @@ namespace Menu.SettingsGame
         [XmlElement("details")] public int levelOfDetails { get; set; }
         [XmlElement("resolution")] public int resolutions { get; set; }
         [XmlElement("fullscreen")] public bool fullscreen { get; set; }
+        [XmlElement("volume")] public int volume { get; set; }
     }
 }
