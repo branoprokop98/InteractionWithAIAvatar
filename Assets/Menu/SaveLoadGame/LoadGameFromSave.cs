@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using AIML;
 using Menu;
 using Menu.NewGame;
 using UnityEngine;
@@ -14,7 +16,7 @@ public class LoadGameFromSave : MonoBehaviour
     private string destinationFile;
     //private string sourceFile;
     private string backupFile;
-
+    private string pathToConfig;
 
     private List<string> saves;
     // Start is called before the first frame update
@@ -25,6 +27,7 @@ public class LoadGameFromSave : MonoBehaviour
         saveGameLocation = Path.Combine(Application.streamingAssetsPath, "Save\\");
         destinationFile = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
         backupFile = Path.Combine(Application.streamingAssetsPath, "Menu.xml.bac");
+        pathToConfig = Path.Combine(Environment.CurrentDirectory, Path.Combine("config", "Settings.xml"));
         loadSaveButtons();
         findSaves();
     }
@@ -50,13 +53,20 @@ public class LoadGameFromSave : MonoBehaviour
     private void replaceMenuForSave(string sourceFileName, int i)
     {
         File.Copy(sourceFileName, destinationFile, true);
+        updateConfig();
         Debug.LogWarning("Buttin number: " + i);
         //File.Replace(sourceFile, destinationFile, backupFile);
     }
 
-    private void instantiateButton()
+    private void updateConfig()
     {
-
+        MenuInteraction menuInteraction = XMLWorker.deserialize<MenuInteraction>(destinationFile);
+        AimlSettings aimlSettings = XMLWorker.deserialize<AimlSettings>(pathToConfig);
+        aimlSettings.settings.Find(x => x.nameOfAttribute == "name").valueOfAttribute =
+            menuInteraction.newGame.name;
+        aimlSettings.settings.Find(x => x.nameOfAttribute == "gender").valueOfAttribute =
+            menuInteraction.newGame.gender == 0 ? "Male" : "Female";
+        XMLWorker.serialize(aimlSettings, pathToConfig);
     }
 
     private void loadSaveButtons()
