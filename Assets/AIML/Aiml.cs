@@ -8,6 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Menu;
 using Menu.NewGame;
+using Menu.SettingsGame;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
@@ -24,11 +25,13 @@ namespace AIML
         private TaskCompletionSource<bool> eventHandled;
         private Animator animator;
         private float myTime;
+        private Settings settings;
         //private SpeechOut _speechOut;
 
         public Aiml()
         {
             string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
+            string pathToSettings = Path.Combine(Application.streamingAssetsPath, "Settings.xml");
             menuInteraction = XMLWorker.deserialize<MenuInteraction>(path);
             AI = new Bot();
             myuser = new User("Username Here", AI);
@@ -37,6 +40,7 @@ namespace AIML
             AI.loadAIMLFromFiles(); //With this Code It Will Load AIML Files from its AIML Folder
             mood = 50;
             myTime = 0f;
+            settings = XMLWorker.deserialize<Settings>(pathToSettings);
         }
 
         public void botInput(string text, Text outText, Text errorText, Text moodText, Animator animator)
@@ -149,6 +153,7 @@ namespace AIML
             //process.StartInfo.FileName = Environment.CurrentDirectory + @"\Assets\StreamingAssets" + @"\TextToSpeech.exe";
             process.StartInfo.FileName = getGender();
             //process.StartInfo.FileName = Path.Combine(Application.dataPath + @"\StreamingAssets" + @"\TextToSpeechMale.exe");
+            output = output.Insert(0, settings.volume + " ");
             process.StartInfo.Arguments = output;
             process.EnableRaisingEvents = true;
             process.Exited += new EventHandler(myProcess_Exited);
