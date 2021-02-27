@@ -18,6 +18,7 @@ namespace Menu.NewGame
             menuInteraction = new MenuInteraction();
             pathToConfig = Path.Combine(Environment.CurrentDirectory, Path.Combine("config", "Settings.xml"));
             this.canvas = canvas;
+            menuInteraction.saveInfo.mood = -1;
         }
 
         public void setGender()
