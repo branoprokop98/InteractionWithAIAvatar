@@ -1,4 +1,6 @@
-﻿using Menu.ExitGame;
+﻿using System.IO;
+using System.Xml;
+using Menu.ExitGame;
 using Menu.NewGame;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +26,11 @@ namespace Menu
             newGameCanvas.enabled = false;
             loadGameCanvas.enabled = false;
             settingsGameCanvas.enabled = false;
+            string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
+            MenuInteraction menuInteraction = XMLWorker.deserialize<MenuInteraction>(path);
+            menuInteraction.saveInfo.mood = -1;
+            menuInteraction.dialogueHistories.Clear();
+            XMLWorker.serialize(menuInteraction, path);
         }
 
         public void getNewGameCanvas()
