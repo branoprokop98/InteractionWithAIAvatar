@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <mainMenu xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <newGame>
-    <gender>1</gender>
+    <gender>0</gender>
     <inputType>0</inputType>
-    <name>Katarina</name>
   </newGame>
   <save-info>
-    <date-time>20.02.2021 16:16</date-time>
+    <mood>-1</mood>
   </save-info>
 </mainMenu>
