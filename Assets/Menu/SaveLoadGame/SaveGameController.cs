@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using AIML;
 using Menu.NewGame;
 using UnityEngine;
 
@@ -27,6 +28,11 @@ namespace Menu.SaveLoadGame
         {
             bool saved = false;
             menuInteraction.saveInfo.DateTime = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
+            foreach (DialogueHistory dialogueHistory in Aiml.dialogueHistories)
+            {
+                menuInteraction.dialogueHistories.Add(dialogueHistory);
+            }
+            menuInteraction.saveInfo.mood = Aiml.mood;
             XMLWorker.serialize(menuInteraction, fileToSave);
             if (File.Exists(savePath))
             {
