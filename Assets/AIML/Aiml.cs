@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using AIMLbot;
@@ -20,16 +21,18 @@ namespace AIML
         private User myuser;
         private string text;
         private MenuInteraction menuInteraction;
-        private int mood;
+        public static int mood { get; set; }
         private Process process;
         private TaskCompletionSource<bool> eventHandled;
         private Animator animator;
         private float myTime;
         private Settings settings;
+        public static List<DialogueHistory> dialogueHistories { get; set; }
         //private SpeechOut _speechOut;
 
         public Aiml()
         {
+            dialogueHistories = new List<DialogueHistory>();
             string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
             string pathToSettings = Path.Combine(Application.streamingAssetsPath, "Settings.xml");
             menuInteraction = XMLWorker.deserialize<MenuInteraction>(path);
@@ -38,7 +41,7 @@ namespace AIML
             //_speechOut = new SpeechOut();
             AI.loadSettings(); //It will Load Settings from its Config Folder with this code
             AI.loadAIMLFromFiles(); //With this Code It Will Load AIML Files from its AIML Folder
-            mood = 50;
+            setMood();
             myTime = 0f;
             settings = XMLWorker.deserialize<Settings>(pathToSettings);
         }
@@ -54,6 +57,27 @@ namespace AIML
             calculateMood(moodText);
             setMoodAnimation();
             run_cmd(output, errorText);
+            storeDialogue(text, output);
+        }
+
+        private void storeDialogue(string input, string output)
+        {
+            DialogueHistory dialogueHistory = new DialogueHistory();
+            dialogueHistory.input = input;
+            dialogueHistory.output = output;
+            dialogueHistories.Add(dialogueHistory);
+        }
+
+        private void setMood()
+        {
+            if (menuInteraction.saveInfo.mood == -1)
+            {
+                mood = 50;
+            }
+            else
+            {
+                mood = menuInteraction.saveInfo.mood;
+            }
         }
 
         private void setMoodAnimation()
@@ -62,7 +86,7 @@ namespace AIML
             AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
             this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
             Debug.LogWarning("Mood: " + myTime.ToString(CultureInfo.InvariantCulture));
-            if (this.mood <= 30)
+            if (mood <= 30)
             {
                 animator.PlayInFixedTime("SadIdle", 0, this.myTime);
                 // animator.SetBool(Idle, false);
@@ -72,7 +96,7 @@ namespace AIML
                 // animator.SetBool(SadTalk, false);
                 // animator.SetBool(Sad, true);
             }
-            else if (this.mood > 30 && this.mood <= 70)
+            else if (mood > 30 && mood <= 70)
             {
                 animator.PlayInFixedTime("Idle", 0, this.myTime);
                 // animator.SetBool(Happy, false);
@@ -83,7 +107,7 @@ namespace AIML
                 // animator.SetBool(Idle, true);
             }
 
-            else if (this.mood > 70)
+            else if (mood > 70)
             {
                 animator.PlayInFixedTime("HappyIdle", 0, this.myTime);
                 // animator.SetBool(SadTalk, false);
@@ -105,7 +129,7 @@ namespace AIML
             AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
             this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
             Debug.LogWarning("Talk: " + myTime.ToString(CultureInfo.InvariantCulture) + "Name of clip: " + myAnimatorClip[0].clip.name);
-            if (this.mood <= 30)
+            if (mood <= 30)
             {
                 animator.PlayInFixedTime("SadTalk", 0, this.myTime);
                 // animator.SetBool(Idle, false);
@@ -115,7 +139,7 @@ namespace AIML
                 // animator.SetBool(Sad, false);
                 // animator.SetBool(SadTalk, true);
             }
-            else if (this.mood > 30 && this.mood <= 70)
+            else if (mood > 30 && mood <= 70)
             {
                 animator.PlayInFixedTime("IdleTalk", 0, this.myTime);
                 // animator.SetBool(Happy, false);
@@ -126,7 +150,7 @@ namespace AIML
                 // animator.SetBool(IdleTalk, true);
             }
 
-            else if (this.mood > 70)
+            else if (mood > 70)
             {
                 animator.PlayInFixedTime("HappyTalk", 0, this.myTime);
                 // animator.SetBool(SadTalk, false);
@@ -205,13 +229,13 @@ namespace AIML
                 moodOfSentence = "0";
             }
 
-            int moodTemp = this.mood;
+            int moodTemp = mood;
             moodTemp += int.Parse(moodOfSentence);
             if (moodTemp > 0 && moodTemp <= 100)
             {
-                this.mood = moodTemp;
+                mood = moodTemp;
             }
-            moodText.text = this.mood.ToString();
+            moodText.text = mood.ToString();
         }
 
 
