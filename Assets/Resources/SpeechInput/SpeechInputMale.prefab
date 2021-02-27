@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 7098117361668167942}
   - component: {fileID: 7098117361668167941}
   - component: {fileID: 7098117361668167940}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,7 +847,7 @@ GameObject:
   - component: {fileID: 8830658293943400119}
   - component: {fileID: 8830658293943400118}
   - component: {fileID: 8830658293943400113}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ErrorCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
