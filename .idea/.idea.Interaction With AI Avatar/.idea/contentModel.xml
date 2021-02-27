@@ -340,10 +340,6 @@
           <e p="Save" t="Include">
             <e p="Save0.xml" t="Include" />
             <e p="Save1.xml" t="Include" />
-            <e p="Save2.xml" t="Include" />
-            <e p="Save3.xml" t="Include" />
-            <e p="Save4.xml" t="Include" />
-            <e p="Save5.xml" t="Include" />
           </e>
           <e p="Settings.xml" t="Include" />
           <e p="Topics.xml" t="Include" />
