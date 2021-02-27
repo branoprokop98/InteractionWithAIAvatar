@@ -59,7 +59,7 @@ namespace AIML.KeyboardInput
             _rigidbody = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<Rigidbody>();
             //_rigidbody = player.GetComponent<Rigidbody>();
             canvas.enabled = false;
-            _hiting = new Hiting(2);
+            _hiting = new Hiting(60);
             inDialog = false;
             errorText = errorText.GetComponent<Text>();
             errorText.enabled = false;

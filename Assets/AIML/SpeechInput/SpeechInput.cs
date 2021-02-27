@@ -28,7 +28,7 @@ namespace AIML.SpeechInput
         {
             aiml = new Aiml();
             interacting = false;
-            hitting = new Hiting(2);
+            hitting = new Hiting(60);
             interactCanvas.enabled = false;
             errorText = errorText.GetComponent<Text>();
             animator = this.GetComponent<Animator>();

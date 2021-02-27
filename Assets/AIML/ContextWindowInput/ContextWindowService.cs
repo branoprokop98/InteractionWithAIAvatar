@@ -26,7 +26,7 @@ namespace AIML.ContextWindowInput
             contextSentence = new ContextWindowSentence(canvas, textCanvas);
             animator = this.gameObject.GetComponent<Animator>();
             canvas.enabled = false;
-            hitting = new Hiting();
+            hitting = new Hiting(60);
             interacting = false;
             actualLayerOfTopic = 0;
             actualLayerOfSentences = 0;
