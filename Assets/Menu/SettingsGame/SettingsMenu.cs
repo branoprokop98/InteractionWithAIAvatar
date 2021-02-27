@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using Menu.NewGame;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,7 @@ namespace Menu.SettingsGame
         private string pathToSettings;
         private List<String> options;
         private int currentResolutionIndex;
+        private MenuInteraction menuInteraction;
 
         private Resolution[] resolutions;
 
@@ -44,18 +46,28 @@ namespace Menu.SettingsGame
         {
             settings = XMLWorker.deserialize<Settings>(pathToSettings);
 
-            if (settings == null)
+            if (settings != null)
             {
-                saveSettings(currentResolutionIndex, 2, true, (int)volumeSlider.value);
-                setValuesInsettings();
+                if (settings.speechOutputSupport)
+                {
+                    saveSettings(currentResolutionIndex, settings.levelOfDetails, settings.fullscreen, settings.volume, true);
+                    volumeSlider.interactable = true;
+                    setValuesInSettings();
+                }
+                else
+                {
+                    saveSettings(currentResolutionIndex, settings.levelOfDetails, settings.fullscreen, settings.volume, false);
+                    volumeSlider.interactable = false;
+                    setValuesInSettings();
+                }
             }
             else
             {
-                setValuesInsettings();
+                setValuesInSettings();
             }
         }
 
-        private void setValuesInsettings()
+        private void setValuesInSettings()
         {
             resolutionDropdown.value = settings.resolutions;
             resolutionDropdown.RefreshShownValue();
@@ -99,13 +111,14 @@ namespace Menu.SettingsGame
             Screen.fullScreen = isFullscreen;
         }
 
-        public void saveSettings(int resolution, int quality, bool isFullscreen, int volume)
+        public void saveSettings(int resolution, int quality, bool isFullscreen, int volume, bool speechSupport)
         {
             settings = new Settings();
             settings.resolutions = resolution;
             settings.levelOfDetails = quality;
             settings.fullscreen = isFullscreen;
             settings.volume = volume;
+            settings.speechOutputSupport = speechSupport;
             XMLWorker.serialize(settings, pathToSettings);
         }
 
