@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 using AIMLbot.AIMLTagHandlers;
 using UnityEngine.Rendering;
@@ -13,6 +14,9 @@ namespace Menu.NewGame
 
         [XmlElement("save-info")]
         public SaveInfo saveInfo { get; set; }
+
+        [XmlElement("dialogue")]
+        public List<DialogueHistory> dialogueHistories { get; set; }
 
         public MenuInteraction()
         {
@@ -32,5 +36,15 @@ namespace Menu.NewGame
     public class SaveInfo
     {
         [XmlElement("date-time")] public string DateTime{ get; set; }
+        [XmlElement("mood")] public int mood { get; set; }
+    }
+
+    public class DialogueHistory
+    {
+        [XmlElement("input")]
+        public string input { get; set; }
+
+        [XmlElement("output")]
+        public string output { get; set; }
     }
 }
