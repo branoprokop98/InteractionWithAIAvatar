@@ -25,6 +25,7 @@ public class SpeechCompatibility : MonoBehaviour
     private TaskCompletionSource<bool> eventHandled;
     private Settings settings;
     private string pathToSettings;
+    public static bool textToSpeechCompatibility;
 
     // Start is called before the first frame update
     private void Awake()
@@ -44,11 +45,13 @@ public class SpeechCompatibility : MonoBehaviour
             };
             dictationRecognizer.Stop();
             dictationRecognizer.Dispose();
+            textToSpeechCompatibility = true;
             runProcess();
         }
         catch (Exception e)
         {
             speechCanvas.enabled = true;
+            textToSpeechCompatibility = false;
             ShowCursor.mouseVisible();
         }
     }
