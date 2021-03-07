@@ -28,7 +28,7 @@ namespace Menu
             {
                 reader.Close();
             }
-
+            reader.Close();
             return default(T);
         }
     }
