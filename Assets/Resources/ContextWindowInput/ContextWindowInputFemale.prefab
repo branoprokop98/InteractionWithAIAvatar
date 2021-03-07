@@ -48,6 +48,7 @@ MonoBehaviour:
   canvas: {fileID: 2848767485178446228}
   interactObject: {fileID: 2363854142932367509}
   textCanvas: {fileID: 2848767486236698775}
+  errorText: {fileID: 2848767485140389252}
 --- !u!1 &2848767484372475900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,6 +2152,7 @@ MonoBehaviour:
   canvas: {fileID: 2848767485178446228}
   interactObject: {fileID: 2848767485364518571}
   textCanvas: {fileID: 2848767486236698775}
+  errorText: {fileID: 0}
 --- !u!1 &2848767485492382012
 GameObject:
   m_ObjectHideFlags: 0
