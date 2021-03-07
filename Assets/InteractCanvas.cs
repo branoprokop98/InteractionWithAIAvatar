@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,7 @@ public class InteractCanvas : MonoBehaviour
     [SerializeField] private Canvas _canvas;
     [SerializeField] private Text _text;
     private Hiting hitting;
+    private Hiting hittingLayer;
     private LayerMask _layerMask;
     public static bool interacting;
     public static bool showPauseMenu;
@@ -17,7 +19,8 @@ public class InteractCanvas : MonoBehaviour
     {
         interacting = false;
         _canvas.enabled = false;
-        hitting = new Hiting(2);
+        hitting = new Hiting(60);
+        hittingLayer = new Hiting(LayerMask.NameToLayer("Interactable"));
         showPauseMenu = true;
     }
 
@@ -36,20 +39,35 @@ public class InteractCanvas : MonoBehaviour
             showPauseMenu = false;
             interacting = false;
         }
-        else if (hitting.getHit() && hitting.hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable") &&
-                 interacting)
+        else if (hitting.getHit() && interacting)
         {
-            _text.text = "Press ESC to exit";
-            _canvas.enabled = true;
+            if (hitting.hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+            {
+                _text.text = "Press ESC to exit";
+                _canvas.enabled = true;
+            }
+            else
+            {
+                _canvas.enabled = false;
+            }
         }
-        else if (hitting.getHit() && hitting.hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable") && interacting == false)
+        else if (hitting.getHit() && interacting == false)
         {
-            _text.text = "Press F to interact";
-            _canvas.enabled = true;
-            showPauseMenu = true;
-            interacting = false;
+            Debug.LogWarning(hitting.hit.collider.gameObject.layer == LayerMask.NameToLayer("Interactable"));
+            if (hitting.hit.collider.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+            {
+                _text.text = "Press F to interact";
+                hitting.getHit();
+                _canvas.enabled = true;
+                showPauseMenu = true;
+                interacting = false;
+            }
+            else
+            {
+                _canvas.enabled = false;
+            }
         }
-        else if(!hitting.getHit())
+        if(!hitting.getHit())
         {
             _canvas.enabled = false;
         }

@@ -3,6 +3,8 @@
   <newGame>
     <gender>0</gender>
     <inputType>0</inputType>
-    <name />
   </newGame>
+  <save-info>
+    <mood>-1</mood>
+  </save-info>
 </mainMenu>

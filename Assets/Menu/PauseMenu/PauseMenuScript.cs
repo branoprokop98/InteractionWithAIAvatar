@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Menu.SaveLoadGame;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Menu.PauseMenu
@@ -7,6 +8,7 @@ namespace Menu.PauseMenu
     {
         [SerializeField] private Canvas pauseCanvas;
         [SerializeField] private Canvas hitCanvas;
+        private SaveGameController save;
 
 
         private bool isPaused;
@@ -17,6 +19,7 @@ namespace Menu.PauseMenu
             //pauseCanvas.SetActive(false);
             pauseCanvas.enabled = false;
             hitCanvas.enabled = true;
+            save = new SaveGameController();
             ShowCursor.mouseInvisible();
         }
 
@@ -58,6 +61,11 @@ namespace Menu.PauseMenu
                 Time.timeScale = 0.1f;
                 isPaused = true;
             }
+        }
+
+        public void saveGame()
+        {
+            save.saveGame();
         }
 
         public void loadMenu()

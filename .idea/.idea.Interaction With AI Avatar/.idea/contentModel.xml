@@ -12,6 +12,7 @@
       <e p="Assets" t="Include">
         <e p="aiml" t="Include">
           <e p="Aiml.cs" t="Include" />
+          <e p="AimlSettings.cs" t="Include" />
           <e p="ContextWindowInput" t="Include">
             <e p="AIMLStructure.cs" t="Include" />
             <e p="ContextLayer.cs" t="Include" />
@@ -51,7 +52,15 @@
           <e p="PauseMenu" t="Include">
             <e p="PauseMenuScript.cs" t="Include" />
           </e>
+          <e p="SaveLoadGame" t="Include">
+            <e p="LoadGameFromSave.cs" t="Include" />
+            <e p="SaveGameController.cs" t="Include" />
+          </e>
           <e p="SceneLoader.cs" t="Include" />
+          <e p="SettingsGame" t="Include">
+            <e p="Settings.cs" t="Include" />
+            <e p="SettingsMenu.cs" t="Include" />
+          </e>
           <e p="XMLWorker.cs" t="Include" />
         </e>
         <e p="Plugins" t="Include">
@@ -328,6 +337,11 @@
         </e>
         <e p="StreamingAssets" t="Include">
           <e p="Menu.xml" t="Include" />
+          <e p="Save" t="Include">
+            <e p="Save0.xml" t="Include" />
+            <e p="Save1.xml" t="Include" />
+          </e>
+          <e p="Settings.xml" t="Include" />
           <e p="Topics.xml" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">

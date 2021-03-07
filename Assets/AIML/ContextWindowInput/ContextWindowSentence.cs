@@ -13,15 +13,15 @@ namespace AIML.ContextWindowInput
         private readonly LoadSentences sentences;
         private readonly Aiml aiml;
 
-        public ContextWindowSentence(Canvas buttonCanvas, Canvas textCanvas)
+        public ContextWindowSentence(Canvas buttonCanvas, Canvas textCanvas, Animator animator, Aiml aiml)
         {
             this.textCanvas = textCanvas;
             this.canvas = buttonCanvas;
             sentences = new LoadSentences();
-            aiml = new Aiml();
+            this.aiml = aiml;
         }
 
-        public void getSentencesOfTopic(Button button, Animator animator)
+        public void getSentencesOfTopic(Button button)
         {
             Debug.Log(button.transform.GetChild(0).gameObject.GetComponent<Text>().text);
             string nameOfTopic = button.transform.GetChild(0).gameObject.GetComponent<Text>().text;
@@ -41,7 +41,7 @@ namespace AIML.ContextWindowInput
             Text outText = textCanvas.transform.GetChild(0).gameObject.GetComponent<Text>();
             Text errorText = textCanvas.transform.GetChild(1).gameObject.GetComponent<Text>();
             Text moodText = textCanvas.transform.GetChild(3).gameObject.GetComponent<Text>();
-            aiml.botInput(nameOfTopic, outText, errorText, moodText, animator);
+            aiml.botInput(nameOfTopic, outText, errorText, moodText);
         }
 
         public void initSentences()

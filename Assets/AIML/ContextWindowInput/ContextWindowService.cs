@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Globalization;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace AIML.ContextWindowInput
@@ -11,6 +13,8 @@ namespace AIML.ContextWindowInput
         [SerializeField] private Canvas canvas;
         [SerializeField] private GameObject interactObject;
         [SerializeField] private Canvas textCanvas;
+        [SerializeField] private Text errorText;
+
         private Hiting hitting;
         private bool interacting;
         public static int actualLayerOfTopic { get; set; }
@@ -18,21 +22,24 @@ namespace AIML.ContextWindowInput
         private Aiml aiml;
         private Button btn;
         private Animator animator;
+        private bool toChange;
 
         // Start is called before the first frame update
         void Start()
         {
             contextTopic = new ContextWindowTopic(canvas);
-            contextSentence = new ContextWindowSentence(canvas, textCanvas);
             animator = this.gameObject.GetComponent<Animator>();
+            aiml = new Aiml(animator);
+            contextSentence = new ContextWindowSentence(canvas, textCanvas, animator, aiml);
             canvas.enabled = false;
-            hitting = new Hiting();
+            hitting = new Hiting(60);
             interacting = false;
+            aiml.time = 123f;
             actualLayerOfTopic = 0;
             actualLayerOfSentences = 0;
-            aiml = new Aiml();
             textCanvas.enabled = false;
             ShowCursor.mouseInvisible();
+            StartCoroutine(startTimer());
         }
 
         // Update is called once per frame
@@ -55,6 +62,10 @@ namespace AIML.ContextWindowInput
                 canvas.enabled = false;
                 interacting = false;
             }
+            if (toChange)
+            {
+                changeMood120();
+            }
         }
 
         public void getNextLayerOfTopic() => contextTopic.getNextLayer();
@@ -66,7 +77,7 @@ namespace AIML.ContextWindowInput
 
         public void getPrevLayerOfSentence() => contextSentence.getPrevLayer();
 
-        public void getSentencesOfTopic(Button button) => contextSentence.getSentencesOfTopic(button, animator);
+        public void getSentencesOfTopic(Button button) => contextSentence.getSentencesOfTopic(button);
 
         public void getTopics() => contextTopic.initTopicsName();
 
@@ -78,6 +89,56 @@ namespace AIML.ContextWindowInput
         public void OnHoverExit(Button button)
         {
             button.transform.localScale += new Vector3(-0.1f, -0.1f, -0.1f);
+        }
+
+        private void changeMood120()
+        {
+            if (Aiml.mood > 70)
+            {
+                aiml.setMoodAnimation();
+            }
+            else if (Aiml.mood <= 70 && Aiml.mood > 30)
+            {
+                aiml.setMoodAnimation();
+            }
+            else if (Aiml.mood <= 30)
+            {
+                aiml.setMoodAnimation();
+            }
+
+            toChange = false;
+        }
+
+        public IEnumerator startTimer()
+        {
+            while (true)
+            {
+                aiml.time--;
+                if (aiml.time % 60 == 0 && aiml.time != 0)
+                {
+                    if (Aiml.mood > 70)
+                    {
+                        Aiml.mood = 60;
+                    }
+                    else if (Aiml.mood <= 70 && Aiml.mood > 30)
+                    {
+                        Aiml.mood = 20;
+                    }
+                    else if (Aiml.mood <= 30)
+                    {
+                        Aiml.mood = 0;
+                    }
+                    toChange = true;
+                }
+
+                if (aiml.time <= 0)
+                {
+                    aiml.time++;
+                }
+
+                this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
+                yield return new WaitForSeconds(1f);
+            }
         }
 
     }

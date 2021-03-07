@@ -9,6 +9,7 @@ public class Hiting
     private Ray ray;
     public RaycastHit hit;
     private int hitDistance;
+    private LayerMask layerMask;
 
     public Hiting(int hitDistance)
     {
@@ -20,10 +21,15 @@ public class Hiting
         hitDistance = 20;
     }
 
+    public Hiting(LayerMask layerMask)
+    {
+        this.layerMask = layerMask;
+    }
+
     public bool getHit()
     {
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit[] hits =  Physics.RaycastAll(ray, 20);
+        if (!(Camera.main is null)) ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits =  Physics.RaycastAll(ray, 20, layerMask);
         if (Physics.Raycast(ray, out hit, hitDistance))
         {
             Debug.Log(hit.collider.gameObject);
@@ -32,5 +38,4 @@ public class Hiting
 
         return false;
     }
-
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1533162453248431431}
   - component: {fileID: 8159232561900324728}
   - component: {fileID: 4117196885376745038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MoodText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 2658918706266315136}
   - component: {fileID: 6535480188403317603}
   - component: {fileID: 5553974074740298949}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ErrorCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 1354829431804058774}
   - component: {fileID: 7006272026963850099}
   - component: {fileID: 6794569871855208063}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MoodPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 7072328869013499103}
   - component: {fileID: 7477825366046922615}
   - component: {fileID: 6261333084519357331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ErrorText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 8677028696956852031}
   - component: {fileID: 8677028696956852000}
   - component: {fileID: 8677028696956852001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 8677028696965662263}
   - component: {fileID: 8677028696965662261}
   - component: {fileID: 8677028696965662262}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 8677028696999560326}
   - component: {fileID: 8677028696999560324}
   - component: {fileID: 8677028696999560325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 8677028697317158667}
   - component: {fileID: 8677028697317158668}
   - component: {fileID: 8677028697317158669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -797,7 +797,7 @@ GameObject:
   - component: {fileID: 8677028697554924142}
   - component: {fileID: 8677028697554924140}
   - component: {fileID: 8677028697554924141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -875,7 +875,7 @@ GameObject:
   - component: {fileID: 8677028698148519767}
   - component: {fileID: 8677028698148519765}
   - component: {fileID: 8677028698148519766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8677028698766713286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KeyboardInputMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
