@@ -28,10 +28,12 @@ namespace AIML
         private float myTime;
         private Settings settings;
         public static List<DialogueHistory> dialogueHistories { get; set; }
+        public float time { get; set; }
         //private SpeechOut _speechOut;
 
-        public Aiml()
+        public Aiml(Animator animator)
         {
+            this.animator = animator;
             dialogueHistories = new List<DialogueHistory>();
             string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
             string pathToSettings = Path.Combine(Application.streamingAssetsPath, "Settings.xml");
@@ -42,22 +44,24 @@ namespace AIML
             AI.loadSettings(); //It will Load Settings from its Config Folder with this code
             AI.loadAIMLFromFiles(); //With this Code It Will Load AIML Files from its AIML Folder
             setMood();
+            setMoodAnimation();
             myTime = 0f;
             settings = XMLWorker.deserialize<Settings>(pathToSettings);
         }
 
-        public void botInput(string text, Text outText, Text errorText, Text moodText, Animator animator)
+        public void botInput(string text, Text outText, Text errorText, Text moodText)
         {
             myuser.setMood();
             Request r = new Request(text, myuser, AI); //With This Code it will Request The Response From AIML Folders
             Result res = AI.Chat(r); //With This Code It Will Get Result
             string output = res.Output; //With this Code It Will Write the Result of Textbox1 Response to Textbox2 text
             outText.text = output;
-            this.animator = animator;
+            // this.animator = animator;
             calculateMood(moodText);
             setMoodAnimation();
             run_cmd(output, errorText);
             storeDialogue(text, output);
+            time = 179f;
         }
 
         private void storeDialogue(string input, string output)
@@ -80,50 +84,32 @@ namespace AIML
             }
         }
 
-        private void setMoodAnimation()
+        public void setMoodAnimation()
         {
             AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
             AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
             this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
             Debug.LogWarning("Mood: " + myTime.ToString(CultureInfo.InvariantCulture));
-            if (mood <= 30)
+            if (mood == 0)
+            {
+                animator.PlayInFixedTime("Crying", 0, this.myTime);
+            }
+            else if (mood <= 30)
             {
                 animator.PlayInFixedTime("SadIdle", 0, this.myTime);
-                // animator.SetBool(Idle, false);
-                // animator.SetBool(IdleTalk, false);
-                // animator.SetBool(Happy, false);
-                // animator.SetBool(HappyTalk, false);
-                // animator.SetBool(SadTalk, false);
-                // animator.SetBool(Sad, true);
             }
             else if (mood > 30 && mood <= 70)
             {
                 animator.PlayInFixedTime("Idle", 0, this.myTime);
-                // animator.SetBool(Happy, false);
-                // animator.SetBool(HappyTalk, false);
-                // animator.SetBool(SadTalk, false);
-                // animator.SetBool(Sad, false);
-                // animator.SetBool(IdleTalk, false);
-                // animator.SetBool(Idle, true);
             }
 
             else if (mood > 70)
             {
                 animator.PlayInFixedTime("HappyIdle", 0, this.myTime);
-                // animator.SetBool(SadTalk, false);
-                // animator.SetBool(Sad, false);
-                // animator.SetBool(IdleTalk, false);
-                // animator.SetBool(Idle, false);
-                // animator.SetBool(HappyTalk, false);
-                // animator.SetBool(Happy, true);
             }
-            // AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
-            // AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
-            // this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
-            // Debug.LogWarning("Mood: " + myTime.ToString(CultureInfo.InvariantCulture));
         }
 
-        private void setTalkAnimation()
+        public void setTalkAnimation()
         {
             AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
             AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
@@ -132,38 +118,16 @@ namespace AIML
             if (mood <= 30)
             {
                 animator.PlayInFixedTime("SadTalk", 0, this.myTime);
-                // animator.SetBool(Idle, false);
-                // animator.SetBool(IdleTalk, false);
-                // animator.SetBool(Happy, false);
-                // animator.SetBool(HappyTalk, false);
-                // animator.SetBool(Sad, false);
-                // animator.SetBool(SadTalk, true);
             }
             else if (mood > 30 && mood <= 70)
             {
                 animator.PlayInFixedTime("IdleTalk", 0, this.myTime);
-                // animator.SetBool(Happy, false);
-                // animator.SetBool(HappyTalk, false);
-                // animator.SetBool(SadTalk, false);
-                // animator.SetBool(Sad, false);
-                // animator.SetBool(Idle, false);
-                // animator.SetBool(IdleTalk, true);
             }
 
             else if (mood > 70)
             {
                 animator.PlayInFixedTime("HappyTalk", 0, this.myTime);
-                // animator.SetBool(SadTalk, false);
-                // animator.SetBool(Sad, false);
-                // animator.SetBool(IdleTalk, false);
-                // animator.SetBool(Idle, false);
-                // animator.SetBool(Happy, false);
-                // animator.SetBool(HappyTalk, true);
             }
-            // AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
-            // AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
-            // this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
-            // Debug.LogWarning("Talk: " + myTime.ToString(CultureInfo.InvariantCulture) + "Name of clip: " + myAnimatorClip[0].clip.name);
         }
 
         private void run_cmd(string output, Text errorText)
