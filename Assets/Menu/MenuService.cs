@@ -1,8 +1,10 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Xml;
 using Menu.ExitGame;
 using Menu.NewGame;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Menu
@@ -26,11 +28,12 @@ namespace Menu
             newGameCanvas.enabled = false;
             loadGameCanvas.enabled = false;
             settingsGameCanvas.enabled = false;
-            string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
-            MenuInteraction menuInteraction = XMLWorker.deserialize<MenuInteraction>(path);
-            menuInteraction.saveInfo.mood = -1;
-            menuInteraction.dialogueHistories.Clear();
-            XMLWorker.serialize(menuInteraction, path);
+            restoreMenuConfig();
+            // string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
+            // MenuInteraction menuInteraction = XMLWorker.deserialize<MenuInteraction>(path);
+            // menuInteraction.saveInfo.mood = -1;
+            // menuInteraction.dialogueHistories.Clear();
+            // XMLWorker.serialize(menuInteraction, path);
         }
 
         public void getNewGameCanvas()
@@ -39,6 +42,7 @@ namespace Menu
             newGameCanvas.enabled = true;
             loadGameCanvas.enabled = false;
             settingsGameCanvas.enabled = false;
+            restoreMenuConfig();
         }
 
         public void getMainMenuCanvas()
@@ -79,5 +83,17 @@ namespace Menu
         {
             button.transform.localScale += new Vector3(-0.1f, -0.1f, -0.1f);
         }
+
+        private void restoreMenuConfig()
+        {
+            string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
+            MenuInteraction menuInteraction = XMLWorker.deserialize<MenuInteraction>(path);
+            menuInteraction.saveInfo.mood = -1;
+            menuInteraction.dialogueHistories.Clear();
+            menuInteraction.newGame.name = "";
+            menuInteraction.saveInfo.DateTime = null;
+            XMLWorker.serialize(menuInteraction, path);
+        }
+
     }
 }
