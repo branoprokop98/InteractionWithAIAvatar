@@ -29,12 +29,12 @@ public class LoadedManagment : MonoBehaviour
         switch (menuInteraction.newGame.inputType)
         {
             case 0:
-                //speech
-                loadGenderForSpeech();
-                break;
-            case 1:
                 //keyboard
                 loadGenderForKeyboard();
+                break;
+            case 1:
+                //speech
+                loadGenderForSpeech();
                 break;
             case 2:
                 //context window
