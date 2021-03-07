@@ -1,4 +1,6 @@
-﻿using AIMLbot;
+﻿using System.Collections;
+using System.Globalization;
+using AIMLbot;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
@@ -22,13 +24,14 @@ namespace AIML.KeyboardInput
 
         private Hiting _hiting;
         private RigidbodyFirstPersonController _rigidbodyFirstPersonController;
-        private Aiml _aiml;
+        private Aiml aiml;
         private Bot AI;
         private User myuser;
         private bool inDialog;
         private string text;
         private float startTime;
         private Animator animator;
+        private bool toChange;
 
         public static AI_Bot aiBot;
 
@@ -51,10 +54,12 @@ namespace AIML.KeyboardInput
 
         void Start()
         {
+            toChange = false;
             //_speechInputForAiml = new SpeechInputForAiml();
             animator = this.GetComponent<Animator>();
             aiBot = this;
-            _aiml = new Aiml();
+            aiml = new Aiml(animator);
+            aiml.time = 123f;
             outText = outText.GetComponent<Text>();
             _rigidbody = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<Rigidbody>();
             //_rigidbody = player.GetComponent<Rigidbody>();
@@ -62,8 +67,9 @@ namespace AIML.KeyboardInput
             _hiting = new Hiting(60);
             inDialog = false;
             errorText = errorText.GetComponent<Text>();
-            errorText.enabled = false;
+            errorText.enabled = true;
             ShowCursor.mouseInvisible();
+            StartCoroutine(startTimer());
         }
 
         // Update is called once per frame
@@ -88,13 +94,68 @@ namespace AIML.KeyboardInput
                 RigidbodyFirstPersonController.instance.mouseLook.YSensitivity = 2;
                 inDialog = false;
             }
+
+            if (toChange)
+            {
+                changeMood120();
+            }
         }
 
 
         public void botControll(string text)
         {
-            _aiml.botInput(text, outText, errorText, moodText, animator);
+            aiml.botInput(text, outText, errorText, moodText);
 
+        }
+
+        private void changeMood120()
+        {
+            if (Aiml.mood > 70)
+            {
+                aiml.setMoodAnimation();
+            }
+            else if (Aiml.mood <= 70 && Aiml.mood > 30)
+            {
+                aiml.setMoodAnimation();
+            }
+            else if (Aiml.mood <= 30)
+            {
+                aiml.setMoodAnimation();
+            }
+
+            toChange = false;
+        }
+
+        public IEnumerator startTimer()
+        {
+            while (true)
+            {
+                aiml.time--;
+                if (aiml.time % 60 == 0 && aiml.time != 0)
+                {
+                    if (Aiml.mood > 70)
+                    {
+                        Aiml.mood = 60;
+                    }
+                    else if (Aiml.mood <= 70 && Aiml.mood > 30)
+                    {
+                        Aiml.mood = 20;
+                    }
+                    else if (Aiml.mood <= 30)
+                    {
+                        Aiml.mood = 0;
+                    }
+                    toChange = true;
+                }
+
+                if (aiml.time <= 0)
+                {
+                    aiml.time++;
+                }
+
+                this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
+                yield return new WaitForSeconds(1f);
+            }
         }
 
     }
