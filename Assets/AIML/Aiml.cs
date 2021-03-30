@@ -194,7 +194,15 @@ namespace AIML
             }
 
             int moodTemp = mood;
-            moodTemp += int.Parse(moodOfSentence);
+            if (int.Parse(moodOfSentence) > 0)
+            {
+                moodTemp += int.Parse(moodOfSentence) * 5;
+            }
+            else
+            {
+                moodTemp += int.Parse(moodOfSentence);
+            }
+
             if (moodTemp > 0 && moodTemp <= 100)
             {
                 mood = moodTemp;
