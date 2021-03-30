@@ -129,7 +129,7 @@ namespace AIML.SpeechInput
                     aiml.time++;
                 }
 
-                this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
+                //this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
                 yield return new WaitForSeconds(1f);
             }
         }

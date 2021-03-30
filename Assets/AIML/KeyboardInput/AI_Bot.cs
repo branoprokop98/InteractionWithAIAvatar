@@ -59,7 +59,7 @@ namespace AIML.KeyboardInput
             animator = this.GetComponent<Animator>();
             aiBot = this;
             aiml = new Aiml(animator);
-            aiml.time = 123f;
+            aiml.time = 179f;
             outText = outText.GetComponent<Text>();
             _rigidbody = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<Rigidbody>();
             //_rigidbody = player.GetComponent<Rigidbody>();
@@ -153,7 +153,7 @@ namespace AIML.KeyboardInput
                     aiml.time++;
                 }
 
-                this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
+                //this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
                 yield return new WaitForSeconds(1f);
             }
         }
