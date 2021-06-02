@@ -3,6 +3,8 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Branislav\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Branislav\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Interaction With AI Avatar.-477616392.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Branislav\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Branislav\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
     <e p="C:\Users\Branislav\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
     <e p="C:\Users\Branislav\Documents\Unity projects\Interaction With AI Avatar" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
@@ -46,6 +48,7 @@
           </e>
           <e p="MenuService.cs" t="Include" />
           <e p="NewGame" t="Include">
+            <e p="DropDownController.cs" t="Include" />
             <e p="MenuInteraction.cs" t="Include" />
             <e p="NewGameController.cs" t="Include" />
           </e>
@@ -94,6 +97,7 @@
         <e p="Scripts" t="Include">
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="SpeechCompatibility.cs" t="Include" />
+          <e p="Timer.cs" t="Include" />
         </e>
         <e p="ShowCursor.cs" t="Include" />
         <e p="Standard Assets" t="Include">
@@ -340,6 +344,9 @@
           <e p="Save" t="Include">
             <e p="Save0.xml" t="Include" />
             <e p="Save1.xml" t="Include" />
+            <e p="Save2.xml" t="Include" />
+            <e p="Save3.xml" t="Include" />
+            <e p="Save4.xml" t="Include" />
           </e>
           <e p="Settings.xml" t="Include" />
           <e p="Topics.xml" t="Include" />
