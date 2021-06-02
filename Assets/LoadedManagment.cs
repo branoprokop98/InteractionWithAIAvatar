@@ -21,10 +21,10 @@ public class LoadedManagment : MonoBehaviour
         ShowCursor.mouseInvisible();
         string path = Path.Combine(Application.streamingAssetsPath, "Menu.xml");
         menuInteraction = XMLWorker.deserialize<MenuInteraction>(path);
-        loadInput();
+        loadInputType();
     }
 
-    private void loadInput()
+    private void loadInputType()
     {
         switch (menuInteraction.newGame.inputType)
         {

@@ -56,7 +56,7 @@ namespace AIML.SpeechInput
                 speechInput();
             }
             else if (Input.GetKeyDown(KeyCode.Escape) && hitting.getHit() &&
-                     hitting.hit.collider.gameObject == interactObject && interacting && Timer.counting)
+                     hitting.hit.collider.gameObject == interactObject && interacting)
             {
                 Timer.counting = false;
                 interacting = false;
@@ -112,14 +112,17 @@ namespace AIML.SpeechInput
                     if (Aiml.mood > 70)
                     {
                         Aiml.mood = 60;
+                        moodText.text = 60.ToString();
                     }
                     else if (Aiml.mood <= 70 && Aiml.mood > 30)
                     {
                         Aiml.mood = 20;
+                        moodText.text = 20.ToString();
                     }
                     else if (Aiml.mood <= 30)
                     {
                         Aiml.mood = 0;
+                        moodText.text = 0.ToString();
                     }
                     toChange = true;
                 }
@@ -129,7 +132,7 @@ namespace AIML.SpeechInput
                     aiml.time++;
                 }
 
-                this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
+                //this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
                 yield return new WaitForSeconds(1f);
             }
         }

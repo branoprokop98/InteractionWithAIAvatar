@@ -59,7 +59,7 @@ namespace AIML.KeyboardInput
             animator = this.GetComponent<Animator>();
             aiBot = this;
             aiml = new Aiml(animator);
-            aiml.time = 123f;
+            aiml.time = 179f;
             outText = outText.GetComponent<Text>();
             _rigidbody = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<Rigidbody>();
             //_rigidbody = player.GetComponent<Rigidbody>();
@@ -136,14 +136,17 @@ namespace AIML.KeyboardInput
                     if (Aiml.mood > 70)
                     {
                         Aiml.mood = 60;
+                        moodText.text = 60.ToString();
                     }
                     else if (Aiml.mood <= 70 && Aiml.mood > 30)
                     {
                         Aiml.mood = 20;
+                        moodText.text = 20.ToString();
                     }
                     else if (Aiml.mood <= 30)
                     {
                         Aiml.mood = 0;
+                        moodText.text = 0.ToString();
                     }
                     toChange = true;
                 }
@@ -153,7 +156,7 @@ namespace AIML.KeyboardInput
                     aiml.time++;
                 }
 
-                this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
+                //this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
                 yield return new WaitForSeconds(1f);
             }
         }

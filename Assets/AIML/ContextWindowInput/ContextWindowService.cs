@@ -34,7 +34,7 @@ namespace AIML.ContextWindowInput
             canvas.enabled = false;
             hitting = new Hiting(60);
             interacting = false;
-            aiml.time = 123f;
+            aiml.time = 179f;
             actualLayerOfTopic = 0;
             actualLayerOfSentences = 0;
             textCanvas.enabled = false;
@@ -111,6 +111,7 @@ namespace AIML.ContextWindowInput
 
         public IEnumerator startTimer()
         {
+            Text moodText = textCanvas.transform.GetChild(3).gameObject.GetComponent<Text>();
             while (true)
             {
                 aiml.time--;
@@ -119,14 +120,17 @@ namespace AIML.ContextWindowInput
                     if (Aiml.mood > 70)
                     {
                         Aiml.mood = 60;
+                        moodText.text = 60.ToString();
                     }
                     else if (Aiml.mood <= 70 && Aiml.mood > 30)
                     {
                         Aiml.mood = 20;
+                        moodText.text = 20.ToString();
                     }
                     else if (Aiml.mood <= 30)
                     {
                         Aiml.mood = 0;
+                        moodText.text = 0.ToString();
                     }
                     toChange = true;
                 }
@@ -136,7 +140,7 @@ namespace AIML.ContextWindowInput
                     aiml.time++;
                 }
 
-                this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
+                //this.errorText.text = aiml.time.ToString(CultureInfo.InvariantCulture) + " " + Aiml.mood;
                 yield return new WaitForSeconds(1f);
             }
         }

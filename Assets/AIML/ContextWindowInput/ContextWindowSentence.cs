@@ -38,9 +38,11 @@ namespace AIML.ContextWindowInput
                 }
             }
 
-            Text outText = textCanvas.transform.GetChild(0).gameObject.GetComponent<Text>();
-            Text errorText = textCanvas.transform.GetChild(1).gameObject.GetComponent<Text>();
-            Text moodText = textCanvas.transform.GetChild(3).gameObject.GetComponent<Text>();
+            Text outText = textCanvas.transform.GetChild(3).gameObject.GetComponent<Text>();
+            Text errorText = textCanvas.transform.GetChild(4).gameObject.GetComponent<Text>();
+            Text moodText = textCanvas.transform.GetChild(5).gameObject.GetComponent<Text>();
+            Text inputText = textCanvas.transform.GetChild(6).gameObject.GetComponent<Text>();
+            inputText.text = nameOfTopic;
             aiml.botInput(nameOfTopic, outText, errorText, moodText);
         }
 

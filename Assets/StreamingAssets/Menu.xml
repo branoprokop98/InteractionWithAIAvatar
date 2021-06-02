@@ -2,7 +2,8 @@
 <mainMenu xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <newGame>
     <gender>0</gender>
-    <inputType>0</inputType>
+    <inputType>1</inputType>
+    <name />
   </newGame>
   <save-info>
     <mood>-1</mood>

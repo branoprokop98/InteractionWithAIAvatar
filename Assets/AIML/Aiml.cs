@@ -84,11 +84,19 @@ namespace AIML
             }
         }
 
-        public void setMoodAnimation()
+        private void calculateTime()
         {
             AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
             AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
             this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
+        }
+
+        public void setMoodAnimation()
+        {
+            calculateTime();
+            // AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
+            // AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
+            // this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
             Debug.LogWarning("Mood: " + myTime.ToString(CultureInfo.InvariantCulture));
             if (mood == 0)
             {
@@ -111,10 +119,11 @@ namespace AIML
 
         public void setTalkAnimation()
         {
-            AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
-            AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
-            this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
-            Debug.LogWarning("Talk: " + myTime.ToString(CultureInfo.InvariantCulture) + "Name of clip: " + myAnimatorClip[0].clip.name);
+            calculateTime();
+            // AnimatorStateInfo animationState = this.animator.GetCurrentAnimatorStateInfo(0);
+            // AnimatorClipInfo[] myAnimatorClip = this.animator.GetCurrentAnimatorClipInfo(0);
+            // this.myTime = myAnimatorClip[0].clip.length * animationState.normalizedTime;
+            //Debug.LogWarning("Talk: " + myTime.ToString(CultureInfo.InvariantCulture) + "Name of clip: " + myAnimatorClip[0].clip.name);
             if (mood <= 30)
             {
                 animator.PlayInFixedTime("SadTalk", 0, this.myTime);
@@ -187,14 +196,19 @@ namespace AIML
 
         private void calculateMood(Text moodText)
         {
-            string moodOfSentence = myuser.getMood();
-            if (moodOfSentence == "")
-            {
-                moodOfSentence = "0";
-            }
+            int moodOfSentence = getMoodFromSentence();
 
             int moodTemp = mood;
-            moodTemp += int.Parse(moodOfSentence);
+
+            if (moodOfSentence > 0)
+            {
+                moodTemp += moodOfSentence * 5;
+            }
+            else
+            {
+                moodTemp += moodOfSentence;
+            }
+
             if (moodTemp > 0 && moodTemp <= 100)
             {
                 mood = moodTemp;
@@ -202,6 +216,18 @@ namespace AIML
             moodText.text = mood.ToString();
         }
 
+        private int getMoodFromSentence()
+        {
+            string mood = myuser.getMood();
+            try
+            {
+                return int.Parse(mood);
+            }
+            catch
+            {
+                return 0;
+            }
+        }
 
         public void speechOutput(string output)
         {
